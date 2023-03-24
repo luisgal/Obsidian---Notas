@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "aa140da5303519f9",
+        "id": "2ed96543da8f2933",
         "type": "tabs",
         "children": [
           {
-            "id": "c3dee7312f36c183",
+            "id": "163b1285d8aef21b",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -138,7 +138,7 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "c3dee7312f36c183",
+  "active": "163b1285d8aef21b",
   "lastOpenFiles": [
     "Obsidian/Obsidian Git/Obsidian Git.md",
     "Obsidian/Obsidian Git",
