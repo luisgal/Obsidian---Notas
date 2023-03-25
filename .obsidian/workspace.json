@@ -18,6 +18,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "f10478174326d008",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Obsidian/Obsidian Git/Obsidian Git 1.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "3bd045eb996ee26d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "76faec1ba3586930",
+            "type": "leaf",
+            "state": {
+              "type": "reveal-preview-view",
+              "state": {}
+            }
           }
         ]
       }
@@ -48,7 +75,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#Obsidian",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +92,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -85,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Obsidian/Obsidian Git/Obsidian Git.md",
+                "file": "Obsidian/Obsidian Git/Obsidian Git 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Obsidian/Obsidian Git/Obsidian Git.md",
+                "file": "Obsidian/Obsidian Git/Obsidian Git 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Obsidian/Obsidian Git/Obsidian Git.md"
+                "file": "Obsidian/Obsidian Git/Obsidian Git 1.md"
               }
             }
           },
@@ -136,13 +164,22 @@
               "type": "git-view",
               "state": {}
             }
+          },
+          {
+            "id": "a0267947c556f109",
+            "type": "leaf",
+            "state": {
+              "type": "git-history-view",
+              "state": {}
+            }
           }
         ],
         "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 343.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -151,12 +188,14 @@
       "canvas:Create new canvas": false,
       "daily-notes:Abrir la nota de hoy": false,
       "templates:Insertar plantilla": false,
-      "command-palette:Abrir paleta de comandos": false
+      "command-palette:Abrir paleta de comandos": false,
+      "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "163b1285d8aef21b",
+  "active": "f10478174326d008",
   "lastOpenFiles": [
     "Obsidian/Obsidian Git/Obsidian Git.md",
+    "Obsidian/Obsidian Git/Obsidian Git 1.md",
     "Obsidian/Obsidian Git",
     "Obsidian/Markdown",
     "SQL",

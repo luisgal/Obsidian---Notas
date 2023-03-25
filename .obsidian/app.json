@@ -8,5 +8,13 @@
     "landscape": false,
     "margin": "0",
     "downscalePercent": 100
-  }
+  },
+  "livePreview": true,
+  "readableLineLength": true,
+  "strictLineBreaks": false,
+  "foldHeading": true,
+  "showLineNumber": true,
+  "spellcheck": true,
+  "newFileLocation": "current",
+  "attachmentFolderPath": "./"
 }

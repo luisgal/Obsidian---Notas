@@ -13,7 +13,10 @@ For mobile users see [Mobile](#mobile) section below.
 - Sidebar view. The Source Control View allows you to stage and commit individual files. It can be opened with the `Open Source Control View` command.
 - For viewing the history of a file, I strongly recommend you the [Version History Diff](obsidian://show-plugin?id=obsidian-version-history-diff) plugin
 
-![Source Control View](https://raw.githubusercontent.com/denolehov/obsidian-git/master/images/source-view.png)
+<p align="center"> 
+	<img src="https://raw.githubusercontent.com/denolehov/obsidian-git/master/images/source-view.png" alt="Source Control View"
+	styrle="text-align:center;">
+</p>
 
 ## Available Commands
 
