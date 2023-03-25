@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "Obsidian/Obsidian Git/Obsidian Git.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -128,13 +128,21 @@
                 "file": "Obsidian/Obsidian Git/Obsidian Git.md"
               }
             }
+          },
+          {
+            "id": "9a585415166287b5",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
