@@ -1,6 +1,7 @@
 {
   "accentColor": "",
   "baseFontSize": 14,
-  "theme": "moonstone",
-  "nativeMenus": false
+  "theme": "system",
+  "nativeMenus": false,
+  "textFontFamily": "Noto Music"
 }

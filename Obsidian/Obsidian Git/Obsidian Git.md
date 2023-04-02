@@ -1,8 +1,12 @@
+# Obsidian Git
+
 Plugin that allows you to back up your [Obsidian.md](https://obsidian.md) vault to a remote Git repository (e.g. private repo on GitHub).
 
 Requirements, installation steps (including setup for mobile), tips and tricks, common issues and more can be found in the [documentation](https://publish.obsidian.md/git-doc).
 
 For mobile users see [Mobile](#mobile) section below.
+
+
 
 ## Highlighted Features
 
@@ -18,6 +22,8 @@ For mobile users see [Mobile](#mobile) section below.
 	styrle="text-align:center;">
 </p>
 
+---
+
 ## Available Commands
 
 - Changes
@@ -26,16 +32,22 @@ For mobile users see [Mobile](#mobile) section below.
 	- `Stage current file`
 	- `Unstage current file`
 
+---
+
 - Commit
 	- `Commit all changes`: Only commits all changes without pushing
 	- `Commit all changes with specific message`: Same as above, but with a custom message
 	- `Commit staged`: Commits only files that have been staged
 	- `Commit staged with specific message`: Same as above, but with a custom message
 
+---
+
 - Backup
 	- `Create Backup`: Commits all changes. If "Push on backup" setting is enabled, will also push the commit.
 	- `Create Backup with specific message`: Same as above, but with a custom message
 	- `Create backup and close`: Same as `Create Backup`, but if running on desktop, will close the Obsidian window. Will not exit Obsidian app on mobile.
+
+---
 
 - Remote
 	- `Push`
@@ -46,16 +58,22 @@ For mobile users see [Mobile](#mobile) section below.
 	- `Open file on GitHub`: Open the file view of the current file on GitHub in a browser window. Note: only works on desktop
 	- `Open file history on GitHub`: Open the file history of the current file on GitHub in a browser window. Note: only works on desktop
 
+---
+
 - Local
 	- `Initialize a new repo`
 	- `Create new branch`
 	- `Delete branch`
 	- `CAUTION: Delete repository`
 
+---
+
 - Source Control View
 	- `Open source control view`: Opens side pane displaying [Source control view](#sidebar-view)
 	- `Edit .gitignore`
 	- `Add file to .gitignore`: Add current file to .gitignore
+
+---
 
 ## Desktop
 
@@ -70,6 +88,8 @@ Authentication may require additional setup. See more in the [Authentication doc
 
 Please use AppImage instead ([Linux installation guide](https://publish.obsidian.md/git-doc/Installation#Linux))
 
+---
+
 ## Mobile
 
 ### Restrictions of the mobile version
@@ -80,6 +100,8 @@ I am using [isomorphic-git](https://isomorphic-git.org/), which is a re-implemen
 - Repo size is limited, because of memory restrictions
 - Rebase merge strategy is not supported
 - Submodules are not supported
+
+---
 
 ### Performance on mobile
 
