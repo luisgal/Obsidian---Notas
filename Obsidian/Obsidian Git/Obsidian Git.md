@@ -6,7 +6,7 @@ Requirements, installation steps (including setup for mobile), tips and tricks, 
 
 For mobile users see [Mobile](#mobile) section below.
 
-
+---
 
 ## Highlighted Features
 
@@ -32,7 +32,6 @@ For mobile users see [Mobile](#mobile) section below.
 	- `Stage current file`
 	- `Unstage current file`
 
----
 
 - Commit
 	- `Commit all changes`: Only commits all changes without pushing
@@ -40,14 +39,12 @@ For mobile users see [Mobile](#mobile) section below.
 	- `Commit staged`: Commits only files that have been staged
 	- `Commit staged with specific message`: Same as above, but with a custom message
 
----
 
 - Backup
 	- `Create Backup`: Commits all changes. If "Push on backup" setting is enabled, will also push the commit.
 	- `Create Backup with specific message`: Same as above, but with a custom message
 	- `Create backup and close`: Same as `Create Backup`, but if running on desktop, will close the Obsidian window. Will not exit Obsidian app on mobile.
 
----
 
 - Remote
 	- `Push`
@@ -58,7 +55,6 @@ For mobile users see [Mobile](#mobile) section below.
 	- `Open file on GitHub`: Open the file view of the current file on GitHub in a browser window. Note: only works on desktop
 	- `Open file history on GitHub`: Open the file history of the current file on GitHub in a browser window. Note: only works on desktop
 
----
 
 - Local
 	- `Initialize a new repo`
@@ -66,14 +62,12 @@ For mobile users see [Mobile](#mobile) section below.
 	- `Delete branch`
 	- `CAUTION: Delete repository`
 
----
 
 - Source Control View
 	- `Open source control view`: Opens side pane displaying [Source control view](#sidebar-view)
 	- `Edit .gitignore`
 	- `Add file to .gitignore`: Add current file to .gitignore
 
----
 
 ## Desktop
 
