@@ -25,8 +25,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Docker/3. Comandos básicos.md",
-                "mode": "source",
+                "file": "Obsidian/Obsidian Git/Obsidian Git.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -43,8 +43,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -189,14 +188,14 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "07c2f350c991e8ab",
+  "active": "9e8ccf15abbc6f3a",
   "lastOpenFiles": [
-    "Docker/4. DockerFile.md",
     "Docker/5. Docker Compose.md",
+    "Obsidian/Obsidian Git/Obsidian Git.md",
     "Docker/3. Comandos básicos.md",
+    "Docker/4. DockerFile.md",
     "Docker/1. Introducción.md",
     "Docker/2. Conceptos básicos.md",
-    "Obsidian/Obsidian Git/Obsidian Git.md",
     "README.md",
     "Obsidian/Obsidian Git",
     "Obsidian/Markdown",
