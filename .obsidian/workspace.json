@@ -20,6 +20,18 @@
             }
           },
           {
+            "id": "921dda9e17c4b13b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Zzz/Biblioteca.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "07c2f350c991e8ab",
             "type": "leaf",
             "state": {
@@ -43,7 +55,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -109,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Docker/3. Comandos básicos.md",
+                "file": "Zzz/Biblioteca.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Docker/3. Comandos básicos.md",
+                "file": "Zzz/Biblioteca.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Docker/3. Comandos básicos.md"
+                "file": "Zzz/Biblioteca.md"
               }
             }
           },
@@ -188,11 +201,13 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "9e8ccf15abbc6f3a",
+  "active": "921dda9e17c4b13b",
   "lastOpenFiles": [
+    "Docker/3. Comandos básicos.md",
+    "Zzz/Biblioteca.md",
+    "Zzz",
     "Docker/5. Docker Compose.md",
     "Obsidian/Obsidian Git/Obsidian Git.md",
-    "Docker/3. Comandos básicos.md",
     "Docker/4. DockerFile.md",
     "Docker/1. Introducción.md",
     "Docker/2. Conceptos básicos.md",
