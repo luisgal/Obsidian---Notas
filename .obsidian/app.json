@@ -9,7 +9,7 @@
     "margin": "0",
     "downscalePercent": 100
   },
-  "livePreview": true,
+  "livePreview": false,
   "readableLineLength": true,
   "strictLineBreaks": false,
   "foldHeading": true,
