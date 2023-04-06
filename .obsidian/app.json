@@ -17,5 +17,7 @@
   "spellcheck": true,
   "newFileLocation": "current",
   "attachmentFolderPath": "./",
-  "showInlineTitle": false
+  "showInlineTitle": false,
+  "rightToLeft": false,
+  "legacyEditor": false
 }

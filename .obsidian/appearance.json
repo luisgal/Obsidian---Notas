@@ -3,5 +3,8 @@
   "baseFontSize": 14,
   "theme": "system",
   "nativeMenus": false,
-  "textFontFamily": "Noto Music"
+  "textFontFamily": "Noto Music",
+  "enabledCssSnippets": [
+    "center"
+  ]
 }
