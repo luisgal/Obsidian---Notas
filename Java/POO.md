@@ -63,48 +63,402 @@ Con el concepto de objeto logramos observar que cada objeto tiene característic
 
 Entonces ¿qué pasa cuando tenemos características y funcionalidades que distintos objetos tienen en común? en este punto toma relevancia el concepto de clase.
 
+Una clase es la abstracción que podemos formar alrededor de uno o más objetos, esta abstracción podemos concebirla como una plantilla. Ahora bien, en programación podemos decir que una clase es un tipo de dato definido por el programador específicamente para crear objetos. Intentemos ahora unir las dos definiciones anteriores para poder conceptualizar claramente lo que es una clase.
 
+Sigamos con el ejemplo del coche, ya vimos que teníamos distintos objetos que eran todos coches pero cada uno podía tener sus particularidades, intentemos generalizar lo que es un coche para poder crear la clase coche.
 
+```mermaid
+flowchart LR
+	A([Coche])
+	B([Atributos])
+	C([Métodos])
 
-### Atributos y métodos
+	A --> B & C
+
+	B --> B1([Color])
+	B --> B2([No. de llantas])
+	B --> B3([Velocidad])
+	B --> B4([Kilometraje])
+	
+	C --> C1([Acelerar])
+	C --> C2([Frenar])
+	C --> C3([Ir adelante])
+	C --> C4([Reversa])
+```
+
+Como podemos ver, la clase a diferencia del objeto no me dice cuales son las particularidades de un objeto, no me dice el color del coche, si no que me dice que características (atributos) y funcionalidades (métodos) son las que definen lo que es un objeto, para este ejemplo lo que es un coche.
+
+Es importante aclarar que la clase coche puede ser definida de muchas maneras, el ejemplo solo muestra una de ellas, la definición de la clase coche puede variar según el uso que le va a dar a la clase, lo que se necesite tener en cuenta en el proyecto o programa en el que utilizaremos el coche, por lo mismo podemos entender que la clase coche podrá tener más o menos atributos y métodos.
+
+Por último, la manera más común de representar una clase es utilizando UML, si interesa busca lo que es ya que aquí no se explica. Siguiendo el ejemplo del coche se describe a continuación esa clase.
+
+```mermaid
+classDiagram
+	class Coche{
+		+String Color
+		+int No. de llantas
+		+float Velocidad
+		+long Kilometraje
+		
+		-Acelerar()
+		-Frenar()
+		+Ir_adelante()
+		+Reversa()
+	}
+```
+
+Como lo podemos ver la clase como se muestra esta dividida en tres segmentos, el primero de ellos indica el nombre de la clase, el segundo apartado muestra los atributos de la clase y en el último encontramos los métodos. Se recomienda leer sobre UML y la definición de clases así como su diagramado.
+
+### Instanciar objetos
+
+Ya que tenemos definido lo que es una clase y un objeto es momento de adentrarnos a como llevar estos dos conceptos a código utilizando como lenguaje Java y de esta manera poder abordar el concepto lo que es una instancia, la instanciación o creación de instancias.
+
+Una de las grandes ventajas de java con respecto a la programación orientada a objetos es que esta diseñado para poder solventar este paradigma de programación; así que empecemos por ver el código que se requiere para definir una clase, en esta ocasión representaremos todo con un ejemplo nuevo.
+
+```mermaid
+classDiagram
+	class Perro{
+		+int edad
+		+String nombre
+		+float peso
+		+String color_pelo
+		+String genero
+		
+		+comer() : void
+		+moverse() : void
+		-caminar() : void
+		+ladrar() : void
+		+getEdad() : int
+	}
+```
+
+La clase *Perro* se puede escribir en código Java de la siguiente manera:
+
+```java
+public class Perro {
+	public int edad;
+	public String nombre;
+	public float peso;
+	public String color_pelo;
+	public String genero;
+
+	public Perro(/*int edad*/){
+		//code
+		//this.edad = edad
+	}
+	
+	public void comer(){
+		//code
+	}
+	
+	public void moverse(){
+		//code
+	}
+	
+	private void caminar(){
+		//code
+	}
+	
+	public void ladrar(){
+		//code
+	}
+	
+	public int getEdad(){
+		return this.edad;
+	}
+}
+```
+
+Se puede agregar más métodos para la visualización y modificación de los atributos, se pueden inicializar sus atributos con algún valor *default*,  entre otras cosas;  una de las cosas más importantes dentro del código de la clase es su constructor (este concepto se verá a fondo más adelante) el cual permite crear instancias de esta clase o lo que es lo mismo a crear objetos del tipo de la clase.
+
+```java
+
+Perro perro1 = new Perro();
+Perro perro2 = new Perro();
+Perro perro3 = new Perro();
+
+```
+
+Lo que vemos en el código de ejemplo anterior es como crear objetos de la clase perro, a esto se le llama crear una **instancia** . Crear una **instancia** significa crear un objeto que sea de un tipo de clase y asignarlo a una variable mediante la cual se podrá hacer uso del objeto; como lo vemos en el ejemplo de arriba se instanciaron 3 objetos de la clase *Perro* en las variables *perro1*, *perro2*, *perro3*. Una vez que se tiene la variable de un objeto se puede hacer uso de el, poder utilizar a sus métodos como acceder a sus atributos.
 
 ### Constructores y destructores
 
----
-## Modularidad
+El constructor es uno elemento muy importante de la clase, es con lo que podremos instanciar objetos de la clase. El constructor de una clase va declarado dentro de la misma clase, debe tener el mismo nombre que la clase y puede o no recibir parámetros, esencialmente los parámetros que recibe el constructor son para inicializar el valor o cambiar los valores por default de la clase.
 
+```java
+public class Perro {
+	public int edad;
+	public String nombre;
+	public float peso;
+	public String color_pelo;
+	public String genero;
 
----
-## Jerarquía
+	public Perro(){
+		//super()
+	}
+}
+```
 
+El código que se muestra arriba es el ejemplo de un constructor vacío, no recibe ningún parámetro. Que no reciba parámetros no implica que forzosamente el constructor no realice nada, pueden asignarse valores por default como en el siguiente ejemplo.
 
----
-## Tipificación
+```java
+public class Perro {
+	public int edad;
+	public String nombre;
+	public float peso;
+	public String color_pelo;
+	public String genero;
 
+	public Perro(){
+		//super()
+		this.nombre = "Chispas";
+	}
+}
+```
 
----
-## Sobrecarga
+Es importante ver el siguiente ejemplo en el que dentro de la misma clase se tendrán más de un solo constructor, todos tendrán el mismo nombre sin embargo cada constructor cambia el número de parámetros que recibe e incluso pueden cambiar los parámetros que se solicitan.
 
+```java
+public class Perro {
+	public int edad;
+	public String nombre;
+	public float peso;
+	public String color_pelo;
+	public String genero;
 
----
-## Agregación
+	public Perro(){
+		//super()
+	}
+	
+	public Perro(int edad){
+		//super()
+		this.edad = edad;
+	}
+	
+	public Perro(int edad, String nombre, float peso){
+		//super()
+		this.edad = edad;
+		this.nombre = nombre;
+		this.peso = peso;
+	}
+	
+	public Perro(int edad, float peso, String genero){
+		//super()
+		this.edad = edad;
+		this.peso = peso;
+		this.genero = genero;
+	}
+}
+```
 
+Todos los constructores funcionarán independientemente de contar con el mismo nombre, esto es una forma de **sobrecarga**, tema que se vera más adelante.
 
----
-## Herencia
+El tema ahora es como la llamada a un constructor en especifico siendo que todas las declaraciones del constructor son diferente, lo importante será el orden y el tipo de datos que se envien como parámetros, dependiendo del tipo y orden de datos que se agreguen a la llamada al constructor Java determinará a cual de los constructores se esta haciendo la llamada.
 
+```java
 
----
-## Clases abstractas
+Perro perro1 = new Perro();  //Se llama al constructor vacío
+Perro perro2 = new Perro(3); //Se llama al constructor que agrega edad
+Perro perro3 = new Perro(4. "Chispas", 21.5); /* Se llamada al constructor que agrega edad, nombre y peso*/
 
+```
 
----
-## Upcasting y downcasting
+**Nota**: en los constructores se agrego como comentario la sentencia ```super()```, si se quitará la restricción como comentario, en este caso no sucedería nada, pero para otros ejemplos y declaraciones de constructores es importante, esto se ve en el tema de herencia.
 
+### Sobrecarga de métodos
 
----
-## Polimorfismo
+Anteriormente con los constructores vimos que se podían tener distintos constructores con el mismo nombre pero recibiendo distinta información y sin embargo al ser llamados Java determinaba por si solo que constructor era el correcto para cada llamada. A esto se le conoce como el principio de sobrecarga de métodos.
+
+Realmente no solo se pueden crear distintos constructores de una clase, se pueden crear distintos métodos que contengan el mismo nombre y sin embargo la clase funcionará sin problemas. ¿Cómo es esto posible? Como se menciono antes, lo importante es el tipo de datos que se envían a al método que se llame y el orden en el que se proporcionen, con ello se podrá saber a cual de los métodos se esta haciendo referencia. Para poder entender este concepto veamos el siguiente ejemplo de una *calculadora*:
+
+```java
+public class Calculadora{
+	public Calculadora(){
+		//super()
+	}
+
+	public static suma(int a, int b){
+		return a+b;
+	}
+	
+	public static suma(float a, float b){
+		return a+b;
+	}
+	
+	public static suma(double a, double b){
+		return a+b;
+	}
+}
+```
+
+En el ejemplo que se muestra se tiene a la clase Calculadora y se creo tres veces el método llamado suma, todos internamente realizan la misma operación, el comportamiento no obligatoriamente debe ser el mismo sin embargo para este ejemplo coincidió que todos los métodos realizaran la misma función, lo que diferencia la llamada de un método u otro será en este caso el tipo de datos que se proporcionen.
+
+```java
+
+Calculadora.suma(4, 5) //Se llama al método que utiliza enteros
+Calculadora.suma(4.1, 16.023) //Se llama al método que usa flotantes
+
+```
+
+Para este ejemplo utilizamos la palabra ```static``` la cual es una palabra reservada como un modificador de acceso, como también lo son las palabras ```public``` y ```private``` que ya se han utilizado. Esto nos llevará al siguiente tema, encapsulamiento y ocultación de la información.
 
 
 ---
 ## Encapsulamiento
+
+El principio de encapsulamiento nos habla de como los objetos resguardan y ocultan su información, encapsulando sus datos, sus estados y comportamientos, de tal forma que solo el objeto pueda hacer uso de ellos sin exponerlos al exterior. De esta manera se asegura que la información de un objeto se encuentre oculta y solo el objeto sea responsable de sus estados, impidiendo que otros objetos o factores externos puedan modificarlos directamente si no solo a través de la interacción con el objeto.
+
+La encapsulación esta íntimamente relacionado con los modificadores de acceso, los modificadores de acceso nos indican quien y desde donde se puede hacer uso de los atributos y métodos de un objeto, declarando estos modificadores desde la construcción de la clase.
+
+```java
+
+public class Persona_1{
+	public String nombre;
+
+	public Persona(String nombre){ç
+		//super()
+		this.nombre = nombre;
+	}
+}
+
+public class Persona_2{
+	private String nombre;
+
+	public Persona(String nombre){ç
+		//super()
+		this.nombre = nombre;
+	}
+}
+
+```
+
+En el código anterior podemos ver dos clases *Persona_1* y *persona_2*, ambas contiene el atributo *nombre* que tiene la palabra reservada *public* y *private* respectivamente, de esta forma se declara que el atributo nombre es algo publico para la clase *Persona_1*, indicando que cualquiera y donde sea puede acceder para ver y modificar el nombre mediante el objeto, y privado para *Persona _2_*, nadie tiene acceso a el nombre más que el objeto mediante se propios métodos.
+
+```java
+
+Persona_1 p1 = new Persona_1("Jaime");
+p1.nombre = "Rodrigo"; // Esto esta permitido por que el atributo es publico
+
+Persona_2 p2 = new Persona_2("Pablo");
+p2.nombre = "Pancho";  // ERROR, Esto no esta permitido ya que el atributo es privado
+
+```
+
+Para *Persona_2* expresamos que al atributo nombre podemos acceder mediante los métodos del objeto, para entender esto veamos el siguiente código.
+
+```java
+
+public class Persona{
+	private String nombre;
+
+	public Persona(String nombre){ç
+		//super()
+		this.nombre = nombre;
+	}
+
+	public String getNombre(){
+		return this.nombre;
+	}
+	
+	public void setNombre(String nombre){
+		this.nombre = nombre
+	}
+}
+
+
+```
+
+En esta ocasión a la clase *Persona* se le declaro un atributo llamado *nombre* el cual *privado*, un constructor con el cual se da un valor al atributo y dos métodos públicos. Con los método agregados a esta clase podremos acceder al atributo tanto para poder obtener el valor, *getnombre*, como para modificarlo *setNombre*.
+
+```java
+
+Persona p = new Persona("Carolina"); // Instanciación
+p.setNombre("Diana");                // Modificación del nombre
+String a = p.getNombre();            // Acceso al nombre
+
+```
+
+El código anterior nos muestra como se puede ahora acceder a un atributo siendo este privado, mediante métodos propios de la clase. Es importante mencionar que podríamos crear otros métodos para la clase persona que utilicen de alguna forma el atributo privado, la creación de distintos métodos es dependiente del problema que se desee resolver y la abstracción que se tenga de los objetos al declarar las clases.
+
+### Access Modifiers
+
+Así como ya vimos los modificadores *public* y *private*, existen otros modificadores de acceso que veremos en esta sección.
+
+Los modificadores de acceso sirven para limitar por niveles el acceso a la información. Cada modificador tiene sus particularidades, algunos nos permiten modificar atributos y métodos, y otros también nos pueden ayudar a modificar el alcance nuestras clases dentro de paquetes, los paquetes o **packages** en los que podemos organizar nuestro código Java. Los modificadores de acceso se muestran a continuación así como sus especificaciones.
+
+| Modificador | Para | Descripción |
+|-------------|------|-------------|
+| public | Clases, atributos, métodos y constructores | El código es accesible para todas las clases. |
+| default | Clases, atributos, métodos y constructores | El código es accesible para las clases del mismo *package*. Este es el modificador utilizado cuando no se especifica ninguno otro. |
+| private | Atributos, métodos y constructores | El código es accesible únicamente dentro de la clase donde esta declarado. |
+| protected | Atributos, métodos y constructores | El código es accesible para las clases pertenecientes al mismo *package* y para sus subclases. |
+
+En las descripciones anteriores se mencionaron dos conceptos que se verán en temas futuros, **package**, tema importante en la construcción de proyectos en Java,  y **subclases**, que se verá en el tema de **herencia**; por ello es importante continuar leyendo.
+
+### Non-Access Modifiers
+
+Existen otro tipo de modificadores en los que no indagaremos a profundidad, dado que cada uno de ellos son un tema bastante amplio, pero mostraremos cuales son y en concepto para que son utilizados. Estos modificadores, que no son de acceso, por algunos son conocidos como de contenido o de comportamiento, se difiere dado que cada modificador esta diseñado he implementado para objetivos particulares y  si bien en concepto pueden existir herramientas similares o iguales en otros lenguajes de programación, los que a continuación se exponen los tomaremos por el momento como propios del lenguaje Java.
+
+| Modificador | Descripción |
+|-------------|-------------|
+| final | Para una clase significa que no puede ser heredada. Para un atributo nos indica que no puede ser modificado. Para un método se entiende que este no puede ser sobre escrito (*Override*). |
+| static | Se utiliza solo para métodos y atributos, permite acceder a dichos métodos o atributos sin necesidad de instanciar un objeto de clase. |
+| abstract | Se puede utilizar para clases, indicando que no se pueden construir objetos de esta clase más que por herencia. Su otro uso es en métodos dentro de clases abstractas indicando que el método se encontrara vacío hasta la declaración del mismo método en subclases. |
+| transient | Sirve para omitir los atributos y métodos de un objeto al ser serializado. |
+| synchronized | Diseñado para sincronizar distintos hilos que accedan a métodos, atributos o variables limitando al acceso de un hilo al mismo tiempo. |
+| volatile | Se utiliza en atributos, restringiendo almacenar e¡el valor del atributo en memoria cache obligando a siempre leer el valor desde la memoria principal. |
+
+Estos modificadores pueden especificarse a la par que los modificadores de acceso, no son excluyentes.
+
+---
+## Herencia
+
+En POO, la herencia es uno de los conceptos más importantes ya que nos permite potenciar el uso de clases y aumentar la productividad del desarrollo de software al simplificar la detección de errores.
+
+La herencia es una relación entre clases en las que existe un clase padre, **superclase**, y una o más clases hijas especializadas, **subclases**. La relación de herencia entre clases, al igual que en la biología, nos permite pasar los atributos y métodos de una clase padre a sus clases hijas y estas a la vez pueden mejorar o especializar sus funcionalidades.
+
+```java
+
+public class Vehiculo {
+	public String marca = "Mazada";
+	public String matricula = "WZ4-5HC";
+
+	public void avanzar(){
+		System.out.println("Estoy avanzando");
+	}
+}
+
+public class Carro extends Vehicle{
+	public String modelo = "Mazda 3";
+}
+
+```
+
+El código anterior nos muestra dos clases, *Vehiculo* y *Carro*, de las cuales una extiende, para ello la palabra reservada *extends*, de otra. Lo que sucede es que la clase *Carro* va a contar con todos los atributos y métodos de la clase vehículo dado que internamente un *Carro* también es un  *Vehículo*.
+
+```java
+
+Carro c = new Carro();
+
+System.out.println(c.modelo); // Salida - "Mazda 3"
+System.out.println(c.marca);  // Salida - "Mazda"
+
+c.avanzar; // Salida - "Estoy avanzando"
+
+```
+
+Con el ejemplo anterior podemos observar como un objeto de la clase *Carro* hace uso de la clase *Vehiculo* de la cual extendió.
+
+---
+## Polimorfismo
+
+El polimorfismo y la herencia son dos conceptos íntimamente ligados, la herencia como se vio anteriormente nos permite heredar entre clases los atributos y métodos de *superclases* a *subclases* por lo que podemos entender que una clase hija también es en si la clase padre al tener todas sus características. Pero ahora consideremos lo siguiente:
+
+¿Qué pasa si existen múltiples objetos que puedan tener el mismo comportamiento en común pero con algunos otros particulares? Como por ejemplo un gato y un perro, ambos comparten varias características pero nos enfocaremos en ambos pueden ser mascotas. Para representar este caso veamos el siguiente diagrama.
+
+```mermaid
+
+classDiagram
+	
+
+```
