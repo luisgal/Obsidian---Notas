@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "Java/POO.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": true
               }
             }
@@ -133,8 +133,12 @@
   },
   "active": "36eb676c8d10c5f9",
   "lastOpenFiles": [
-    "Java/POO.md",
     "/Java/POO.md",
+    "img/any.jpg.md",
+    "/img/any.jpg.md",
+    "img",
+    "/img",
+    "Java/POO.md",
     "/Docker/3. Comandos básicos.md",
     "Java",
     "/Java",
