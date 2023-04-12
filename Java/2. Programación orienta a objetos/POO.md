@@ -306,7 +306,7 @@ Para este ejemplo utilizamos la palabra ```static``` la cual es una palabra rese
 
 ### La palabra reservada 'this'
 
-La palabra reservada *this* nos sirve para referencia a la instancia de la variable de manera interna. Los atributos de una variable y los parámetros de su métodos pueden tener los mismos nombre por lo que al momento de hacer referencia de una variable por su nombre puede caer en una ambigüedad en la que el compilador no sabe a cual de las variables se refiere, por lo que el la palabra *this* no ayuda a superar esta ambigüedad como lo vemos en el siguiente ejemplo.
+La palabra reservada *this* nos sirve a hacer una referencia de la variable que instancia un objeto, esto ayuda a crear dentro de la clase una referencia de si misma. Los atributos de una variable y los parámetros de su métodos pueden tener los mismos nombre por lo que al momento de hacer referencia de una variable por su nombre puede caer en una ambigüedad en la que el compilador no sabe a cual de las variables se refiere, por lo que el la palabra *this* no ayuda a superar esta ambigüedad como lo vemos en el siguiente ejemplo.
 
 ```java
 
@@ -334,7 +334,7 @@ public class Cuadrado(){
 
 ```
 
-En este caso si es modificado el atributo asignando el valor pasado por el parámetro. 
+En este caso si es modificado el atributo asignando el valor pasado por el parámetro. La palabra *this* nos ayuda a hacer una referencia al objeto mismo, por lo que ahora podemos con la palabra *this* hacer uso de las variables del objeto, sus atributos, y sus métodos diferenciando entre los parámetros externos que contengan los mismo nombres.
 
 ---
 ## Encapsulamiento
@@ -554,4 +554,95 @@ Como podemos observar se ha declarado que tanto el perro como el gato son mascot
 
 El concepto de polimorfismo nos indica que un objeto puede tener múltiples formas y conjunto a la herencia podemos verlo claramente, la clase mascota puede estar presente por si sola, adaptarse conjunto a la clase perro y en paralelo hacerlo con la clase Gato.
 
-Es importante tener en cuenta que en Java no existe la herencia múltiple donde una subclase herede de varias superclases, sin embargo existen métodos para emular este estado. Para ello se debe hacer uso de técnicas un poco más avanzadas que no se ven en esta nota. Se sugiere ver sobre [[Clases y Herencia # Interfaces | Interfaces]].
+Es importante tener en cuenta que en Java no existe la herencia múltiple donde una subclase herede de varias superclases, sin embargo existen métodos para emular este estado. Para ello se debe hacer uso de técnicas un poco más avanzadas que no se ven en esta nota. Se sugiere estudiar sobre Desarrollo orientado a objetos.
+
+### Upcasting y downcasting
+
+Uno de los conceptos más importantes del polimorfismo y herencia es sobre la conversión de un tipo de dato a otro, *Cast*, y entre clases con jerarquía de herencia es fundamental. Los dos tipos de conversión de datos con herencia son el ***Upcasting**** y ***Downcasting*** que se refieren a pasar de un tipo de una superclase a una subclase y viceversa.
+
+#### Upcasting
+
+El *Upcasting* se lleva acabo cuando convertimos de un clase hija, subclase, a una clase padre, superclase, esta conversión de tipo de dato se puede hacer de manera implícita o explícita osea que podemos declarar en código y definir el nuevo tipo de dato, o dejar que el compilador sea quien lo haga.
+
+```java
+
+public class Parent{
+	public void printInfo(){
+		System.out.println("Metodo padre");
+	}
+}
+
+public class Child extends Parent{
+	@Override
+	public void printInfo(){
+		System.out.println("Metodo hijo");
+	}
+}
+
+```
+
+Para instanciar un objeto con herencia vimos anteriormente que creábamos un objeto de tipo hijo, es la forma básica de creación de objetos. En el siguiente ejemplo vamos a adaptar un objeto de clase hijo e instanciarla como tipo padre.
+
+```java
+
+Child c = new Child();    // Forma básica de crear un objeto Child
+
+Parent p1 = new Child();  // Upcasting implicito
+
+Parent p2 = c;            // Upcasting explicito
+
+```
+
+Como vemos en el ejemplo convertimos un objeto de hijo a uno de tipo padre y se mostró dos maneras de hacerlo. La conversión implícita se puede llevar acabo ya que la clase *Child* extiende de *Parent* por lo que en si un objeto *Child* es también un objeto *Parent*.
+
+Una vez que se hace la conversión de datos, la variable solo puede hacer uso de los atributos y métodos de la clase padre, no podrá acceder a los de la clase hija dado que ahora no existen para si, sin embargo los métodos y atributos heredados que la clase hija modifique si se aplicarán.
+
+```java
+
+Parent p = new Child();  // Upcasting implicito
+
+p.printInfo();           // Salida: Metodo hijo
+
+```
+
+#### Downcasting
+
+El *Downcasting* se lleva acabo cuando convertimos de un clase padre, superclase, a una clase hija, subclase, esta conversión de tipo de dato solo se puede hacer de manera explícita declarando en código y definiendo el nuevo tipo de dato al que se convertirá.
+
+```java
+
+public class Parent{
+	public void printInfo(){
+		System.out.println("Metodo padre");
+	}
+}
+
+public class Child extends Parent{
+	@Override
+	public void printInfo(){
+		System.out.println("Metodo hijo");
+	}
+}
+
+```
+
+Cuando ser instancie un objeto y se haga un conversión *Downcasting* la variable ahora podrá acceder a los atributos agregados por la clase hija. Es importante saber que el *Downcasting* sirve para revertir el *Upcasting*.
+
+```java
+
+Parent p = new Parent();
+Child c = p; 
+
+// ERROR, no se puede castear así de Parent a Child
+
+```
+
+```java
+
+Parent p = new Child(); // Upcasting
+Child c = p;            // Downcasting
+// Child c = (Child) p;    Se puede especificar el tipo de cast
+
+c.printInfo();          // Salida: Metodo hijo
+  
+```
