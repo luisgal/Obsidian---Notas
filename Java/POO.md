@@ -1,3 +1,5 @@
+> En esta nota se encontrará la información esencial para poder introducirse y comprender de manera general los conceptos sobre la programación orienta a objetos.
+
 # Programación Orientada a objetos (POO)
 
 Antes de la POO, nace un nueva forma de pensar y ver las cosas para la resolución de problemas en el mundo del desarrollo de software, con esto nos referimos al paradigma orientado a objetos.
@@ -15,7 +17,7 @@ El paradigma orienta a objetos es útil cuando el sistema se modela de forma cas
 Para comprender la programación orientada a objetos se debe de entender los conceptos bajo los cuales esta pensado, el primero de ellos son las clases y lo objetos.
 
 ---
-## Clases y objetos
+## Clases y Objetos
 
 Las clases y los objetos son el eje central del paradigma orientado a objetos, debemos entender lo que son y sus diferencias para no utilizar estos conceptos de manera indistinta.
 
@@ -410,6 +412,39 @@ Existen otro tipo de modificadores en los que no indagaremos a profundidad, dado
 
 Estos modificadores pueden especificarse a la par que los modificadores de acceso, no son excluyentes.
 
+### Getters and Setters
+
+Uno de los temas mas importantes, y en esencia básico, sobre el encapsulamiento son los ***Getters*** y ***Setters***. Recordemos que el encapsulamiento nos habla sobre el resguardo y ocultación de la información por parte de los objetos donde solo los mismo objetos puedan hacer uso de su información, para poder llevar acabo este control de la información y una vez visto los modificadores de acceso hablemos de una practica común, y por algunos desarrolladores de software es considerada como una buena practica, es declarar todos los atributos posibles en una clase como privados y para acceder a ellos utilizar métodos ***get*** para obtener el valor del atributo y ***set*** para modificar el valor.
+
+```java
+
+public class Cuadrado{
+	private float lado;
+	private String color;
+
+	public float getLado(){
+		return this.lado;
+	}
+
+	public void setLado(float lado){
+		this.lado = lado;
+	}
+
+	public String getColor(){
+		return this.color;
+	}
+
+	public void setColor(String color){
+		this.color = color;
+	}
+}
+
+```
+
+Como podemos ver, los atributos son privados pero se crean dos métodos públicos por atributo, *get* y *set*, para acceder y modificar el valor del atributo al que se refiera. De esta manera solo el mismo objeto puede acceder a su información sin exponerla a otros métodos.
+
+Esto último es discutible, si bien a nivel conceptual es correcto que el objeto es quien manipula el valor de sus atributos en la práctica construir métodos *get* y *set* que sean completamente públicos sería equivalente a dejar los atributos públicos. La construcción de las clases es algo muy importante a considerar así como los niveles de acceso que se permitan a cada atributo y método, es importante conocer sobre el desarrollo de software y hablando específicamente de la programación orientada a objetos se debe indagar en el Desarrollo Orientado a Objetos.
+
 ---
 ## Herencia
 
@@ -454,11 +489,38 @@ Con el ejemplo anterior podemos observar como un objeto de la clase *Carro* hace
 
 El polimorfismo y la herencia son dos conceptos íntimamente ligados, la herencia como se vio anteriormente nos permite heredar entre clases los atributos y métodos de *superclases* a *subclases* por lo que podemos entender que una clase hija también es en si la clase padre al tener todas sus características. Pero ahora consideremos lo siguiente:
 
-¿Qué pasa si existen múltiples objetos que puedan tener el mismo comportamiento en común pero con algunos otros particulares? Como por ejemplo un gato y un perro, ambos comparten varias características pero nos enfocaremos en ambos pueden ser mascotas. Para representar este caso veamos el siguiente diagrama.
+¿Qué pasa si existen múltiples objetos que puedan tener el mismo comportamiento en común pero con algunos otros particulares? Como por ejemplo un gato y un perro, ambos comparten varias características pero nos enfocaremos en que ambos pueden ser mascotas. Para representar este caso veamos el siguiente diagrama.
 
 ```mermaid
-
 classDiagram
+	Mascota <|-- Perro
+	Mascota <|-- Gato
 	
+	class Mascota{
+		+String nombre
+		+String raza
+		
+		+comer()
+		+dormir()
+		+jugar()
+	}
+	
+	class Perro{
+		+String tamaño
+		+ladrar()
+		+jugar()
+	}
+	
+	class Gato{
+		+boolean tiene_pelo
+		+maullar()
+		+arañar()
+	}
 
 ```
+
+Como podemos observar se ha declarado que tanto el perro como el gato son mascotas, ambos extienden de la clase mascota obteniendo todos sus atributos y métodos pero también cada uno de ellos tiene sus propios atributos y métodos específicos.
+
+El concepto de polimorfismo nos indica que un objeto puede tener múltiples formas y conjunto a la herencia podemos verlo claramente, la clase mascota puede estar presente por si sola, adaptarse conjunto a la clase perro y en paralelo hacerlo con la clase Gato.
+
+Es importante tener en cuenta que en Java no existe la herencia múltiple donde una subclase herede de varias superclases, sin embargo existen métodos para emular este estado. Para ello se debe hacer uso de técnicas un poco más avanzadas que no se ven en esta nota. Se sugiere ver sobre [[Clases y Herencia # Interfaces | Interfaces]].
