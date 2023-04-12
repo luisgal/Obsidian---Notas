@@ -369,6 +369,17 @@ Como lo pudimos observar en el ejemplo anterior, también se puede hacer uso de 
 
 # Tipos de clases aplicación en ejemplos
 
-Ya que hemos visto las distintos tipos de clases, conocemos sobre su aplicación así como sobre su herencia, es importante indagar más sobre herencia y polimorfismo por lo que ahora veremos una manera de hacer uso de las clases abstractas e interfaces. Para poder ver sobre su uso veremos varios ejemplos en código y diagrama para poder entender como llevarlos acabo, su función y uso.
+Ya que hemos visto las distintos tipos de clases, conocemos sobre su aplicación así como sobre su herencia, es importante indagar más sobre herencia y polimorfismo por lo que ahora veremos una manera de hacer uso de los tipos de clases. Para poder ver sobre su uso veremos varios ejemplos en código y diagrama para poder entender como aplicarlas.
 
-## Clas
+## Clases abstractas
+
+
+
+## Interfaces
+
+
+
+## Enum
+
+
+

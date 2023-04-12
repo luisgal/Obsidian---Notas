@@ -2,5 +2,10 @@
   "obsidian-git",
   "obsidian-languagetool-plugin",
   "obsidian-hyphenation",
-  "callout-manager"
+  "callout-manager",
+  "obsidian-pandoc",
+  "obsidian-icon-folder",
+  "code-block-copy",
+  "table-editor-obsidian",
+  "obsidian-advanced-uri"
 ]

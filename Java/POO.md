@@ -304,6 +304,37 @@ Calculadora.suma(4.1, 16.023) //Se llama al método que usa flotantes
 
 Para este ejemplo utilizamos la palabra ```static``` la cual es una palabra reservada como un modificador de acceso, como también lo son las palabras ```public``` y ```private``` que ya se han utilizado. Esto nos llevará al siguiente tema, encapsulamiento y ocultación de la información.
 
+### La palabra reservada 'this'
+
+La palabra reservada *this* nos sirve para referencia a la instancia de la variable de manera interna. Los atributos de una variable y los parámetros de su métodos pueden tener los mismos nombre por lo que al momento de hacer referencia de una variable por su nombre puede caer en una ambigüedad en la que el compilador no sabe a cual de las variables se refiere, por lo que el la palabra *this* no ayuda a superar esta ambigüedad como lo vemos en el siguiente ejemplo.
+
+```java
+
+public class Cuadrado(){
+	public int lado;
+
+	public setLado(int lado){
+		lado = lado;
+	}
+}
+
+```
+
+En el ejemplo anterior intentamos dar valor al atributo lado mediante un método el cual esta recibiendo como parámetro un entero que lleva por nombre el mismo que el del parámetro, en este caso ¿cuál de las dos variables es la que se esta asignando? ¿se asigna el atributo o el parámetro? Lo que sucede realmente es que la variable que se esta utilizando para todo el método es la misma que la de la variable. ¿Cómo hacer que se modifique el valor del atributo de la clase? Para evitar ambigüedades como esta se utiliza la palabra *this* como se muestra a continuación.
+
+```java
+
+public class Cuadrado(){
+	public int lado;
+
+	public setLado(int lado){
+		this.lado = lado;
+	}
+}
+
+```
+
+En este caso si es modificado el atributo asignando el valor pasado por el parámetro. 
 
 ---
 ## Encapsulamiento
