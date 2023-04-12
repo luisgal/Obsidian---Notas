@@ -4,29 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "ed95ab3d65d1e252",
+        "id": "a6b41793c355410d",
         "type": "tabs",
         "children": [
           {
-            "id": "4178a2e5a231cc47",
+            "id": "6106be9d10e68560",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java/2. Programación orienta a objetos/POO.md",
-                "mode": "preview",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "35a39727078edc72",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Java/2. Programación orienta a objetos/Clases y Herencia.md",
-                "mode": "preview",
+                "file": "Java/1. Java Basics/1. Introducción.md",
+                "mode": "source",
                 "source": true
               }
             }
@@ -50,7 +38,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "byCreatedTimeReverse"
+                "sortOrder": "alphabetical"
               }
             }
           },
@@ -97,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Java/2. Programación orienta a objetos/POO.md",
+                "file": "Java/1. Java Basics/1. Introducción.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Java/2. Programación orienta a objetos/POO.md",
+                "file": "Java/1. Java Basics/1. Introducción.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Java/2. Programación orienta a objetos/POO.md"
+                "file": "Java/1. Java Basics/1. Introducción.md"
               }
             }
           },
@@ -175,38 +163,47 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "1a725221c6f2081a",
+  "active": "6106be9d10e68560",
   "lastOpenFiles": [
+    "Java/4. Patrones de diseño/4. Patrones de comportamiento.md",
+    "Java/Java Basic",
+    "Java/4. Patrones de diseño/5. Patrones",
+    "Java/4. Patrones de diseño/1. ¿Qué es un patron de diseño?.md",
+    "Java/3. Desarrollo orienta a objetos/5. Ejemplo.md",
+    "Java/4. Patrones de diseño/3. Patrones estructurales.md",
+    "Java/4. Patrones de diseño/2. Patrones creacionales.md",
+    "Java/3. Desarrollo orienta a objetos/4. Paquetes.md",
+    "Java/3. Desarrollo orienta a objetos/3. Diagrama de clases.md",
+    "Java/3. Desarrollo orienta a objetos/2. UML.md",
+    "Java/3. Desarrollo orienta a objetos/1. ADOO.md",
+    "Java/1. Java Basics/2. Tipos de datos y operadores 1.md",
+    "Java/1. Java Basics/4. Funciones.md",
+    "Java/1. Java Basics/3. Sentencias de control.md",
+    "Java/1. Java Basics/2. Tipos de datos y operadores.md",
+    "Java/1. Java Basics/1. Introducción.md",
+    "Java/2. Programación orienta a objetos/1. POO.md",
+    "Java/2. Programación orienta a objetos/4. Herencia y Polimorfismo.md",
+    "Java/2. Programación orienta a objetos/3. Encapsulamiento.md",
+    "Java/2. Programación orienta a objetos/2. Clases y objetos.md",
+    "Java/2. Programación orienta a objetos/5. Tipos de clases.md",
+    "README.md",
     "Java/Mis tips",
     "Java/1. Java Basics",
     "Java/2. Programación orienta a objetos",
     "Java/3. Desarrollo orienta a objetos",
     "Java/4. Patrones de diseño",
-    "Java/2. Programación orienta a objetos/Clases y Herencia.md",
     "Java/Untitled.md",
-    "Java/2. Programación orienta a objetos/POO.md",
     "Zzz/Biblioteca.md",
     "Zzz/Untitled.md",
     "Untitled.canvas",
     "Java/POO 1.md",
     "POO.md",
-    "img/any.jpg.md",
     "Mermaid",
     "img",
     "Zzz/img/coche_rojo.jpg",
     "Zzz/_canvas_/Coche.canvas",
     "Zzz/_canvas_/Coche.png",
     "Zzz/img/coches.jpg",
-    "Zzz/img",
-    "Zzz/_canvas_",
-    "Docker/5. Docker Compose.md",
-    "Obsidian/Obsidian Git/Obsidian Git.md",
-    "Docker/3. Comandos básicos.md",
-    "Zzz",
-    "Docker/4. DockerFile.md",
-    "Docker/1. Introducción.md",
-    "Docker/2. Conceptos básicos.md",
-    "README.md",
-    "Obsidian/Obsidian Git"
+    "Zzz/img"
   ]
 }

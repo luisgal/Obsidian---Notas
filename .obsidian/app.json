@@ -16,8 +16,9 @@
   "showLineNumber": true,
   "spellcheck": true,
   "newFileLocation": "current",
-  "attachmentFolderPath": "./",
+  "attachmentFolderPath": "Java",
   "showInlineTitle": false,
   "rightToLeft": false,
-  "legacyEditor": false
+  "legacyEditor": false,
+  "alwaysUpdateLinks": true
 }
