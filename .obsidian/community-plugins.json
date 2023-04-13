@@ -5,7 +5,8 @@
   "callout-manager",
   "obsidian-pandoc",
   "obsidian-icon-folder",
-  "code-block-copy",
   "table-editor-obsidian",
-  "obsidian-advanced-uri"
+  "obsidian-advanced-uri",
+  "code-block-copy",
+  "obsidian-embedded-code-title"
 ]

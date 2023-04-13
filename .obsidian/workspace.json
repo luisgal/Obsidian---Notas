@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java/1. Java Basics/1. Introducción.md",
+                "file": "Java/2. Programación orienta a objetos/1. POO.md",
                 "mode": "source",
                 "source": true
               }
             }
+          },
+          {
+            "id": "c724450f7adf7984",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Java/1. Java Basics/1. Introducción.md",
+                "mode": "preview",
+                "source": true
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -69,7 +82,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "a9f1d40eb82c1004",
@@ -144,12 +158,21 @@
               "type": "git-history-view",
               "state": {}
             }
+          },
+          {
+            "id": "8acec20ee17cd338",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 343.5,
+    "width": 200,
     "collapsed": true
   },
   "left-ribbon": {
@@ -163,8 +186,14 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "6106be9d10e68560",
+  "active": "c724450f7adf7984",
   "lastOpenFiles": [
+    "Java/2. Programación orienta a objetos/1. POO.md",
+    "Java/1. Java Basics/1. Introducción.md",
+    "Java/1. Java Basics/2. Tipos de datos y operadores.md",
+    "Java/1. Java Basics/Untitled.md",
+    "Java/Pasted image 20230412184356.png",
+    "Java/Pasted image 20230412184352.png",
     "Java/4. Patrones de diseño/4. Patrones de comportamiento.md",
     "Java/Java Basic",
     "Java/4. Patrones de diseño/5. Patrones",
@@ -179,9 +208,6 @@
     "Java/1. Java Basics/2. Tipos de datos y operadores 1.md",
     "Java/1. Java Basics/4. Funciones.md",
     "Java/1. Java Basics/3. Sentencias de control.md",
-    "Java/1. Java Basics/2. Tipos de datos y operadores.md",
-    "Java/1. Java Basics/1. Introducción.md",
-    "Java/2. Programación orienta a objetos/1. POO.md",
     "Java/2. Programación orienta a objetos/4. Herencia y Polimorfismo.md",
     "Java/2. Programación orienta a objetos/3. Encapsulamiento.md",
     "Java/2. Programación orienta a objetos/2. Clases y objetos.md",
@@ -197,7 +223,6 @@
     "Zzz/Untitled.md",
     "Untitled.canvas",
     "Java/POO 1.md",
-    "POO.md",
     "Mermaid",
     "img",
     "Zzz/img/coche_rojo.jpg",
