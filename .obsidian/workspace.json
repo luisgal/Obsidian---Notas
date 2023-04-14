@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java/2. Programación orienta a objetos/1. POO.md",
+                "file": "Java/1. Java Basics/2. Tipos de datos y operadores.md",
                 "mode": "source",
                 "source": true
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Java/2. Programación orienta a objetos/1. POO.md"
+                "file": "Java/1. Java Basics/2. Tipos de datos y operadores.md"
               }
             }
           },
@@ -114,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Java/2. Programación orienta a objetos/1. POO.md",
+                "file": "Java/1. Java Basics/2. Tipos de datos y operadores.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Java/2. Programación orienta a objetos/1. POO.md",
+                "file": "Java/1. Java Basics/2. Tipos de datos y operadores.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -157,14 +157,15 @@
   },
   "active": "3e05a07272187872",
   "lastOpenFiles": [
+    "Java/1. Java Basics/3. Sentencias de control.md",
+    "Java/1. Java Basics/2. Tipos de datos y operadores.md",
+    "Java/1. Java Basics/1. Introducción.md",
+    "Java/2. Programación orienta a objetos/1. POO.md",
     "Java/2. Programación orienta a objetos/1. POO.docx",
     "Java/2. Programación orienta a objetos/3. Encapsulamiento.md",
     "Java/2. Programación orienta a objetos/4. Herencia y Polimorfismo.md",
     "Java/2. Programación orienta a objetos/5. Tipos de clases.md",
     "Java/2. Programación orienta a objetos/2. Clases y objetos.md",
-    "Java/2. Programación orienta a objetos/1. POO.md",
-    "Java/1. Java Basics/2. Tipos de datos y operadores.md",
-    "Java/1. Java Basics/1. Introducción.md",
     "2023-04-12.md",
     "Java/Mis tips/Untitled.md",
     "Java/4. Patrones de diseño/Patrones",
@@ -172,7 +173,6 @@
     "Java/4. Patrones de diseño/Patrones",
     "README.md",
     "Java/1. Java Basics/Untitled.md",
-    "Java/1. Java Basics/3. Sentencias de control.md",
     "Java/1. Java Basics/4. Funciones.md",
     "Java/Pasted image 20230412184356.png",
     "Java/Pasted image 20230412184352.png",
@@ -195,7 +195,6 @@
     "Java/4. Patrones de diseño",
     "Zzz/Biblioteca.md",
     "Untitled.canvas",
-    "Mermaid",
     "Zzz/img/coche_rojo.jpg",
     "Zzz/_canvas_/Coche.canvas",
     "Zzz/_canvas_/Coche.png",
