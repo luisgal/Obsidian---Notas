@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java/1. Java Basics/2. Tipos de datos y operadores.md",
+                "file": "Java/1. Java Basics/3. Operadores.md",
                 "mode": "source",
                 "source": true
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Java/1. Java Basics/2. Tipos de datos y operadores.md"
+                "file": "Java/1. Java Basics/3. Operadores.md"
               }
             }
           },
@@ -114,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Java/1. Java Basics/2. Tipos de datos y operadores.md",
+                "file": "Java/1. Java Basics/3. Operadores.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Java/1. Java Basics/2. Tipos de datos y operadores.md",
+                "file": "Java/1. Java Basics/3. Operadores.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -157,15 +157,26 @@
   },
   "active": "3e05a07272187872",
   "lastOpenFiles": [
+    "Java/2. Programación orientada a objetos/5. Tipos de clases.md",
+    "Java/2. Programación orientada a objetos/4. Herencia y Polimorfismo.md",
+    "Java/2. Programación orientada a objetos/3. Encapsulamiento.md",
+    "Java/2. Programación orientada a objetos/2. Clases y objetos.md",
+    "Java/2. Programación orientada a objetos/1. POO.md",
+    "Java/2. Programación orientada a objetos",
+    "Java/1. Java Basics/5. Funciones.md",
+    "Java/1. Java Basics/4. Sentencias de control.md",
+    "Java/1. Java Basics/3. Operadores.md",
+    "Java/2. Programación orienta a objetos/5. Tipos de clases.md",
+    "Java/2. Programación orienta a objetos/4. Herencia y Polimorfismo.md",
+    "Java/2. Programación orienta a objetos/3. Encapsulamiento.md",
+    "Java/2. Programación orienta a objetos/2. Clases y objetos.md",
+    "Java/2. Programación orienta a objetos/1. POO.md",
+    "Java/2. Programación orienta a objetos",
+    "Java/1. Java Basics/4. Funciones.md",
     "Java/1. Java Basics/3. Sentencias de control.md",
     "Java/1. Java Basics/2. Tipos de datos y operadores.md",
     "Java/1. Java Basics/1. Introducción.md",
-    "Java/2. Programación orienta a objetos/1. POO.md",
     "Java/2. Programación orienta a objetos/1. POO.docx",
-    "Java/2. Programación orienta a objetos/3. Encapsulamiento.md",
-    "Java/2. Programación orienta a objetos/4. Herencia y Polimorfismo.md",
-    "Java/2. Programación orienta a objetos/5. Tipos de clases.md",
-    "Java/2. Programación orienta a objetos/2. Clases y objetos.md",
     "2023-04-12.md",
     "Java/Mis tips/Untitled.md",
     "Java/4. Patrones de diseño/Patrones",
@@ -173,7 +184,6 @@
     "Java/4. Patrones de diseño/Patrones",
     "README.md",
     "Java/1. Java Basics/Untitled.md",
-    "Java/1. Java Basics/4. Funciones.md",
     "Java/Pasted image 20230412184356.png",
     "Java/Pasted image 20230412184352.png",
     "Java/4. Patrones de diseño/4. Patrones de comportamiento.md",
@@ -181,19 +191,9 @@
     "Java/4. Patrones de diseño/5. Patrones",
     "Java/4. Patrones de diseño/1. ¿Qué es un patron de diseño?.md",
     "Java/3. Desarrollo orienta a objetos/5. Ejemplo.md",
-    "Java/4. Patrones de diseño/3. Patrones estructurales.md",
-    "Java/4. Patrones de diseño/2. Patrones creacionales.md",
-    "Java/3. Desarrollo orienta a objetos/4. Paquetes.md",
-    "Java/3. Desarrollo orienta a objetos/3. Diagrama de clases.md",
-    "Java/3. Desarrollo orienta a objetos/2. UML.md",
-    "Java/3. Desarrollo orienta a objetos/1. ADOO.md",
-    "Java/1. Java Basics/2. Tipos de datos y operadores 1.md",
     "Java/Mis tips",
     "Java/1. Java Basics",
-    "Java/2. Programación orienta a objetos",
     "Java/3. Desarrollo orienta a objetos",
-    "Java/4. Patrones de diseño",
-    "Zzz/Biblioteca.md",
     "Untitled.canvas",
     "Zzz/img/coche_rojo.jpg",
     "Zzz/_canvas_/Coche.canvas",
