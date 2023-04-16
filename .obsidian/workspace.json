@@ -4,16 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "257fd14d95c8f788",
+        "id": "ef672e9c01aef078",
         "type": "tabs",
         "children": [
           {
-            "id": "5aca14956621c43b",
+            "id": "5c2e4165588a9cfb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java/4. Patrones de diseño/1. ¿Qué es un patron de diseño?.md",
+                "file": "Java/4. Patrones de diseño/Patrones/Singleton.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "30727bf7db4b4e22",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Java/4. Patrones de diseño/2. Patrones creacionales.md",
                 "mode": "source",
                 "source": true
               }
@@ -96,7 +108,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Java/4. Patrones de diseño/1. ¿Qué es un patron de diseño?.md"
+                "file": "Java/4. Patrones de diseño/Patrones/Singleton.md"
               }
             }
           },
@@ -114,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Java/4. Patrones de diseño/1. ¿Qué es un patron de diseño?.md",
+                "file": "Java/4. Patrones de diseño/Patrones/Singleton.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,14 +143,13 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Java/4. Patrones de diseño/1. ¿Qué es un patron de diseño?.md",
+                "file": "Java/4. Patrones de diseño/Patrones/Singleton.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -153,15 +164,17 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "canvas:Create new canvas": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "5aca14956621c43b",
+  "active": "5c2e4165588a9cfb",
   "lastOpenFiles": [
-    "Java/4. Patrones de diseño/4. Patrones de comportamiento.md",
-    "Java/4. Patrones de diseño/3. Patrones estructurales.md",
     "Java/4. Patrones de diseño/2. Patrones creacionales.md",
+    "Java/4. Patrones de diseño/Patrones/Singleton.md",
+    "Java/4. Patrones de diseño/3. Patrones estructurales.md",
     "Java/4. Patrones de diseño/1. ¿Qué es un patron de diseño?.md",
+    "Java/4. Patrones de diseño/4. Patrones de comportamiento.md",
     "Java/2. Programación orientada a objetos/1. POO.md",
     "Java/3. Desarrollo orienta a objetos/1. ADOO.md",
     "Java/1. Java Basics/5. Funciones.md",
@@ -188,7 +201,6 @@
     "Java/4. Patrones de diseño/Patrones",
     "Java/Untitled.md",
     "Java/4. Patrones de diseño/Patrones",
-    "README.md",
     "Java/Pasted image 20230412184356.png",
     "Java/Pasted image 20230412184352.png",
     "Java/Java Basic",
