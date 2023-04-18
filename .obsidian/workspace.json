@@ -4,28 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "ef672e9c01aef078",
+        "id": "95680938ae3cbc0c",
         "type": "tabs",
         "children": [
           {
-            "id": "5c2e4165588a9cfb",
+            "id": "062334941a0f8256",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Java/4. Patrones de diseño/Patrones/Singleton.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "30727bf7db4b4e22",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Java/4. Patrones de diseño/2. Patrones creacionales.md",
                 "mode": "source",
                 "source": true
               }
@@ -92,7 +80,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 204.50043487548828
+    "width": 204.50043487548828,
+    "collapsed": true
   },
   "right": {
     "id": "a9f1d40eb82c1004",
@@ -168,46 +157,46 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "5c2e4165588a9cfb",
+  "active": "062334941a0f8256",
   "lastOpenFiles": [
-    "Java/4. Patrones de diseño/2. Patrones creacionales.md",
+    "Java/4. Patrones de diseño/Patrones/Factory Method.md",
+    "Java/4. Patrones de diseño/Patrones/Prototype.md",
+    "Java/4. Patrones de diseño/Patrones/Builder.md",
+    "Java/4. Patrones de diseño/Patrones/Abstract Factory.md",
     "Java/4. Patrones de diseño/Patrones/Singleton.md",
-    "Java/4. Patrones de diseño/3. Patrones estructurales.md",
+    "Java/4. Patrones de diseño/Patrones/Composite.md",
+    "Java/4. Patrones de diseño/Patrones/Mediator.md",
+    "Java/4. Patrones de diseño/Patrones/Memento.md",
+    "Java/4. Patrones de diseño/Patrones/Observer.md",
+    "Java/4. Patrones de diseño/Patrones/Proxy.md",
+    "Java/4. Patrones de diseño/Patrones/State.md",
+    "Java/4. Patrones de diseño/Patrones/Strategy.md",
+    "Java/4. Patrones de diseño/Patrones/Template Method.md",
+    "Java/4. Patrones de diseño/Patrones/Visitor.md",
+    "Java/4. Patrones de diseño/2. Patrones creacionales.md",
     "Java/4. Patrones de diseño/1. ¿Qué es un patron de diseño?.md",
+    "Java/4. Patrones de diseño/3. Patrones estructurales.md",
     "Java/4. Patrones de diseño/4. Patrones de comportamiento.md",
-    "Java/2. Programación orientada a objetos/1. POO.md",
-    "Java/3. Desarrollo orienta a objetos/1. ADOO.md",
-    "Java/1. Java Basics/5. Funciones.md",
-    "Java/1. Java Basics/4. Sentencias de control.md",
-    "Java/1. Java Basics/3. Operadores.md",
-    "Java/1. Java Basics/2. Tipos de datos y operadores.md",
+    "Java/CreationalPattern/FactoryMethod.md",
+    "Java/CreationalPattern",
     "Java/1. Java Basics/1. Introducción.md",
-    "Java/2. Programación orientada a objetos/5. Tipos de clases.md",
-    "Java/2. Programación orientada a objetos/2. Clases y objetos.md",
-    "Java/2. Programación orientada a objetos/4. Herencia y Polimorfismo.md",
-    "Java/2. Programación orientada a objetos/3. Encapsulamiento.md",
+    "Java/4. Patrones de diseño/Patrones/Iterator.md",
+    "Java/4. Patrones de diseño/Patrones/Command.md",
+    "Java/4. Patrones de diseño/Patrones/Chain of Responsibility.md",
+    "Java/4. Patrones de diseño/Patrones/Flywight.md",
+    "Java/4. Patrones de diseño/Patrones/Facade.md",
+    "Untitled.md",
+    "Templates",
     "Java/2. Programación orientada a objetos",
-    "Java/2. Programación orienta a objetos/5. Tipos de clases.md",
-    "Java/2. Programación orienta a objetos/4. Herencia y Polimorfismo.md",
-    "Java/2. Programación orienta a objetos/3. Encapsulamiento.md",
-    "Java/2. Programación orienta a objetos/2. Clases y objetos.md",
-    "Java/2. Programación orienta a objetos/1. POO.md",
     "Java/2. Programación orienta a objetos",
-    "Java/1. Java Basics/4. Funciones.md",
-    "Java/1. Java Basics/3. Sentencias de control.md",
     "Java/2. Programación orienta a objetos/1. POO.docx",
-    "2023-04-12.md",
-    "Java/Mis tips/Untitled.md",
     "Java/4. Patrones de diseño/Patrones",
-    "Java/Untitled.md",
     "Java/4. Patrones de diseño/Patrones",
     "Java/Pasted image 20230412184356.png",
     "Java/Pasted image 20230412184352.png",
     "Java/Java Basic",
     "Java/4. Patrones de diseño/5. Patrones",
     "Java/Mis tips",
-    "Java/1. Java Basics",
-    "Java/3. Desarrollo orienta a objetos",
     "Untitled.canvas",
     "Zzz/img/coche_rojo.jpg",
     "Zzz/_canvas_/Coche.canvas",
