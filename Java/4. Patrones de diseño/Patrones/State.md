@@ -3,8 +3,6 @@ title: Java - Patrón State
 tags:  
 - Java/DesignPattern
 - DesignPattern
-aliases:
-- Java/CreationalPattern/State
 ---
 
 # State

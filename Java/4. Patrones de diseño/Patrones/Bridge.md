@@ -3,9 +3,8 @@ title: Java - Patrón Bridge
 
 tags:  
 - Java/DesignPattern
+- Java/StructuralPattern
 - DesignPattern
-aliases:
-- Java/CreationalPattern/Bridge
 ---
 
 # Bridge

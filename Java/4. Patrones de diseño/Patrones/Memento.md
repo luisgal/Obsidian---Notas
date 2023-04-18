@@ -3,8 +3,6 @@ title: Java - Patrón Memento
 tags:  
 - Java/DesignPattern
 - DesignPattern
-aliases:
-- Java/CreationalPattern/Memento
 ---
 
 # Memento

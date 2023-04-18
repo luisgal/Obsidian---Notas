@@ -2,9 +2,8 @@
 title: Java - Patrón Proxy
 tags:  
 - Java/DesignPattern
+- Java/StructuralPattern
 - DesignPattern
-aliases:
-- Java/CreationalPattern/Proxy
 ---
 
 # Proxy

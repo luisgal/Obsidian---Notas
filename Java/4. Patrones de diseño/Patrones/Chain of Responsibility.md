@@ -3,8 +3,6 @@ title: Java - Patrón Chain of Responsibility
 tags:  
 - Java/DesignPattern
 - DesignPattern
-aliases:
-- Java/CreationalPattern/ChainOfResponsibility
 ---
 
 # Chain of Responsibility

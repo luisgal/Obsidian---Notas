@@ -3,8 +3,6 @@ title: Java - Patrón Command
 tags:  
 - Java/DesignPattern
 - DesignPattern
-aliases:
-- Java/CreationalPattern/Command
 ---
 
 # Command

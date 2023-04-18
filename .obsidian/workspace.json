@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "95680938ae3cbc0c",
+        "id": "a97fed27390d7761",
         "type": "tabs",
         "children": [
           {
-            "id": "062334941a0f8256",
+            "id": "3629a6e372b0dd33",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java/4. Patrones de diseño/Patrones/Singleton.md",
+                "file": "Java/4. Patrones de diseño/Patrones/Bridge.md",
                 "mode": "source",
                 "source": true
               }
@@ -80,8 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 204.50043487548828,
-    "collapsed": true
+    "width": 204.50043487548828
   },
   "right": {
     "id": "a9f1d40eb82c1004",
@@ -97,7 +96,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Java/4. Patrones de diseño/Patrones/Singleton.md"
+                "file": "Java/4. Patrones de diseño/Patrones/Bridge.md"
               }
             }
           },
@@ -115,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Java/4. Patrones de diseño/Patrones/Singleton.md",
+                "file": "Java/4. Patrones de diseño/Patrones/Bridge.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Java/4. Patrones de diseño/Patrones/Singleton.md",
+                "file": "Java/4. Patrones de diseño/Patrones/Bridge.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -157,35 +156,35 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "062334941a0f8256",
+  "active": "3629a6e372b0dd33",
   "lastOpenFiles": [
-    "Java/4. Patrones de diseño/Patrones/Factory Method.md",
-    "Java/4. Patrones de diseño/Patrones/Prototype.md",
+    "Java/4. Patrones de diseño/Patrones/Chain of Responsibility.md",
+    "Java/4. Patrones de diseño/Patrones/Bridge.md",
     "Java/4. Patrones de diseño/Patrones/Builder.md",
+    "Java/4. Patrones de diseño/Patrones/Adapter.md",
     "Java/4. Patrones de diseño/Patrones/Abstract Factory.md",
-    "Java/4. Patrones de diseño/Patrones/Singleton.md",
     "Java/4. Patrones de diseño/Patrones/Composite.md",
-    "Java/4. Patrones de diseño/Patrones/Mediator.md",
-    "Java/4. Patrones de diseño/Patrones/Memento.md",
-    "Java/4. Patrones de diseño/Patrones/Observer.md",
+    "Java/4. Patrones de diseño/Patrones/Decorator.md",
+    "Java/4. Patrones de diseño/Patrones/Facade.md",
+    "Java/4. Patrones de diseño/Patrones/Flyweight.md",
     "Java/4. Patrones de diseño/Patrones/Proxy.md",
-    "Java/4. Patrones de diseño/Patrones/State.md",
-    "Java/4. Patrones de diseño/Patrones/Strategy.md",
-    "Java/4. Patrones de diseño/Patrones/Template Method.md",
     "Java/4. Patrones de diseño/Patrones/Visitor.md",
+    "Java/4. Patrones de diseño/Patrones/Template Method.md",
+    "Java/4. Patrones de diseño/Patrones/Strategy.md",
+    "Java/4. Patrones de diseño/Patrones/State.md",
+    "Java/4. Patrones de diseño/Patrones/Singleton.md",
+    "Java/4. Patrones de diseño/Patrones/Prototype.md",
+    "Java/4. Patrones de diseño/Patrones/Observer.md",
+    "Java/4. Patrones de diseño/Patrones/Memento.md",
+    "Java/4. Patrones de diseño/Patrones/Mediator.md",
+    "Java/4. Patrones de diseño/Patrones/Iterator.md",
+    "Java/4. Patrones de diseño/Patrones/Factory Method.md",
+    "Java/4. Patrones de diseño/Patrones/Command.md",
+    "Java/4. Patrones de diseño/3. Patrones estructurales.md",
     "Java/4. Patrones de diseño/2. Patrones creacionales.md",
     "Java/4. Patrones de diseño/1. ¿Qué es un patron de diseño?.md",
-    "Java/4. Patrones de diseño/3. Patrones estructurales.md",
     "Java/4. Patrones de diseño/4. Patrones de comportamiento.md",
-    "Java/CreationalPattern/FactoryMethod.md",
     "Java/CreationalPattern",
-    "Java/1. Java Basics/1. Introducción.md",
-    "Java/4. Patrones de diseño/Patrones/Iterator.md",
-    "Java/4. Patrones de diseño/Patrones/Command.md",
-    "Java/4. Patrones de diseño/Patrones/Chain of Responsibility.md",
-    "Java/4. Patrones de diseño/Patrones/Flywight.md",
-    "Java/4. Patrones de diseño/Patrones/Facade.md",
-    "Untitled.md",
     "Templates",
     "Java/2. Programación orientada a objetos",
     "Java/2. Programación orienta a objetos",

@@ -3,8 +3,6 @@ title: Java - Patrón Observer
 tags:  
 - Java/DesignPattern
 - DesignPattern
-aliases:
-- Java/CreationalPattern/Observer
 ---
 
 # Observer

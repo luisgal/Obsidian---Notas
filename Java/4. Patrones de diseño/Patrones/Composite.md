@@ -3,9 +3,8 @@ title: Java - Patrón Composite
 
 tags:  
 - Java/DesignPattern
+- Java/StructuralPattern
 - DesignPattern
-aliases:
-- Java/CreationalPattern/Composite
 ---
 
 # Composite

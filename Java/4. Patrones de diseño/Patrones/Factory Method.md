@@ -5,8 +5,6 @@ tags:
 - Java/DesignPattern
 - Java/CreationalPattern
 - DesignPattern
-aliases:
-- Java/CreationalPattern/FactoryMethod
 ---
 
 # Factory Method

@@ -3,8 +3,6 @@ title: Java - Patrón Mediator
 tags:  
 - Java/DesignPattern
 - DesignPattern
-aliases:
-- Java/CreationalPattern/Mediator
 ---
 
 # Mediator

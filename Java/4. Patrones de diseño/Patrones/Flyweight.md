@@ -1,13 +1,12 @@
 ---
-title: Java - Patrón Flywight
+title: Java - Patrón Flyweight
 tags:  
 - Java/DesignPattern
+- Java/StructuralPattern
 - DesignPattern
-aliases:
-- Java/CreationalPattern/Flywight
 ---
 
-# Flywight
+# Flyweight
 
 ## Propósito
 

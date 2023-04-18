@@ -3,8 +3,6 @@ title: Java - Patrón Strategy
 tags:  
 - Java/DesignPattern
 - DesignPattern
-aliases:
-- Java/CreationalPattern/Strategy
 ---
 
 # Strategy

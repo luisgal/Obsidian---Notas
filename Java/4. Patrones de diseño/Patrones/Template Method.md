@@ -3,8 +3,6 @@ title: Java - Patrón Template Method
 tags:  
 - Java/DesignPattern
 - DesignPattern
-aliases:
-- Java/CreationalPattern/TemplateMethod
 ---
 
 # Template Method

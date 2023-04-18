@@ -3,8 +3,6 @@ title: Java - Patrón Iterator
 tags:  
 - Java/DesignPattern
 - DesignPattern
-aliases:
-- Java/CreationalPattern/Iterator
 ---
 
 # Iterator

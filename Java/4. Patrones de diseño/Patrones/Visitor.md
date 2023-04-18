@@ -3,8 +3,6 @@ title: Java - Patrón Visitor
 tags:  
 - Java/DesignPattern
 - DesignPattern
-aliases:
-- Java/CreationalPattern/Visitor
 ---
 
 # Visitor

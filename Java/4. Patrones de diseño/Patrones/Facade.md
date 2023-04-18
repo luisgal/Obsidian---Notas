@@ -2,9 +2,8 @@
 title: Java - Patrón Facade
 tags:  
 - Java/DesignPattern
+- Java/StructuralPattern
 - DesignPattern
-aliases:
-- Java/CreationalPattern/Facade
 ---
 
 # Facade

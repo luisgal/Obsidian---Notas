@@ -2,9 +2,8 @@
 title: Java - Patrón Decorator
 tags:  
 - Java/DesignPattern
+- Java/StructuralPattern
 - DesignPattern
-aliases:
-- Java/CreationalPattern/Decorator
 ---
 
 # Decorator
