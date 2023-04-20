@@ -4,14 +4,14 @@
     "type": "split",
     "children": [
       {
-        "id": "a34dd2c7ade10e38",
+        "id": "9b33be5101e310e0",
         "type": "tabs",
         "children": [
           {
-            "id": "66b24cdfc44ca612",
+            "id": "a2c0e629e0ee196b",
             "type": "leaf",
             "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {}
             }
           }
@@ -55,10 +55,10 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "relacion",
                 "matchingCase": false,
                 "explainSearch": false,
-                "collapseAll": false,
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               }
@@ -76,8 +76,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 204.50043487548828,
-    "collapsed": true
+    "width": 204.50043487548828
   },
   "right": {
     "id": "a9f1d40eb82c1004",
@@ -149,46 +148,46 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "66b24cdfc44ca612",
+  "active": "1a725221c6f2081a",
   "lastOpenFiles": [
-    "Java/4. Patrones de diseño/Patrones/Template Method.md",
-    "Java/2. Programación orientada a objetos/1. POO.md",
-    "Java/4. Patrones de diseño/Patrones/Strategy.md",
-    "Java/4. Patrones de diseño/Patrones/Observer.md",
-    "Java/4. Patrones de diseño/Patrones/Chain of Responsibility.md",
+    "Zzz/Biblioteca.md",
+    "Patrones de diseño/designpatternscard.pdf",
+    "Zzz/El rock de la carcel.epub",
+    "Zzz/El Paraiso en la otra esquina - Mario Vargas Llosa.mobi",
+    "Patrones de diseño/5. Relación entre patrones.md",
+    "Patrones de diseño/2. Patrones creacionales.md",
+    "Patrones de diseño/4. Patrones de comportamiento.md",
+    "Patrones de diseño/3. Patrones estructurales.md",
+    "Patrones de diseño/1. ¿Qué es un patron de diseño?.md",
     "Obsidian/Basic Formatting.md",
-    "1.md",
-    "Java/4. Patrones de diseño/Patrones/Visitor.md",
-    "Java/4. Patrones de diseño/Patrones/State.md",
-    "Java/4. Patrones de diseño/Patrones/Singleton.md",
-    "Java/4. Patrones de diseño/Patrones/Proxy.md",
-    "Java/4. Patrones de diseño/Patrones/Prototype.md",
-    "Java/4. Patrones de diseño/Patrones/Memento.md",
-    "Java/4. Patrones de diseño/Patrones/Mediator.md",
-    "Java/4. Patrones de diseño/Patrones/Iterator.md",
-    "Java/4. Patrones de diseño/Patrones/Flyweight.md",
-    "Java/4. Patrones de diseño/Patrones/Factory Method.md",
-    "Java/4. Patrones de diseño/Patrones/Facade.md",
-    "Java/4. Patrones de diseño/Patrones/Decorator.md",
-    "Java/4. Patrones de diseño/Patrones/Composite.md",
-    "Java/4. Patrones de diseño/Patrones/Command.md",
-    "Java/4. Patrones de diseño/Patrones/Builder.md",
-    "Java/4. Patrones de diseño/Patrones/Bridge.md",
-    "Java/4. Patrones de diseño/Patrones/Adapter.md",
-    "Java/4. Patrones de diseño/Patrones/Abstract Factory.md",
-    "Java/4. Patrones de diseño/4. Patrones de comportamiento.md",
+    "Obsidian/Obsidian Git.md",
+    "Patrones de diseño/Patrones/Template Method.md",
+    "Patrones de diseño/Patrones/Visitor.md",
+    "Patrones de diseño/Patrones/Strategy.md",
+    "Patrones de diseño/Patrones/State.md",
+    "Patrones de diseño/Patrones/Singleton.md",
+    "Patrones de diseño/Patrones/Proxy.md",
+    "Patrones de diseño/Patrones/Prototype.md",
+    "Patrones de diseño/Patrones/Observer.md",
+    "Patrones de diseño/Patrones/Memento.md",
+    "Patrones de diseño/Patrones/Mediator.md",
+    "Patrones de diseño/Patrones/Iterator.md",
+    "Patrones de diseño/Patrones/Flyweight.md",
+    "Patrones de diseño/Patrones/Factory Method.md",
+    "Patrones de diseño/Patrones/Facade.md",
+    "Patrones de diseño/Patrones/Decorator.md",
+    "Patrones de diseño/Patrones/Composite.md",
+    "Patrones de diseño/Patrones/Command.md",
+    "Patrones de diseño/Patrones/Chain of Responsibility.md",
     "Java/CreationalPattern",
     "Templates",
     "Java/2. Programación orientada a objetos",
     "Java/2. Programación orienta a objetos",
     "Java/2. Programación orienta a objetos/1. POO.docx",
-    "Java/4. Patrones de diseño/Patrones",
-    "Java/4. Patrones de diseño/Patrones",
+    "Patrones de diseño/Patrones",
+    "Patrones de diseño/Patrones",
     "Java/Pasted image 20230412184356.png",
     "Java/Pasted image 20230412184352.png",
-    "Java/Java Basic",
-    "Java/4. Patrones de diseño/5. Patrones",
-    "Java/Mis tips",
     "Untitled.canvas",
     "Zzz/img/coche_rojo.jpg",
     "Zzz/_canvas_/Coche.canvas",

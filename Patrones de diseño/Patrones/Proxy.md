@@ -1,8 +1,7 @@
 ---
-title: Java - Patrón Proxy
+title: Patrón Proxy
 tags:  
-- Java/DesignPattern
-- Java/StructuralPattern
+- StructuralPattern
 - DesignPattern
 ---
 
@@ -109,3 +108,7 @@ Hay decenas de formas de utilizar el patrón Proxy. Repasemos los usos más popu
 
 > [!fail] Contra
 >  La respuesta del servicio puede retrasarse.
+
+## Relación con otros patrones
+
+![[5. Relación entre patrones#Proxy]]

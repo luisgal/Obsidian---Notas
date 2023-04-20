@@ -1,9 +1,7 @@
 ---
-title: Java - Patrón Builder
-
+title: Patrón Builder
 tags:  
-- Java/DesignPattern
-- Java/CreationalPattern
+- CreationalPattern
 - DesignPattern
 ---
 
@@ -127,3 +125,7 @@ Crear un monstruo semejante sólo es posible en lenguajes que soportan la sobrec
 
 > [!fail] Contra
 > La complejidad general del código aumenta, ya que el patrón exige la creación de varias clases nuevas.
+
+## Relación con otros patrones
+
+![[5. Relación entre patrones#Builder]]

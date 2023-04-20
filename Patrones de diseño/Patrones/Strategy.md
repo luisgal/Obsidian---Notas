@@ -1,8 +1,7 @@
 ---
-title: Java - Patrón Strategy
+title: Patrón Strategy
 tags:  
-- Java/DesignPattern
-- Java/BehavioralPattern
+- BehavioralPattern
 - DesignPattern
 ---
 
@@ -193,3 +192,7 @@ class ExampleApplication is
 
 > [!fail] Contra 
 > Muchos lenguajes de programación modernos tienen un soporte de tipo funcional que te permite implementar distintas versiones de un algoritmo dentro de un grupo de funciones anónimas. Entonces puedes utilizar estas funciones exactamente como habrías utilizado los objetos de estrategia, pero sin saturar tu código con clases e interfaces adicionales.
+
+## Relación con otros patrones
+
+![[5. Relación entre patrones#Strategy]]

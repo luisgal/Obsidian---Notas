@@ -1,8 +1,7 @@
 ---
-title: Java - Patrón Chain of Responsibility
+title: Patrón Chain of Responsibility
 tags:  
-- Java/DesignPattern
-- Java/BehavioralPattern
+- BehavioralPattern
 - DesignPattern
 ---
 
@@ -223,3 +222,7 @@ class Application is
 
 > [!fail] Contra
 > Algunas solicitudes pueden acabar sin ser gestionadas.
+
+## Relación con otros patrones
+
+![[5. Relación entre patrones#Chain of Responsibility]]

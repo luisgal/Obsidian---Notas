@@ -1,8 +1,7 @@
 ---
-title: Java - Patrón Template Method
+title: Patrón Template Method
 tags:  
-- Java/DesignPattern
-- Java/BehavioralPattern
+- BehavioralPattern
 - DesignPattern
 ---
 
@@ -174,3 +173,6 @@ class MonstersAI extends GameAI is
 > [!fail] Contra
 > Los métodos plantilla tienden a ser más difíciles de mantener cuantos más pasos tengan.
 
+## Relación con otros patrones
+
+![[5. Relación entre patrones#Template Method]]

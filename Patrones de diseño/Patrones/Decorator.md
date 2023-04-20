@@ -1,8 +1,7 @@
 ---
-title: Java - Patrón Decorator
+title: Patrón Decorator
 tags:  
-- Java/DesignPattern
-- Java/StructuralPattern
+- StructuralPattern
 - DesignPattern
 ---
 
@@ -270,3 +269,7 @@ class ApplicationConfigurator is
 
 > [!fail] Contra
 > El código de configuración inicial de las capas pueden tener un aspecto desagradable.
+
+## Relación con otros patrones
+
+![[5. Relación entre patrones#Decorator]]

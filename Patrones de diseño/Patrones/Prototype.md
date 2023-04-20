@@ -1,9 +1,7 @@
 ---
-title: Java - Patrón Prototype
-
+title: Patrón Prototype
 tags:  
-- Java/DesignPattern
-- Java/CreationalPattern
+- CreationalPattern
 - DesignPattern
 ---
 
@@ -199,3 +197,7 @@ class Application is
 
 > [!fail] Contra
 > Clonar objetos complejos con referencias circulares puede resultar complicado.
+
+## Relación con otros patrones
+
+![[5. Relación entre patrones#Prototype]]

@@ -1,9 +1,7 @@
 ---
-title: Java - Patrón Factory Method
-
+title: Patrón Factory Method
 tags:  
-- Java/DesignPattern
-- Java/CreationalPattern
+- CreationalPattern
 - DesignPattern
 ---
 
@@ -188,3 +186,7 @@ class Main is
 
 >[!fail] Contra
 >Puede ser que el código se complique, ya que debes incorporar una multitud de nuevas subclases para implementar el patrón. La situación ideal sería introducir el patrón en una jerarquía existente de clases creadoras.
+
+## Relación con otros patrones
+
+![[5. Relación entre patrones#Factory Method]]

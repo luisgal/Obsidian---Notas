@@ -1,8 +1,7 @@
 ---
-title: Java - Patrón Flyweight
+title: Patrón Flyweight
 tags:  
-- Java/DesignPattern
-- Java/StructuralPattern
+- StructuralPattern
 - DesignPattern
 ---
 
@@ -182,3 +181,7 @@ class Forest is
 
 > [!fail] Contra
 > El código se complica mucho. Los nuevos miembros del equipo siempre estarán preguntándose por qué el estado de una entidad se separó de tal manera.
+
+## Relación con otros patrones
+
+![[5. Relación entre patrones#Flyweight]]

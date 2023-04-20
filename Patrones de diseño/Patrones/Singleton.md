@@ -1,9 +1,7 @@
 ---
-title: Java - Patrón Singleton
-
+title: Patrón Singleton
 tags:  
-- Java/DesignPattern
-- Java/CreationalPattern
+- CreationalPattern
 - DesignPattern
 ---
 
@@ -153,3 +151,7 @@ class Application is
 
 > [!fail] Contra
 > Puede resultar complicado realizar la prueba unitaria del código cliente del Singleton porque muchos _frameworks_ de prueba dependen de la herencia a la hora de crear objetos simulados (mock objects). Debido a que la clase Singleton es privada y en la mayoría de los lenguajes resulta imposible sobrescribir métodos estáticos, tendrás que pensar en una manera original de simular el Singleton. O, simplemente, no escribas las pruebas. O no utilices el patrón Singleton.
+
+## Relación con otros patrones
+
+![[5. Relación entre patrones#Singleton]]

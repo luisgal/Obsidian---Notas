@@ -1,8 +1,7 @@
 ---
-title: Java - Patrón Observer
+title: Patrón Observer
 tags:  
-- Java/DesignPattern
-- Java/BehavioralPattern
+- BehavioralPattern
 - DesignPattern
 ---
 
@@ -208,3 +207,7 @@ class Application is
 > Puedes establecer relaciones entre objetos durante el tiempo de ejecución.
 
 > [!fail] Contra Los suscriptores son notificados en un orden aleatorio.
+
+## Relación con otros patrones
+
+![[5. Relación entre patrones#Observer]]

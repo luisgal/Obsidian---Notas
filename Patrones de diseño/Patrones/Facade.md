@@ -1,8 +1,7 @@
 ---
-title: Java - Patrón Facade
+title: Patrón Facade
 tags:  
-- Java/DesignPattern
-- Java/StructuralPattern
+- StructuralPattern
 - DesignPattern
 ---
 
@@ -133,3 +132,7 @@ class Application is
 
 > [!fail] Contra
 > Una fachada puede convertirse en un objeto todopoderoso acoplado a todas las clases de una aplicación.
+
+## Relación con otros patrones
+
+![[5. Relación entre patrones#Facade]]

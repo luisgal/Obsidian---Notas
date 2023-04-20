@@ -1,9 +1,7 @@
 ---
-title: Java - Patrón Composite
-
+title: Patrón Composite
 tags:  
-- Java/DesignPattern
-- Java/StructuralPattern
+- StructuralPattern
 - DesignPattern
 ---
 
@@ -194,3 +192,7 @@ class ImageEditor is
 
 >[!fail] Contra
 > Puede resultar difícil proporcionar una interfaz común para clases cuya funcionalidad difiere demasiado. En algunos casos, tendrás que generalizar en exceso la interfaz componente, provocando que sea más difícil de comprender.
+
+## Relación con otros patrones
+
+![[5. Relación entre patrones#Composite]]

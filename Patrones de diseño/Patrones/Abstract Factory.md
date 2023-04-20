@@ -1,9 +1,7 @@
 ---
-title: Java - Patrón Abstract Factory
-
+title: Patrón Abstract Factory
 tags:  
-- Java/DesignPattern
-- Java/CreationalPattern
+- CreationalPattern
 - DesignPattern
 ---
 
@@ -106,3 +104,7 @@ Queda otro punto por aclarar: si el cliente sólo está expuesto a las interface
 
 > [!fail] Contra
 > Puede ser que el código se complique más de lo que debería, ya que se introducen muchas nuevas interfaces y clases junto al patrón.
+
+## Relación con otros patrones
+
+![[5. Relación entre patrones#Abstract Factory]]

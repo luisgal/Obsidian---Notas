@@ -1,9 +1,7 @@
 ---
-title: Java - Patrón Adapter
-
+title: Patrón Adapter
 tags:  
-- Java/DesignPattern
-- Java/StructuralPattern
+- StructuralPattern
 - DesignPattern
 ---
 
@@ -173,3 +171,7 @@ hole.fits(large_sqpeg_adapter) // falso
 
 > [!fail] Contra
 > La complejidad general del código aumenta, ya que debes introducir un grupo de nuevas interfaces y clases. En ocasiones resulta más sencillo cambiar la clase de servicio de modo que coincida con el resto de tu código.
+
+## Relación con otros patrones
+
+![[5. Relación entre patrones#Adapter]]

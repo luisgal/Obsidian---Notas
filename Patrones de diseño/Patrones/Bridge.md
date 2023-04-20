@@ -1,9 +1,7 @@
 ---
-title: Java - Patrón Bridge
-
+title: Patrón Bridge
 tags:  
-- Java/DesignPattern
-- Java/StructuralPattern
+- StructuralPattern
 - DesignPattern
 ---
 
@@ -99,3 +97,7 @@ Con esta solución, podemos extraer el código relacionado con el color y coloca
 
 > [!fail] Contra
 > Puede ser que el código se complique si aplicas el patrón a una clase muy cohesionada.
+
+## Relación con otros patrones
+
+![[5. Relación entre patrones#Bridge]]
