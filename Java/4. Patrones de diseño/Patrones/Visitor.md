@@ -2,6 +2,7 @@
 title: Java - Patrón Visitor
 tags:  
 - Java/DesignPattern
+- Java/BehavioralPattern
 - DesignPattern
 ---
 

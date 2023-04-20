@@ -2,6 +2,7 @@
 title: Java - Patrón Iterator
 tags:  
 - Java/DesignPattern
+- Java/BehavioralPattern
 - DesignPattern
 ---
 

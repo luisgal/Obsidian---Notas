@@ -2,6 +2,7 @@
 title: Java - Patrón Command
 tags:  
 - Java/DesignPattern
+- Java/BehavioralPattern
 - DesignPattern
 ---
 

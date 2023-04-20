@@ -2,6 +2,7 @@
 title: Java - Patrón Memento
 tags:  
 - Java/DesignPattern
+- Java/BehavioralPattern
 - DesignPattern
 ---
 

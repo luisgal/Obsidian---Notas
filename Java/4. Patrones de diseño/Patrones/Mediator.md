@@ -2,6 +2,7 @@
 title: Java - Patrón Mediator
 tags:  
 - Java/DesignPattern
+- Java/BehavioralPattern
 - DesignPattern
 ---
 

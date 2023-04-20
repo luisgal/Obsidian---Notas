@@ -2,6 +2,7 @@
 title: Java - Patrón State
 tags:  
 - Java/DesignPattern
+- Java/BehavioralPattern
 - DesignPattern
 ---
 

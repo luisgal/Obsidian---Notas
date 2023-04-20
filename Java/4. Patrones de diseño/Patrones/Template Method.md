@@ -2,6 +2,7 @@
 title: Java - Patrón Template Method
 tags:  
 - Java/DesignPattern
+- Java/BehavioralPattern
 - DesignPattern
 ---
 
