@@ -6,14 +6,21 @@ tags:
 ---
 
 # Factory Method
+---
+---
 
 ## Propósito
+---
 
 ***Factory Method*** es un patrón de diseño creacional que proporciona una interfaz para crear objetos en una superclase, mientras permite a las subclases alterar el tipo de objetos que se crearán.
 
 ![Engelbart | center | 400](https://refactoring.guru/images/patterns/content/factory-method/factory-method-es.png)
 
+<br>
+<br>
+
 ## Problema
+---
 
 Imagina que estás creando una aplicación de gestión logística. La primera versión de tu aplicación sólo es capaz de manejar el transporte en camión, por lo que la mayor parte de tu código se encuentra dentro de la clase `Camión`.
 
@@ -23,7 +30,11 @@ Añadir una nueva clase al programa no es tan sencillo si el resto del código y
 
 Al final acabarás con un código bastante sucio, plagado de condicionales que cambian el comportamiento de la aplicación dependiendo de la clase de los objetos de transporte.
 
+<br>
+<br>
+
 ## Solución
+---
 
 El patrón *Factory Method* sugiere que, en lugar de llamar al operador `new`para construir objetos directamente, se invoque a un método *fábrica* especial. No te preocupes: los objetos se siguen creando a través del `new`, pero se invocan desde el método fábrica. Los objetos devueltos por el método fábrica a menudo se denomina `productos`.
 
@@ -41,7 +52,11 @@ Por ejemplo, tanto la clase `Camión` como la clase `Barco` deben implementar la
 
 El código que utiliza el método fábrica (a menudo denominado código cliente) no encuentra diferencias entre los productos devueltos por varias subclases y trata a todos los productos como la clase abstracta `Transporte`. El cliente sabe que todos los objetos de transporte deben tener el método `entrega`, pero no necesita saber cómo funciona exactamente.
 
+<br>
+<br>
+
 ## Estructura
+---
 
 ![Embelgart | center | 400](https://refactoring.guru/images/patterns/diagrams/factory-method/structure-indexed.png)
 
@@ -49,12 +64,13 @@ El código que utiliza el método fábrica (a menudo denominado código cliente)
 2. Las **Concrete Products** son distintas implementaciones de la interfaz **Product**
 3. La clase **Creadora** declara el método fábrica que devuelve nuevos objetos de producto. Es importante que el tipo de retorno de este método coincida con la interfaz de producto.
 
-	Puedes declarar el patrón Factory Method como abstracto para forzar a todas las subclases a implementar sus propias versiones del método. Como alternativa, el método fábrica base puede devolver algún tipo de producto por defecto.
+    Puedes declarar el patrón Factory Method como abstracto para forzar a todas las subclases a implementar sus propias versiones del método. Como alternativa, el método fábrica base puede devolver algún tipo de producto por defecto.
 
-	Observa que a pesar de su nombre la creación de producto no es la principal responsabilidad de la clase creadora. Normalmente, esta clase cuenta con alguna lógica de negocios central relacionada con los productos. El patrón Factory Method ayuda a desacoplar esta lógica de las clases concreta de producto. Aquí tienes una analogía: una gran empresa de desarrollo de software puede contar con un departamento de formación de programadores, sin embargo, la principal función de la empresa sigue siendo escribir código, no preparar programadores. 
+    Observa que a pesar de su nombre la creación de producto no es la principal responsabilidad de la clase creadora. Normalmente, esta clase cuenta con alguna lógica de negocios central relacionada con los productos. El patrón Factory Method ayuda a desacoplar esta lógica de las clases concreta de producto. Aquí tienes una analogía: una gran empresa de desarrollo de software puede contar con un departamento de formación de programadores, sin embargo, la principal función de la empresa sigue siendo escribir código, no preparar programadores. 
 4. Los **Concrete Creators** sobrescriben el Factory Method base, de modo que devuelva un tipo diferente de producto.
 
 ### Pseudocódigo
+
 ```java
 // La clase creadora declara el método fábrica que debe devolver
 // un objeto de una clase de producto. Normalmente, las
@@ -99,11 +115,11 @@ interface Product is
 
 class ConcreteProductA implements Product is
     method doSomething() is
-	    print("Concrete Product A")
+        print("Concrete Product A")
 
 class ConcreteProductB implements Product is
-	method doSomething() is
-	    print("Concrete Product B")
+    method doSomething() is
+        print("Concrete Product B")
 
 class Main is
     field p: Product
@@ -128,7 +144,11 @@ class Main is
         p.doSomething()  // Salida: "Concrete Product A"
 ```
 
+<br>
+<br>
+
 ## Aplicabilidad
+---
 
 **Utiliza Factory Method cuando no conozcas de antemano las dependencias y los tipos exactos de los objetos con los que deba funcionar el código.**
 
@@ -156,24 +176,32 @@ class Main is
 > 
 > Por lo tanto, necesitas un método capaz de crear nuevos objetos, además de reutilizar los existentes. Eso suena bastante a lo que hace un patrón Factory Method.
 
+<br>
+<br>
+
 ## Cómo implementarlo
+---
 
 1. Haz que todos los productos sigan la misma interfaz. Esta interfaz deberá declarar métodos que tengan sentido en todos los productos.
 2. Añade un patrón Factory Method vacío dentro de la clase creadora. El tipo de retorno del método deberá coincidir con la interfaz común de los productos.
 3. Encuentra todas las referencias a constructores de producto en el código de la clase creadora. Una a una, sustitúyelas por invocaciones al Factory Method, mientras extraes el código de creación de productos para colocarlo dentro del Factory Method.
-	
-	Puede ser que tengas que añadir un parámetro temporal al Factory Method para controlar el tipo de producto devuelto.
+    
+    Puede ser que tengas que añadir un parámetro temporal al Factory Method para controlar el tipo de producto devuelto.
     
     A estas alturas, es posible que el aspecto del código del Factory Method luzca bastante desagradable. Puede ser que tenga un operador `switch` largo que elige qué clase de producto instanciar. Pero, no te preocupes, lo arreglaremos enseguida.
     
 4. Ahora, crea un grupo de subclases creadoras para cada tipo de producto enumerado en el Factory Method. Sobrescribe el Factory Method en las subclases y extrae las partes adecuadas de código constructor del método base.
 5. Si hay demasiados tipos de producto y no tiene sentido crear subclases para todos ellos, puedes reutilizar el parámetro de control de la clase base en las subclases.
 
-	Por ejemplo, imagina que tienes la siguiente jerarquía de clases: la clase base `Correo` con las subclases `CorreoAéreo` y `CorreoTerrestre` y la clase `Transporte` con `Avión`, `Camión` y `Tren`. La clase `CorreoAéreo` sólo utiliza objetos `Avión`, pero `CorreoTerrestre` puede funcionar tanto con objetos `Camión`, como con objetos `Tren`. Puedes crear una nueva subclase (digamos, `CorreoFerroviario`) que gestione ambos casos, pero hay otra opción. El código cliente puede pasar un argumento al Factory Method de la clase `CorreoTerrestre` para controlar el producto que quiere recibir.
-	
+    Por ejemplo, imagina que tienes la siguiente jerarquía de clases: la clase base `Correo` con las subclases `CorreoAéreo` y `CorreoTerrestre` y la clase `Transporte` con `Avión`, `Camión` y `Tren`. La clase `CorreoAéreo` sólo utiliza objetos `Avión`, pero `CorreoTerrestre` puede funcionar tanto con objetos `Camión`, como con objetos `Tren`. Puedes crear una nueva subclase (digamos, `CorreoFerroviario`) que gestione ambos casos, pero hay otra opción. El código cliente puede pasar un argumento al Factory Method de la clase `CorreoTerrestre` para controlar el producto que quiere recibir.
+    
 6. Si, tras todas las extracciones, el Factory Method base queda vacío, puedes hacerlo abstracto. Si queda algo dentro, puedes convertirlo en un comportamiento por defecto del método.
 
+<br>
+<br>
+
 ## Pros y contras
+---
 
 > [!success] Pro
 > Evitas un acoplamiento fuerte entre el creador y los productos concretos.
@@ -187,6 +215,10 @@ class Main is
 >[!fail] Contra
 >Puede ser que el código se complique, ya que debes incorporar una multitud de nuevas subclases para implementar el patrón. La situación ideal sería introducir el patrón en una jerarquía existente de clases creadoras.
 
+<br>
+<br>
+
 ## Relación con otros patrones
+---
 
 ![[5. Relación entre patrones#Factory Method]]

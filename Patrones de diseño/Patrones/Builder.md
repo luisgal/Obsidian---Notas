@@ -6,14 +6,21 @@ tags:
 ---
 
 # Builder
+---
+---
 
 ## Propósito
+---
 
 **Builder** es un patrón de diseño creacional que nos permite construir objetos complejos paso a paso. El patrón nos permite producir distintos tipos y representaciones de un objeto empleando el mismo código de construcción.
 
 ![center | 400](https://refactoring.guru/images/patterns/content/builder/builder-es.png)
 
+<br>
+<br>
+
 ## Problema
+---
 
 Imagina un objeto complejo que requiere una inicialización laboriosa, paso a paso, de muchos campos y objetos anidados. Normalmente, este código de inicialización está sepultado dentro de monstruoso constructor con una gran cantidad de parámetros. O, peor aún, disperso por todo el código cliente.
 
@@ -29,7 +36,11 @@ Existe otra posibilidad que no implica general subclases. Puedes crear un enorme
 
 En la mayoría de los casos, gran parte de los parámetros no utilizará, lo que provocará que las llamadas al constructor sean bastantes feas. Por ejemplo, solo una pequeña parte de las tiene piscina, por lo que los parámetros relacionados con piscinas serán inútiles en nueve de cada diez casos.
 
+<br>
+<br>
+
 ## Solución
+---
 
 El patrón *Builder* sugiere que saques el código de construcción del objeto de su propia clase y lo coloques dentro de objetos independientes llamados constructores.
 
@@ -53,7 +64,11 @@ No es estrictamente necesario tener una clase directora en el programa, ya que s
 
 Además, la clase directora esconde por completo los detalles de la construcción del producto al código cliente. El cliente sólo necesita asociar un objeto constructor con una clase directora, utilizarla para iniciar la construcción, y obtener el resultado del objeto constructor.
 
+<br>
+<br>
+
 ## Estructura
+---
 
 ![center | 300](https://refactoring.guru/images/patterns/diagrams/builder/structure-indexed.png)
 
@@ -67,7 +82,11 @@ Además, la clase directora esconde por completo los detalles de la construcció
 
 5.  El **Cliente** debe asociar uno de los objetos constructores con la clase directora. Normalmente, se hace una sola vez mediante los parámetros del constructor de la clase directora, que utiliza el objeto constructor para el resto de la construcción. No obstante, existe una solución alternativa para cuando el cliente pasa el objeto constructor al método de producción de la clase directora. En este caso, puedes utilizar un constructor diferente cada vez que produzcas algo con la clase directora.
 
+<br>
+<br>
+
 ## Aplicabilidad
+---
 
 **Utiliza el patrón Builder para evitar un “constructor telescópico”.**
 
@@ -96,7 +115,11 @@ Crear un monstruo semejante sólo es posible en lenguajes que soportan la sobrec
 >
 > Un constructor no expone el producto incompleto mientras ejecuta los pasos de construcción. Esto evita que el código cliente extraiga un resultado incompleto.
 
+<br>
+<br>
+
 ## Cómo implementarlo
+---
 
 1.  Asegúrate de poder definir claramente los pasos comunes de construcción para todas las representaciones disponibles del producto. De lo contrario, no podrás proceder a implementar el patrón.
 
@@ -112,7 +135,11 @@ Crear un monstruo semejante sólo es posible en lenguajes que soportan la sobrec
 
 6.  El resultado de la construcción tan solo se puede obtener directamente del director si todos los productos siguen la misma interfaz. De lo contrario, el cliente deberá extraer el resultado del constructor.
 
+<br>
+<br>
+
 ## Pros y contras
+---
 
 > [!success] Pro
 > Puedes construir objetos paso a paso, aplazar pasos de la construcción o ejecutar pasos de forma recursiva.
@@ -126,6 +153,10 @@ Crear un monstruo semejante sólo es posible en lenguajes que soportan la sobrec
 > [!fail] Contra
 > La complejidad general del código aumenta, ya que el patrón exige la creación de varias clases nuevas.
 
+<br>
+<br>
+
 ## Relación con otros patrones
+---
 
 ![[5. Relación entre patrones#Builder]]

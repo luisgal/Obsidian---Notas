@@ -6,14 +6,21 @@ tags:
 ---
 
 # Composite
+---
+---
 
 ## Propósito
+---
 
 **Composite** es un patrón de diseño estructural que te permite componer objetos en estructuras de árbol y trabajar con esas estructuras como si fueran objetos individuales.
 
 ![center | 400](https://refactoring.guru/images/patterns/content/composite/composite.png?id=73bcf0d94db360b636cd745f710d19db)
 
+<br>
+<br>
+
 ## Problema
+---
 
 El uso del patrón Composite solo tiene sentido cuando el modelo central de tu aplicación puede representar en forma de árbol. Por ejemplo, imagina que tienes dos tipos de objetos: `Productos` y `Cajas`. Una `Caja` puede contener varios `Porductos` así como cierto número de `Cajas` más pequeñas. Estas `Cajas` pequeñas pueden contener algunos `Productos` o incluso `Cajas` más pequeñas, y así sucesivamente.
 
@@ -23,7 +30,11 @@ Digamos que decides crear un sistema de pedidos que utiliza estas clases. Los pe
 
 Puedes intentas la solución directa de envolver todas las cajas, repasar todos los producto y calcular el total. Eso sería en el mundo real; pero en un programa no es tan sencillo como ejecutar un bucle. Tienes que conocer de antemano las clases de `Productos` y `Cajas` a iterar, el nivel de anidación de las cajas y otros detalles desagradables. Todo esto provoca que la solución directa sea demasiado complicada, o incluso imposible.
 
+<br>
+<br>
+
 ## Solución
+---
 
 El patrón Composite sugiera que trabajes con `Productos` y `Cajas` a través de una interfaz común que declara un método para calcular el precio total.
 
@@ -33,25 +44,33 @@ El patrón Composite sugiera que trabajes con `Productos` y `Cajas` a través de
 
 La gran ventaja de esta solución es que no tienes que preocuparte por las clases concretas de los objetos que componen el árbol. No tienes que saber si un objeto es un producto simple o una sofisticada caja. Puedes tratarlos a todos por igual a través de la interfaz común. Cuando invocas un método, los propios objetos pasan la solicitud a lo largo del árbol.
 
+<br>
+<br>
+
 ## Analogía en el mundo real
+---
 
 ![center | 225](https://refactoring.guru/images/patterns/diagrams/composite/live-example.png?id=548a7cec45b493af66e8bfe524a137d3)
 
 Los ejércitos de la mayoría de países se estructuran como jerarquías. Un ejército está formado por varías divisiones; una división es un grupo de brigadas y una brigada está formada por pelotones, que pueden dividirse en escuadrones. Por último, un escuadrón es un pequeño grupo de soldados reales. Las órdenes se dan en la parte superior de la jerarquía y se pasan hacía abajo por cada nivel hasta que todos los soldados saben lo que hay que hacer.
 
+<br>
+<br>
+
 ## Estructura
+---
 
 ![center | 250](https://refactoring.guru/images/patterns/diagrams/composite/structure-es-indexed.png?id=33bb9d4f3056f2f523111a90c92c7af1)
 
 1. La interfaz **Component** describe operaciones que son comunes a elementos simples y complejos del árbol.
-	
+    
 2. La **Hoja** (*Leaf*) es un elemento básico de un árbol que no tiene subelementos.
 
-	Normalmente los componentes de la hoja acaban realizando la mayoría del trabajo real, ya que no tienen a nadie a quien delegarle el trabajo.
+    Normalmente los componentes de la hoja acaban realizando la mayoría del trabajo real, ya que no tienen a nadie a quien delegarle el trabajo.
 
 3. El  **Contenedor** (también llamado *Composite*) es un elemento que tiene subelementos: hojas u otros contenedores. Un contenedor no conoce las clases concretas de sus hijos. Funciona con todos los subelementos únicamente a través de la interfaz componente.
 
-	Al recibir una solicitud, un contener delega el trabajo a sus subelementos, procesa los resultados intermedios y devuelve el resultado final al cliente.
+    Al recibir una solicitud, un contener delega el trabajo a sus subelementos, procesa los resultados intermedios y devuelve el resultado final al cliente.
 
 4. El **Client** funciona con todos los elementos a través de la interfaz componente. Como resultado, el cliente puede funcionar de la misma manera tanto con elementos simples como complejos del árbol.
 
@@ -156,7 +175,11 @@ class ImageEditor is
         all.draw()
 ```
 
+<br>
+<br>
+
 ## Aplicabilidad
+---
 
 **Utiliza el patrón Composite cuando tengas que implementar una estructura de objetos con forma de árbol.**
 
@@ -166,7 +189,11 @@ class ImageEditor is
 
 > Todos los elementos definidos por el patrón Composite comparten una interfaz común. Utilizando esta interfaz, el cliente no tiene que preocuparse por la clase concreta de los objetos con los que funciona.
 
+<br>
+<br>
+
 ## Cómo implementarlo
+---
 
 1. Asegúrate de que el modelo central de tu aplicación pueda representarse como una estructura de árbol. Intenta dividirlo en elementos simples y contenedores. Recuerda que los contenedores deben ser capaces de contener tanto elementos simples como otros contenedores.
 
@@ -182,7 +209,11 @@ class ImageEditor is
 
     Ten en cuenta que estas operaciones se pueden declarar en la interfaz componente. Esto violaría el *Principio de segregación de la interfaz* porque los métodos de la clase hoja estarían vacíos. No obstante, el cliente podrá tratar a todos los elementos de la misma manera, incluso al componer el árbol.
 
+<br>
+<br>
+
 ## Pros y contras
+---
 
 >[!success] Pro
 > Puedes trabajar con estructuras de árbol complejas con mayor comodidad: utiliza el polimorfismo y la recursión en tu favor.
@@ -193,6 +224,10 @@ class ImageEditor is
 >[!fail] Contra
 > Puede resultar difícil proporcionar una interfaz común para clases cuya funcionalidad difiere demasiado. En algunos casos, tendrás que generalizar en exceso la interfaz componente, provocando que sea más difícil de comprender.
 
+<br>
+<br>
+
 ## Relación con otros patrones
+---
 
 ![[5. Relación entre patrones#Composite]]

@@ -6,14 +6,21 @@ tags:
 ---
 
 # Flyweight
+___
+---
 
 ## Propósito
+---
 
 **Flyweight** es un patrón de diseño estructural que te permite mantener más objetos dentro de la cantidad disponible de RAM compartiendo las partes comunes del estado entre varios objetos en lugar de mantener toda la información en cada objeto.
 
 ![center | 400](https://refactoring.guru/images/patterns/content/flyweight/flyweight.png)
 
+<br>
+<br>
+
 ## Problema
+---
 
 Para divertirte un poco después de largas horas de trabajo, decides crear un sencillo videojuego en el que los jugadores se tienen que mover por un mapa disparándose entre sí. Decides implementar un sistema de partículas realistas que lo distinga de otros juegos. Grandes cantidades de balas, misiles y metralla de las explosiones volarán por todo el mapa, ofreciendo una apasionante experiencia al jugador.
 
@@ -23,7 +30,11 @@ El problema estaba relacionado con tu sistema de partículas. Cada partícula, c
 
 ![center | 400](https://refactoring.guru/images/patterns/diagrams/flyweight/problem-es.png)
 
+<br>
+<br>
+
 ## Solución
+---
 
 Observando más atentamente la clase `Partícula`, puede ser que te hayas dado cuenta de que los campos de color y *sprite* consumen mucha más memoria que otros campos. Lo que es peor, esos dos campos almacenan información casi idéntica de todas las partículas. Por ejemplo, todas las balas tienen el mismo color y sprite.
 
@@ -61,7 +72,11 @@ Para un acceso más cómodo a varios objetos flyweight, puedes crear un método 
 
 Existen muchas opciones para colocar este método. El lugar más obvio es un contenedor flyweight. Alternativamente, podrías crea un nueva clase fábrica y hacer estático el método fábrica para colocarlo dentro de una clase flyweight real.
 
+<br>
+<br>
+
 ## Estructura
+---
 
 ![center | 400](https://refactoring.guru/images/patterns/diagrams/flyweight/structure-indexed.png)
 
@@ -76,6 +91,7 @@ Existen muchas opciones para colocar este método. El lugar más obvio es un con
 5.  El **Cliente** calcula o almacena el estado extrínseco de los objetos flyweight. Desde la perspectiva del cliente, un flyweight es un objeto plantilla que puede configurarse durante el tiempo de ejecución pasando información contextual dentro de los parámetros de sus métodos.
 
 6.  La **Fábrica flyweight** gestiona un grupo de objetos flyweight existentes. Con la fábrica, los clientes no crean objetos flyweight directamente. En lugar de eso, invocan a la fábrica, pasándole partes del estado intrínseco del objeto flyweight deseado. La fábrica revisa objetos flyweight creados previamente y devuelve uno existente que coincida con los criterios de búsqueda, o bien crea uno nuevo si no encuentra nada.
+
 ### Pseudocódigo
 
 En este ejemplo, el patrón **Flyweight** ayuda a reducir el uso de memoria a la hora de representar millones de objetos de árbol en un lienzo.
@@ -146,7 +162,11 @@ class Forest is
             tree.draw(canvas)
 ```
 
+<br>
+<br>
+
 ## Aplicabilidad
+---
 
 **Utiliza el patrón Flyweight únicamente cuando tu programa deba soportar una enorme cantidad de objetos que apenas quepan en la RAM disponible.**
 
@@ -156,7 +176,11 @@ class Forest is
 > -  Esto consume toda la RAM disponible de un dispositivo objetivo
 > -  Los objetos contienen estados duplicados que se pueden extraer y compartir entre varios objetos
 
+<br>
+<br>
+
 ## Cómo implementarlo
+---
 
 1. Divide los campos de una clase que se convertirá en flyweight en dos partes:
 
@@ -171,7 +195,11 @@ class Forest is
 
 5. El cliente deberá almacenar o calcular valores del estado extrínseco (contexto) para poder invocar métodos de objetos flyweight. Por comodidad, el estado extrínseco puede moverse a una clase contexto separada junto con el campo referenciador del flyweight.
 
+<br>
+<br>
+
 ## Pros y contras
+---
 
 > [!success] Pro
 > Puedes ahorrar mucha RAM, siempre que tu programa tenga toneladas de objetos similares.
@@ -182,6 +210,10 @@ class Forest is
 > [!fail] Contra
 > El código se complica mucho. Los nuevos miembros del equipo siempre estarán preguntándose por qué el estado de una entidad se separó de tal manera.
 
+<br>
+<br>
+
 ## Relación con otros patrones
+---
 
 ![[5. Relación entre patrones#Flyweight]]

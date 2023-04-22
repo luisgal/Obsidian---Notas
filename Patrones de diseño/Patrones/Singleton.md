@@ -8,30 +8,39 @@ tags:
 # Singleton
 
 ## Propósito
+---
 
 **Singleton** es un patrón de diseño creacional que nos permite asegurarnos de una clase tenga una única instancia, a la vez proporciona un punto de acceso global a dicha instancia.
 
 ![center | 400](https://refactoring.guru/images/patterns/content/singleton/singleton.png)
 
+<br>
+<br>
+
 ## Problema
+---
 
 El patrón Singleton resuelve dos problemas al mismo tiempo, vulnerando el *Principio de responsabilidad única*.
 
 1. **Garantiza que una clase tenga una única instancia**. ¿Por qué querría alguien controlar cuántas instancias tiene una clase? El motivo más habitual es controlar el acceso a algún recurso compartido, por ejemplo, una base de datos o un archivo.
 
-	Funciona así: imagina que has creado un objeto y al cabo de un tiempo decides crear otro nuevo. En lugar de recibir un objeto nuevo, obtendrás el que ya habías creado.
+    Funciona así: imagina que has creado un objeto y al cabo de un tiempo decides crear otro nuevo. En lugar de recibir un objeto nuevo, obtendrás el que ya habías creado.
 
-	Ten en cuenta que este comportamiento es imposible de implementar con un constructor normal, ya que una llamada al constructor siempre **debe** devolver un nuevo objeto por diseño.
+    Ten en cuenta que este comportamiento es imposible de implementar con un constructor normal, ya que una llamada al constructor siempre **debe** devolver un nuevo objeto por diseño.
 
 2. **Proporcionar un punto de acceso global a dicha instancia**. ¿Recuerdas esas variable globales utilizadas para almacenar objetos esenciales? Aunque son muy útiles, también son poco seguras, ya que cualquier código podría sobrescribir el contenido de esas variables y descomponer la aplicación.
 
-	Al igual que una variable global, el patrón Singleton nos permite acceder a un objeto desde cualquier parte del programa. No obstante, también evita que otro código sobrescriba esa instancia.
+    Al igual que una variable global, el patrón Singleton nos permite acceder a un objeto desde cualquier parte del programa. No obstante, también evita que otro código sobrescriba esa instancia.
 
-	Este problema tiene otra cara: no queremos que el código que resuelve el primer problema se encuentre disperso por todo el programa. Es mucho más conveniente tenerlo dentro de una clase, sobre todo si el resto del código ya depende de ella.
+    Este problema tiene otra cara: no queremos que el código que resuelve el primer problema se encuentre disperso por todo el programa. Es mucho más conveniente tenerlo dentro de una clase, sobre todo si el resto del código ya depende de ella.
 
 Hoy en día el patrón Singleton se ha popularizado tanto que la gente suele llamar *singleton* a cualquier patrón, incluso si solo resuelve uno de los problemas antes mencionados.
 
+<br>
+<br>
+
 ## Solución
+---
 
 Todas las implementaciones del patrón Singleton tiene estos dos pasos en común:
 
@@ -40,11 +49,19 @@ Todas las implementaciones del patrón Singleton tiene estos dos pasos en común
 
 Si tu código tiene acceso a la Singleton, podría invocar su método estático. De esta manera, cada vez que se invoque este método, siempre devolverá el mismo objeto.
 
+<br>
+<br>
+
 ## Analogía en el mundo real
+---
 
 El gobierno es un ejemplo excelente del patrón Singleton. Un país sólo puede tener un gobierno oficial. Independientemente de las identidades personales de los individuos de forma el gobierno, el título "Gobierno de X" es un punto de acceso global que identifica al grupo de persona a cargo.
 
+<br>
+<br>
+
 ## Estructura
+---
 
 ![center | 250](https://refactoring.guru/images/patterns/diagrams/singleton/structure-es-indexed.png)
 
@@ -105,7 +122,11 @@ class Application is
         // variable `foo`.
 ```
 
+<br>
+<br>
+
 ## Aplicabilidad
+---
 
 **Utiliza el patrón Singleton cuando una clase de tu programa tan solo deba tener una instancia disponible para todos los clientes; por ejemplo, un único objeto de base de datos compartido por distintas partes del programa.**
 
@@ -117,7 +138,11 @@ class Application is
 >
 > Ten en cuenta que siempre podrás ajustar esta limitación y permitir la creación de cierto número de instancias Singleton. La única parte del código que requiere cambios es el cuerpo del método `getInstance`.
 
+<br>
+<br>
+
 ## Cómo implementarlo
+---
 
 1.  Añade un campo estático privado a la clase para almacenar la instancia Singleton.
 
@@ -129,7 +154,11 @@ class Application is
 
 5.  Repasa el código cliente y sustituye todas las llamadas directas al constructor de la instancia Singleton por llamadas a su método de creación estático.
 
+<br>
+<br>
+
 ## Pros y contras
+---
 
 > [!success] Pro
 > Puedes tener la certeza de que una clase tiene una única instancia.
@@ -152,6 +181,10 @@ class Application is
 > [!fail] Contra
 > Puede resultar complicado realizar la prueba unitaria del código cliente del Singleton porque muchos _frameworks_ de prueba dependen de la herencia a la hora de crear objetos simulados (mock objects). Debido a que la clase Singleton es privada y en la mayoría de los lenguajes resulta imposible sobrescribir métodos estáticos, tendrás que pensar en una manera original de simular el Singleton. O, simplemente, no escribas las pruebas. O no utilices el patrón Singleton.
 
+<br>
+<br>
+
 ## Relación con otros patrones
+---
 
 ![[5. Relación entre patrones#Singleton]]

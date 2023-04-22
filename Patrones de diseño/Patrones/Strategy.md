@@ -6,14 +6,21 @@ tags:
 ---
 
 # Strategy
+---
+---
 
 ## Propósito
+---
 
 **Strategy** es un patrón de diseño de comportamiento que te permite definir una familia de algoritmos, colocar cada uno de ellos en una clase separada y hacer sus objetos intercambiables.
 
 ![center | 400](https://refactoring.guru/images/patterns/content/strategy/strategy.png)
 
+<br>
+<br>
+
 ## Problema
+---
 
 Un dñía decidiste crear una aplicación de navegación para viajeros ocasionales. La aplicación giraba alrededor de un bonito mapa que ayudaba a los usarios a orientarse rápidamente en cualquier ciudad.
 
@@ -31,7 +38,11 @@ Cualquier cambio en algunos de los algoritmos, ya fuera un sencillo arreglo de u
 
 Además, el trabajo en equipo se volvió ineficiente. Tus compañeros, contratados tras el exitoso lanzamiento, se quejaban de que dedicaban demasiado tiempo a resolver conflictos en integración. Implementar una nueva función te exige cambiar la misma clase enorme, entrando en conflicto con el código producido por otras personas.
 
+<br>
+<br>
+
 ## Solución
+---
 
 El patrón Strategy sugiere que tomes esa clase que hace algo especifico de muchas formas diferentes y extraigas todos esos algoritmos para colocarlos en clases separadas llamadas *Strategies*.
 
@@ -47,13 +58,21 @@ En nuestra aplicación de navegación, cada algortimo de enrutamiento puede extr
 
 Incluso contando con los mismo argumentos, cada clase de enrutamiento puede crear una ruta diferente. A la clase navegadora principal no le importa que algoritmo se selecciona ya que su labor principal es representar un grupo de puntos de control en el mapa. La clase tiene un método para cambiar la estrategia activa de enrutamiento, de modo que sus clientes, como los botones en la interfaz de usuario, pueden sustituir el comportamiento seleccionado de enrutamiento por otro.
 
+<br>
+<br>
+
 ## Analogía en el mundo real
+---
 
 ![center | 400](https://refactoring.guru/images/patterns/content/strategy/strategy-comic-1-es.png)
 
 Imagina que tienes que llegar al aeropuerto. Puedes tomar el autobús, pedir un taxi o ir en bicicleta. Éstas son tus estrategias de transporte. Puedes elegir una de las estrategias, dependiendo de factores como el presupuesto o los límites de tiempo.
 
+<br>
+<br>
+
 ## Estructura
+---
 
 ![center | 350](https://refactoring.guru/images/patterns/diagrams/strategy/structure-indexed.png)
 
@@ -140,7 +159,11 @@ class ExampleApplication is
         Print result.
 ```
 
+<br>
+<br>
+
 ## Aplicabilidad
+---
 
 **Utiliza el patrón Strategy cuando quieras utiliza distintas variantes de un algoritmo dentro de un objeto y poder cambiar de un algoritmo a otro durante el tiempo de ejecución.**
 
@@ -158,7 +181,11 @@ class ExampleApplication is
 
 > El patrón Strategy te permite suprimir dicho condicional extrayendo todos los algoritmos para ponerlos en clases separadas, las cuales implementan la misma interfaz. El objeto original delega la ejecución a uno de esos objetos, en lugar de implementar todas las variantes del algoritmo.
 
+<br>
+<br>
+
 ## Cómo implementarlo
+---
 
 1. En la clase contexto, identifica un algoritmo que tienda a sufrir cambios frecuentes. También puede ser un enorme condicional que seleccione y ejecute una variante del mismo algoritmo durante el tiempo de ejecución.
 
@@ -170,7 +197,11 @@ class ExampleApplication is
 
 5. Los clientes de la clase contexto deben asociarla con una estrategia adecuada que coincida con la forma en la que esperan que la clase contexto realice su trabajo principal.
 
+<br>
+<br>
+
 ## Pros y contras
+---
 
 > [!success] Pro
 > Puedes intercambiar algoritmos usados dentro de un objeto durante el tiempo de ejecución.
@@ -191,8 +222,12 @@ class ExampleApplication is
 > Los clientes deben conocer las diferencias entre estrategias para poder seleccionar la adecuada.
 
 > [!fail] Contra 
-> Muchos lenguajes de programación modernos tienen un soporte de tipo funcional que te permite implementar distintas versiones de un algoritmo dentro de un grupo de funciones anónimas. Entonces puedes utilizar estas funciones exactamente como habrías utilizado los objetos de estrategia, pero sin saturar tu código con clases e interfaces adicionales.
+> Muchos lenguajes de programación modernos tienen un soporte de tipo funcional que te permite implementar distintas versiones de un algoritmo dentro de un grupo de funciones anónimas. Entonces puedes utilizar estas funciones exactamente como habrías utilizado los objetos de estrategia, pero sin saturar tu código con clases e 
+<br>
+<br>
+interfaces adicionales.
 
+---
 ## Relación con otros patrones
 
 ![[5. Relación entre patrones#Strategy]]

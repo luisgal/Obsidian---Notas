@@ -6,14 +6,21 @@ tags:
 ---
 
 # Abstract Factory
+---
+---
 
 ## Propósito
+---
 
 **Abstract Factory** es un patrón de diseño creacional que nos permite producir familias de objetos relacionados sin especificar sus clases concretas.
 
 ![center | 400](https://refactoring.guru/images/patterns/content/abstract-factory/abstract-factory-es.png)
 
+<br>
+<br>
+
 ## Problema
+---
 
 Imagina que estás creando un simulador de tienda de muebles. Tu código está compuesto por clases representan lo siguiente:
 
@@ -31,6 +38,10 @@ Necesitamos una forma de crear objetos individuales de mobiliario para que combi
 Además, no queremos cambiar el código existente al añadir al programa nuevos productos o familias de productos. Los comerciantes de muebles actualizan sus catálogos muy a menudo, y debemos evitar tener que cambiar el código principal cada vez que esto ocurra.
 
 ## Solución
+---
+
+<br>
+<br>
 
 Lo primero que sugiere el patrón Abstract Factory es que declaremos de forma explícita interfaces para cada producto diferente de la familia de productos (por ejemplo, silla, sofá o mesilla). Después podemos hacer que todas las variantes de los productos sigan esas interfaces. Por ejemplo, todas las variantes de silla pueden implementar la interfaz `Silla`, así como todas las variantes de mesilla pueden implementar la interfaz `Mesilla`, y así sucesivamente.
 
@@ -51,6 +62,10 @@ Digamos que el cliente quiere una fábrica para producir una silla. El cliente n
 Queda otro punto por aclarar: si el cliente sólo está expuesto a las interfaces abstractas, ¿cómo se crean los objetos de fábrica? Normalmente, la aplicación crea un objeto de fábrica concreto en la etapa de inicialización. Justo antes, la aplicación debe seleccionar el tipo de fábrica, dependiendo de la configuración o de los ajustes del entorno.
 
 ## Estructura
+---
+
+<br>
+<br>
 
 ![Embelgart | center | 400](https://refactoring.guru/images/patterns/diagrams/abstract-factory/structure-indexed.png)
 
@@ -64,7 +79,11 @@ Queda otro punto por aclarar: si el cliente sólo está expuesto a las interface
 
 5.  Aunque las fábricas concretas instancian productos concretos, las firmas de sus métodos de creación deben devolver los productos *abstractos* correspondientes. De este modo, el código cliente que utiliza una fábrica no se acopla a la variante específica del producto que obtiene de una fábrica. El **Cliente** puede funcionar con cualquier variante fábrica/producto concreta, siempre y cuando se comunique con sus objetos a través de interfaces abstractas.
 
+<br>
+<br>
+
 ## Aplicabilidad
+---
 
 **Utiliza el patrón Abstract Factory cuando tu código deba funcionar con varias familias de productos relacionados, pero no desees que dependa de las clases concretas de esos productos, ya que puede ser que no los conozcas de antemano o sencillamente quieras permitir una futura extensibilidad.**
 
@@ -74,7 +93,11 @@ Queda otro punto por aclarar: si el cliente sólo está expuesto a las interface
 
 > En un programa bien diseñado *cada clase es responsable tan solo de una cosa*. Cuando una clase lidia con varios tipos de productos, puede ser que valga la pena extraer sus métodos de fábrica para ponerlos en una clase única de fábrica o una implementación completa del patrón Abstract Factory.
 
+<br>
+<br>
+
 ## Cómo implementarlo
+---
 
 1.  Mapea una matriz de distintos tipos de productos frente a variantes de dichos productos.
 
@@ -88,7 +111,11 @@ Queda otro punto por aclarar: si el cliente sólo está expuesto a las interface
 
 6.  Explora el código y encuentra todas las llamadas directas a constructores de producto. Sustitúyelas por llamadas al método de creación adecuado dentro del objeto de fábrica.
 
+<br>
+<br>
+
 ## Pros y contras
+---
 
 > [!success] Pro
 > Puedes tener la certeza de que los productos que obtienes de una fábrica son compatibles entre sí.
@@ -105,6 +132,10 @@ Queda otro punto por aclarar: si el cliente sólo está expuesto a las interface
 > [!fail] Contra
 > Puede ser que el código se complique más de lo que debería, ya que se introducen muchas nuevas interfaces y clases junto al patrón.
 
+<br>
+<br>
+
 ## Relación con otros patrones
+---
 
 ![[5. Relación entre patrones#Abstract Factory]]

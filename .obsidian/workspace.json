@@ -4,14 +4,14 @@
     "type": "split",
     "children": [
       {
-        "id": "9b33be5101e310e0",
+        "id": "81c85ffba4081698",
         "type": "tabs",
         "children": [
           {
-            "id": "a2c0e629e0ee196b",
+            "id": "7cf25f3f11c76cf3",
             "type": "leaf",
             "state": {
-              "type": "empty",
+              "type": "graph",
               "state": {}
             }
           }
@@ -55,7 +55,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "relacion",
+                "query": "tag:#Casteo",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -95,15 +95,7 @@
             }
           },
           {
-            "id": "8acec20ee17cd338",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {}
-            }
-          },
-          {
-            "id": "c4d1ef045fed01fb",
+            "id": "23ca7a0e945d5cc1",
             "type": "leaf",
             "state": {
               "type": "backlink",
@@ -119,7 +111,7 @@
             }
           },
           {
-            "id": "dfc812b9d3c37b8c",
+            "id": "ed363d4bf6951236",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
@@ -133,7 +125,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 255.5,
+    "width": 251.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -148,37 +140,39 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "1a725221c6f2081a",
+  "active": "7cf25f3f11c76cf3",
   "lastOpenFiles": [
-    "Zzz/Biblioteca.md",
-    "Patrones de diseño/designpatternscard.pdf",
-    "Zzz/El rock de la carcel.epub",
-    "Zzz/El Paraiso en la otra esquina - Mario Vargas Llosa.mobi",
-    "Patrones de diseño/5. Relación entre patrones.md",
-    "Patrones de diseño/2. Patrones creacionales.md",
-    "Patrones de diseño/4. Patrones de comportamiento.md",
-    "Patrones de diseño/3. Patrones estructurales.md",
-    "Patrones de diseño/1. ¿Qué es un patron de diseño?.md",
+    "Java/2. Programación orientada a objetos/8. UML - Diagrama de clases.md",
+    "Java/2. Programación orientada a objetos/6. Tipos de clases.md",
     "Obsidian/Basic Formatting.md",
+    "Java/1. Java Basics/4. Sentencias de control.md",
+    "Java/1. Java Basics/5. Funciones.md",
+    "Java/2. Programación orientada a objetos/4. Encapsulamiento.md",
+    "Java/2. Programación orientada a objetos/7. Relaciones entre objetos.md",
+    "Java/2. Programación orientada a objetos/5. Herencia y Polimorfismo.md",
+    "Patrones de diseño/5. Relación entre patrones.md",
+    "Java/2. Programación orientada a objetos/3. Abstracción.md",
+    "Java/2. Programación orientada a objetos/1. POO.md",
+    "Java/2. Programación orientada a objetos/2. Clases y objetos.md",
+    "Java/Pasted image 20230420185533.png",
+    "Zzz/img/airplane.png",
+    "Java/1. Java Basics/3. Operadores.md",
+    "Java/1. Java Basics/2. Tipos de datos y operadores.md",
+    "Java/1. Java Basics/1. Introducción.md",
+    "Patrones de diseño/Patrones/Singleton.md",
     "Obsidian/Obsidian Git.md",
-    "Patrones de diseño/Patrones/Template Method.md",
     "Patrones de diseño/Patrones/Visitor.md",
+    "Patrones de diseño/Patrones/Template Method.md",
     "Patrones de diseño/Patrones/Strategy.md",
     "Patrones de diseño/Patrones/State.md",
-    "Patrones de diseño/Patrones/Singleton.md",
     "Patrones de diseño/Patrones/Proxy.md",
     "Patrones de diseño/Patrones/Prototype.md",
     "Patrones de diseño/Patrones/Observer.md",
     "Patrones de diseño/Patrones/Memento.md",
     "Patrones de diseño/Patrones/Mediator.md",
-    "Patrones de diseño/Patrones/Iterator.md",
-    "Patrones de diseño/Patrones/Flyweight.md",
-    "Patrones de diseño/Patrones/Factory Method.md",
-    "Patrones de diseño/Patrones/Facade.md",
-    "Patrones de diseño/Patrones/Decorator.md",
-    "Patrones de diseño/Patrones/Composite.md",
-    "Patrones de diseño/Patrones/Command.md",
-    "Patrones de diseño/Patrones/Chain of Responsibility.md",
+    "Patrones de diseño/designpatternscard.pdf",
+    "Zzz/El rock de la carcel.epub",
+    "Zzz/El Paraiso en la otra esquina - Mario Vargas Llosa.mobi",
     "Java/CreationalPattern",
     "Templates",
     "Java/2. Programación orientada a objetos",

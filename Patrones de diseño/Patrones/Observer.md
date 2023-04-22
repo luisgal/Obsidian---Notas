@@ -6,14 +6,21 @@ tags:
 ---
 
 # Observer
+---
+---
 
 ## Propósito
+---
 
 **Observer** es un patrón de diseño de comportamiento que te permite definir un mecanismo de suscripción para notificar a varios objetos sobre cualquier evento que le suceda al objeto que están observando.
 
 ![center | 400](https://refactoring.guru/images/patterns/content/observer/observer.png)
 
+<br>
+<br>
+
 ## Problema
+---
 
 Imagina que tienes dos tipos de objetos: un objeto `Cliente` y un objeto `Tienda`. El cliente está muy interesado en una marca particular de producto (digamos, un nuevo modelo de iPhone) que estará disponible en la tienda muy pronto.
 
@@ -23,7 +30,11 @@ Por otro lado, la tienda podría enviar cientos de correos (lo cual se podría c
 
 Parece que nos encontramos ante un conflicto. O el cliente pierde tiempo comprobando la disponibilidad del producto, o bien la tienda desperdicia recursos notificando a los clientes equivocados.
 
+<br>
+<br>
+
 ## Solución
+---
 
 El objeto que tiene un estado interesante suele denominarse *sujeto*, pero, como también va a notificar a otros objetos los cambios en su estado, le llamaremos *notificador* (en ocasiones también llamado *publicador*). El resto de los objetos que quieren conocer los cambios en el estado del notificador, se denominan *suscriptores*.
 
@@ -41,7 +52,11 @@ Por eso es fundamental que todos los suscriptores implementen la misma interfaz 
 
 Si tu aplicación tiene varios tipos diferentes de notificadores y quieres hacer a tus suscriptores compatibles con todos ellos, puedes ir más allá y hacer que todos los notificadores sigan la misma interfaz. Esta interfaz sólo tendrá que describir algunos métodos de suscripción. La interfaz permitirá a los suscriptores observar los estados de los notificadores sin acoplarse a sus clases concretas.
 
+<br>
+<br>
+
 ## Analogía en el mundo real
+---
 
 ![center | 400](https://refactoring.guru/images/patterns/content/observer/observer-comic-2-es.png)
 
@@ -49,7 +64,11 @@ Si te suscribes a un periódico o una revista, ya no necesitarás ir a la tienda
 
 El notificador mantiene una lista de suscriptores y sabe qué revistas les interesan. Los suscriptores pueden abandonar la lista en cualquier momento si quieren que el notificador deje de enviarles nuevos números.
 
+<br>
+<br>
+
 ## Estructura
+---
 
 ![center | 400](https://refactoring.guru/images/patterns/diagrams/observer/structure-indexed.png)
 
@@ -166,7 +185,11 @@ class Application is
         editor.events.subscribe("save", emailAlerts)
 ```
 
+<br>
+<br>
+
 ## Aplicabilidad
+---
 
 **Utiliza el patrón Observer cuando los cambios en el estado de un objeto puedan necesitar cambiar otros objetos y el grupo de objetos sea desconocido de antemano o cambie dinámicamente.**
 
@@ -178,7 +201,11 @@ class Application is
 
 > La lista de suscripción es dinámica, por lo que los suscriptores pueden unirse o abandonar la lista cuando lo deseen.
 
+<br>
+<br>
+
 ## Cómo implementarlo
+---
 
 1.  Repasa tu lógica de negocio e intenta dividirla en dos partes: la funcionalidad central, independiente del resto de código, actuará como notificador; el resto se convertirá en un grupo de clases suscriptoras.
 
@@ -198,7 +225,11 @@ class Application is
 
 7.  El cliente debe crear todos los suscriptores necesarios y registrarlos con los notificadores adecuados.
 
+<br>
+<br>
+
 ## Pros y contras
+---
 
 > [!success] Pro
 > *Principio de abierto/cerrado*. Puedes introducir nuevas clases suscriptoras sin tener que cambiar el código de la notificadora (y viceversa si hay una interfaz notificadora).
@@ -208,6 +239,10 @@ class Application is
 
 > [!fail] Contra Los suscriptores son notificados en un orden aleatorio.
 
+<br>
+<br>
+
 ## Relación con otros patrones
+---
 
 ![[5. Relación entre patrones#Observer]]

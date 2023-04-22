@@ -6,14 +6,20 @@ tags:
 ---
 
 # Chain of Responsibility
-
+---
+---
 ## Propósito
+---
 
 **Chain of Responsability** es un patrón de diseño de comportamiento que te permite pasar solicitudes a lo largo de una cadena de manejadores. Al recibir, cada manejador decide si la procesa o sí la pasa al siguiente manejador de la cadena.
 
 ![center | 400](https://refactoring.guru/images/patterns/content/chain-of-responsibility/chain-of-responsibility.png)
 
+<br>
+<br>
+
 ## Problema
+---
 
 Imagina que estás trabajando en un sistema de pedidos online. Quieres restringir el acceso al sistema de forma que únicamente los usuarios autenticados puedan generar pedidos. Además, los usuarios que tengan permisos administrativos deben tener pleno acceso a todos los pedidos.
 
@@ -33,7 +39,11 @@ El código de las comprobaciones, que ya se veía desordenado, se vuelve más y 
 
 El sistema se vuelve muy difícil de comprender y costoso de mantener. Luchas con el código durante un tiempo hasta que un día decides refactorizarlo todo.
 
+<br>
+<br>
+
 ## Solución
+---
 
 Al igual que muchos otros patrones de diseño de comportamiento, el **Chain of Responsability** se basa en transformar comportamientos particulares en objetos autónomos llamados *manejadores*. En nuestro caso, cada comprobación debe ponerse dentro de su propia clase con un único método que realice la comprobación. La solicitud, junto con su información se pasa a este método como argumento.
 
@@ -53,7 +63,11 @@ Por ejemplo, cuando un usuario hace clic en un botón, el evento se propaga por 
 
 Es fundamental que todas las clases manejadoras implementen la misma interfaz. Cada manejadora concreta solo debe preocuparse por la siguiente que cuente con el método `ejecutar`. De esta forma puedes componer cadenas durante el tiempo de ejecución, utilizando varios manejadores sin acoplar tu código a sus clases concretas.
 
+<br>
+<br>
+
 ## Estructura
+---
 
 ![center | 250](https://refactoring.guru/images/patterns/diagrams/chain-of-responsibility/structure-indexed.png)
 
@@ -168,7 +182,11 @@ class Application is
         component.showHelp()
 ```
 
+<br>
+<br>
+
 ## Aplicabilidad
+---
 
 **Utiliza el patrón Chain of Responsibility cuando tu programa deba procesar distintos tipos de solicitudes de varias maneras, pero los tipos exactos de solicitudes y sus secuencias no se conozcan de antemano.**
 
@@ -182,7 +200,11 @@ class Application is
 
 > Si aportas modificadores (_setters_) para un campo de referencia dentro de las clases manejadoras, podrás insertar, eliminar o reordenar los manejadores dinámicamente.
 
+<br>
+<br>
+
 ## Cómo implementarlo
+---
 
 1.  Declara la interfaz manejadora y describe la firma de un método para manejar solicitudes.
 
@@ -209,7 +231,11 @@ class Application is
     -   Algunas solicitudes pueden no llegar al final de la cadena.
     -   Otras pueden llegar hasta el final de la cadena sin ser gestionadas.
 
+<br>
+<br>
+
 ## Pros y contras
+---
 
 > [!success] Pro 
 > Puedes controlar el orden de control de solicitudes.
@@ -223,6 +249,10 @@ class Application is
 > [!fail] Contra
 > Algunas solicitudes pueden acabar sin ser gestionadas.
 
+<br>
+<br>
+
 ## Relación con otros patrones
+---
 
 ![[5. Relación entre patrones#Chain of Responsibility]]

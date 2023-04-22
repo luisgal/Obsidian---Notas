@@ -6,20 +6,31 @@ tags:
 ---
 
 # Facade
+---
+---
 
 ## Propósito
+---
 
 **Facade** es un patrón de diseño estructural que proporciona una interfaz a una biblioteca, un framework o cualquier otro grupo complejo de clases.
 
 ![center | 400](https://refactoring.guru/images/patterns/content/facade/facade.png)
 
+<br>
+<br>
+
 ## Problema
+---
 
 Imagina que debes lograr que tu código trabaje con un amplio grupo de objetos que pertenecen a una sofisticada biblioteca o framework. Normalmente, debes inicializar todos esos objetos, llevar un registro de las dependencias, ejecutar los métodos en el orden correcto y así sucesivamente.
 
 Como resultado, la lógica de negocio de tus clases se vería estrechamente acoplada a los detalles de implementación de las clases de terceros, haciéndola difícil de comprender y mantener.
 
+<br>
+<br>
+
 ## Solución
+---
 
 Una fachada es una clase que proporciona una interfaz a un subsistema complejos que contiene muchas partes móviles. Una fachada puede proporcionar una funcionalidad limitada en comparación con trabajar directamente con el subsistema, tan solo incluye las funciones realmente importantes para los clientes.
 
@@ -27,11 +38,19 @@ Tener una fachada resulta útil cuando tienes que integrar tu aplicación con un
 
 Por ejemplo, una aplicación que sube breves vídeos divertidos de gatos a las redes sociales, podría potencialmente utilizar una biblioteca de conversión de vídeo profesional. Sin embargo, lo único que necesita en realidad es una clase con el método simple `codificar(nombreDelArchivo, formato)`. Una vez que crees dicha clase y la conectes con la biblioteca de conversión de vídeo, tendrás tu primera fachada.
 
+<br>
+<br>
+
 ## Analogía en el mundo real
+---
 
 Cuando llamas a una tienda para hacer un pedido por teléfono, un operador es tu fachada a todos los servicios y departamentos de la tienda. El operador te proporciona una sencilla interfaz de vos al sistema de pedidos, pasarelas de pago y varios servicios de entrega.
 
+<br>
+<br>
+
 ## Estructura
+---
 
 ![center | 400](https://refactoring.guru/images/patterns/diagrams/facade/structure-indexed.png)
 
@@ -103,7 +122,11 @@ class Application is
         mp4.save()
 ```
 
+<br>
+<br>
+
 ## Aplicabilidad
+---
 
 **Utiliza el patrón Facade cuando necesites una interfaz limitada pero directa a un subsistema complejo.**
 
@@ -115,7 +138,11 @@ class Application is
 >
 > Por ejemplo, regresemos a nuestro framework de conversión de vídeo. Puede dividirse en dos capas: la relacionada con el vídeo y la relacionada con el audio. Puedes crear una fachada para cada capa y hacer que las clases de cada una de ellas se comuniquen entre sí a través de esas fachadas. Este procedimiento es bastante similar al patrón [[Mediator]]
 
+<br>
+<br>
+
 ## Cómo implementarlo
+---
 
 1.  Comprueba si es posible proporcionar una interfaz más simple que la que está proporcionando un subsistema existente. Estás bien encaminado si esta interfaz hace que el código cliente sea independiente de muchas de las clases del subsistema.
 
@@ -125,7 +152,11 @@ class Application is
 
 4.  Si la fachada se vuelve demasiado grande, piensa en extraer parte de su comportamiento y colocarlo dentro de una nueva clase fachada refinada.
 
+<br>
+<br>
+
 ## Pros y contras
+---
 
 > [!success] Pro
 > Puedes aislar tu código de la complejidad de un subsistema.
@@ -133,6 +164,10 @@ class Application is
 > [!fail] Contra
 > Una fachada puede convertirse en un objeto todopoderoso acoplado a todas las clases de una aplicación.
 
+<br>
+<br>
+
 ## Relación con otros patrones
+---
 
 ![[5. Relación entre patrones#Facade]]

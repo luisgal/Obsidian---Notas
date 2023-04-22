@@ -6,14 +6,21 @@ tags:
 ---
 
 # Adapter
+---
+---
 
 ## Propósito
+---
 
 **Adapter** es un patrón de diseño estructural que permite la colaboración entre objetos con interfaces incompatibles.
 
 ![center | 400](https://refactoring.guru/images/patterns/content/adapter/adapter-es.png)
 
+<br>
+<br> 
+
 ## Problema
+---
 
 Imagina que estás creando una aplicación de monitoreo del mercado de valores. La aplicación descarga la información de bolsa desde varias fuentes en formato XML para presentarla al usuario con bonitos gráficos y diagramas.
 
@@ -23,7 +30,11 @@ En cierto momento, decides mejorar la aplicación integrando una inteligente bib
 
 Podrías cambiar la biblioteca para que funcione con XML. Sin embargo, esto podrá descomponer parte del código existente que depende de la biblioteca. Y, lo que es peor, podrías no tener siquiera acceso al código fuente de la biblioteca, lo que hace imposible esta solución.
 
+<br>
+<br> 
+
 ## Solución
+---
 
 Puedes crear un *adapter*. Se trata de un objeto especial que convierte la interfaz de un objeto, de forma que otro objeto pueda comprenderla.
 
@@ -41,11 +52,19 @@ En ocasiones se puede incluso crear un adaptador de dos direcciones que pueda co
 
 regresemos a nuestra aplicación del mercado de valores. Para resolver el dilema de los formatos incompatibles., puedes crear adaptadores de XML a JSON para cada clase de la biblioteca de análisis con la que trabaje tu código directamente. Después ajustas tu código para se comunique con la biblioteca únicamente a través de estos adaptadores. Cuando un adaptador recibe una llamada, traduce los datos XML entrantes a una estructura JSON y pasa la llamada a los métodos adecuados de un objeto de análisis envuelto.
 
+<br>
+<br> 
+
 ## Analogía en el mundo real
+---
 
 Cuando viajas de Europa a Estados Unidos por primera vez, puede ser que te lleves una sorpresa cuando intentes cargar tu computadora portátil. Los tipos de enchufe son diferente en cada país, por lo que un enchufe español no sirve en Estados Unidos. El problema puede solucionarse utilizando un adaptador que incluya el enchufe americanos y el europeo.
 
+<br>
+<br> 
+
 ## Estructura
+---
 
 **Adaptador de objetos**
 
@@ -132,7 +151,11 @@ hole.fits(small_sqpeg_adapter) // verdadero
 hole.fits(large_sqpeg_adapter) // falso
 ```
 
+<br>
+<br> 
+
 ## Aplicabilidad
+---
 
 **Utiliza la clase adaptadora cuando quieras usar una clase existente, pero cuya interfaz no sea compatible con el resto del código.**
 
@@ -144,7 +167,11 @@ hole.fits(large_sqpeg_adapter) // falso
 >
 > Una solución mucho más elegante sería colocar la funcionalidad que falta dentro de una clase adaptadora. Después puedes envolver objetos a los que les falten funciones, dentro de la clase adaptadora, obteniendo esas funciones necesarias de un modo dinámico. Para que esto funcione, las clases en cuestión deben tener una interfaz común y el campo de la clase adaptadora debe seguir dicha interfaz. Este procedimiento es muy similar al del patrón [[Decorator]]
 
+<br>
+<br> 
+
 ## Cómo implementarlo
+---
 
 1. Asegúrate de que tienes al menos dos clases con interfaces incompatibles:
 
@@ -161,7 +188,11 @@ hole.fits(large_sqpeg_adapter) // falso
 
 6. Las clases cliente deberán utilizar la clase adaptadora a través de la interfaz con el cliente. Esto te permitirá cambiar o extender las clases adaptadoras sin afectar al código cliente.
 
+<br>
+<br> 
+
 ## Pros y contras
+---
 
 > [!success] Pro
 > *Principio de responsabilidad única*. Puedes separar la interfaz o el código de conversión de datos de la lógica de negocio primaria del programa.
@@ -172,6 +203,10 @@ hole.fits(large_sqpeg_adapter) // falso
 > [!fail] Contra
 > La complejidad general del código aumenta, ya que debes introducir un grupo de nuevas interfaces y clases. En ocasiones resulta más sencillo cambiar la clase de servicio de modo que coincida con el resto de tu código.
 
+<br>
+<br> 
+
 ## Relación con otros patrones
+---
 
 ![[5. Relación entre patrones#Adapter]]

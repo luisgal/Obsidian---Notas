@@ -6,14 +6,21 @@ tags:
 ---
 
 # Proxy
+---
+---
 
 ## Propósito
+---
 
 **Proxy** es un patrón de diseño estructural que te permite proporcionar un sustituto o marcador de posición para otro objeto. Un proxy controla el acceso al objeto original, permitiéndote hacer algo antes o después de que la solicitud llegue al objeto original.
 
 ![center | 400](https://refactoring.guru/images/patterns/content/proxy/proxy.png)
 
+<br>
+<br>
+
 ## Problema
+---
 
 ¿Por qué querrías controlar el acceso a un objeto? Imagina que tienes un objeto enorme que consume una gran cantidad de recurso del sistema. Lo necesitas de vez en cuando, pero no siempre.
 
@@ -23,7 +30,11 @@ Puedes llevar a cabo una implementación diferida, es decir, crear este objeto s
 
 En un mundo ideal, querríamos meter este código directamente dentro de la clase de nuestro objeto, pero eso no siempre es posible. Por ejemplo, la clase puede ser parte de una biblioteca cerrada de un tercero.
 
+<br>
+<br>
+
 ## Solución
+---
 
 El patrón Proxy sugiere que crees una nueva clase proxy con la misma interfaz que un objeto de servicio original. Después actualizas tu aplicación para que pase el objeto proxy a todos los clientes del objeto original. Al recibir una solicitud de un cliente, el proxy crea un objeto de servicio real y le delega todo el trabajo.
 
@@ -31,7 +42,11 @@ El patrón Proxy sugiere que crees una nueva clase proxy con la misma interfaz q
 
 Pero, ¿cuál es la ventaja? Si necesitas ejecutar algo antes o después de la lógica primaria de la clase, el proxy te permite hacerlo sin  cambiar esa clase. Ya que el proxy implementa la misma interfaz que la clase original, puede pasarse a cualquier cliente que espere un objeto de servicio real.
 
+<br>
+<br>
+
 ## Estructura
+---
 
 ![center | 300](https://refactoring.guru/images/patterns/diagrams/proxy/structure-indexed.png)
 
@@ -45,7 +60,11 @@ Pero, ¿cuál es la ventaja? Si necesitas ejecutar algo antes o después de la l
    
 4. El **Client** debe funcionar con servicios y proxies a través de la misma interfaz. De este modo puedes pasar un proxy a cualquier código que espere un objeto de servicio.
 
+<br>
+<br>
+
 ## Aplicabilidad
+---
 
 Hay decenas de formas de utilizar el patrón Proxy. Repasemos los usos más populares.
 
@@ -77,7 +96,11 @@ Hay decenas de formas de utilizar el patrón Proxy. Repasemos los usos más popu
 >
 > El proxy también puede rastrear si el cliente ha modificado el objeto de servicio. Después, los objetos sin cambios pueden ser reutilizados por otros clientes.
 
+<br>
+<br>
+
 ## Cómo implementarlo
+---
 
 1.  Si no hay una interfaz de servicio preexistente, crea una para que los objetos de proxy y de servicio sean intercambiables. No siempre resulta posible extraer la interfaz de la clase servicio, porque tienes que cambiar todos los clientes del servicio para utilizar esa interfaz. El plan B consiste en convertir el proxy en una subclase de la clase servicio, de forma que herede la interfaz del servicio.
 
@@ -89,7 +112,11 @@ Hay decenas de formas de utilizar el patrón Proxy. Repasemos los usos más popu
 
 5.  Considera implementar la inicialización diferida para el objeto de servicio.
 
+<br>
+<br>
+
 ## Pros y contras
+---
 
 > [!success] Pro
 > Puedes controlar el objeto de servicio sin que los clientes lo sepan.
@@ -109,6 +136,10 @@ Hay decenas de formas de utilizar el patrón Proxy. Repasemos los usos más popu
 > [!fail] Contra
 >  La respuesta del servicio puede retrasarse.
 
+<br>
+<br>
+
 ## Relación con otros patrones
+---
 
 ![[5. Relación entre patrones#Proxy]]

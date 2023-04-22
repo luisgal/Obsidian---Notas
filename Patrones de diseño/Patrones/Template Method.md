@@ -6,14 +6,21 @@ tags:
 ---
 
 # Template Method
+---
+---
 
 ## Propósito
+---
 
 **Template Method** es un patrón de diseño de comportamiento que define el esqueleto de un algoritmo en la superclase pero permite que las subclases sobrescriban paso del algoritmo sin cambiar su estructura.
 
 ![center | 400](https://refactoring.guru/images/patterns/content/template-method/template-method.png)
 
+<br>
+<br>
+
 ## Problema
+---
 
 Imagina que estás creando una aplicación de minería de datos que analiza documentos corporativos. Los usuario suben a la aplicación documentos en varios formatos (PDF, DOC, CSV) y ésta intenta extraer la información relevante de estos documentos en un formato uniforme.
 
@@ -25,7 +32,11 @@ En cierto moento te das cuenta que las tres clases tienen mucho código similar.
 
 Hay otro problema relacionado con el código cliente que utiliza esas clases. Tiene muchos condicionales que eligen un curso de acción adecuado dependiendo de la clase del objeto de procesamiento. Si las tres clases de procesamiento tiene una interfaz común o una clase base, puedes eliminar los condicionales en el código cliente y utilizar el polimorfismo al invocar métodos en un objeto de procesamiento.
 
+<br>
+<br>
+
 ## Solución
+---
 
 El patrón **Template Method** sugiere que dividas un algoritmo en una serie de pasos, conviertas estos paso en métodos y coloques una serie de llamadas a esos método dentro de un único método plantilla. Los pasos pueden ser `abstractos`, o contar con una implementación por defecto. Para utilizar el algortimo, el cliente debe aportar su propia subclase, implementar todos los pasos abstractos y sobrescribir algunos de los opcionales se es necesario (pero no el propio método plantilla).
 
@@ -44,7 +55,11 @@ Como pues ver, tenemos dos tipos de pasos:
 
 Hay otro tipo de pasos, llamados ganchos (*hooks*). Un gancho es un paso opcional con un cuerpo vacío. Un método plantilla funcionará aunque el gancho no se sobrescriba. Normalmente los ganchos se colocan antes dy después de pasos cruciales de los algoritmos, suministrando a las subclases puntos adicionales de extensión para un algoritmo.
 
+<br>
+<br>
+
 ## Estructura
+---
 
 ![center | 350](https://refactoring.guru/images/patterns/diagrams/template-method/structure-indexed.png)
 
@@ -134,7 +149,11 @@ class MonstersAI extends GameAI is
         // Los monstruos no construyen unidades.
 ```
 
+<br>
+<br>
+
 ## Aplicabilidad
+---
 
 **Utiliza el patrón Template Method cuando quieras permitir a tus clientes que extiendan únicamente pasos particulares de un algoritmo, pero no todo el algoritmo o su estructura.**
 
@@ -144,7 +163,11 @@ class MonstersAI extends GameAI is
 
 > Cuando conviertes un algoritmo así en un método plantilla, también puedes elevar los pasos con implementaciones similares a una superclase, eliminando la duplicación del código. El código que varía entre subclases puede permanecer en las subclases.
 
+<br>
+<br>
+
 ## Cómo implementarlo
+---
 
 1.  Analiza el algoritmo objetivo para ver si puedes dividirlo en pasos. Considera qué pasos son comunes a todas las subclases y cuáles siempre serán únicos.
 
@@ -156,7 +179,11 @@ class MonstersAI extends GameAI is
 
 5.  Para cada variación del algoritmo, crea una nueva subclase concreta. Ésta _debe_ implementar todos los pasos abstractos, pero también _puede_ sobrescribir algunos de los opcionales.
 
+<br>
+<br>
+
 ## Pros y contras
+---
 
 > [!success] Pro
 > Puedes permitir a los clientes que sobrescriban tan solo ciertas partes de un algoritmo grande, para que les afecten menos los cambios que tienen lugar en otras partes del algoritmo.
@@ -171,8 +198,12 @@ class MonstersAI extends GameAI is
 > Puede que violes el _principio de sustitución de Liskov_ suprimiendo una implementación por defecto de un paso a través de una subclase.
 
 > [!fail] Contra
-> Los métodos plantilla tienden a ser más difíciles de mantener cuantos más pasos tengan.
+> Los métodos plantilla tienden a ser más difíciles de 
+<br>
+<br>
+mantener cuantos más pasos tengan.
 
+---
 ## Relación con otros patrones
 
 ![[5. Relación entre patrones#Template Method]]

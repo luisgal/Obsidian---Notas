@@ -6,14 +6,21 @@ tags:
 ---
 
 # Bridge
+___
+___
 
 ## Propósito
+---
 
 **Bridge** es un patrón de diseño estructural que te permite dividir una clase grande, o un grupo de clases estrechamente relacionadas, en dos jerarquías separadas (abstracción e implementación) que pueden desarrollarse independientemente la una de la otra.
 
 ![center | 400](https://refactoring.guru/images/patterns/content/bridge/bridge.png)
 
+<br>
+<br>
+
 ## Problema
+---
 
 Digamos que tienes una clase geométrica `Forma` con un par de subclases: `Círculo` y `Cuadrado`. Deseas extender esta jerarquía de clase para que incorpore colores, por lo que planeas crear las subclases de forma `Rojo` y `Azul`. Sin embargo, como ya tienes dos subclases, tienes que crear cuatro combinaciones de clase, como `CírculoAzul` y `CuadradoRojo`.
 
@@ -21,7 +28,11 @@ Digamos que tienes una clase geométrica `Forma` con un par de subclases: `Círc
 
 Añadir nuevos tipos de forma y color a la jerarquía hará que ésta crezca exponencialmente. Por ejemplo, para añadir una forma de triángulo deberás introducir dos subclases, una para cada color. Y, después, para añadir un nuevo color habrá que crear tres subclases, una para cada tipo de forma. Cuanto más avancemos, peor será.
 
+<br>
+<br>
+
 ## Solución
+---
 
 Este problema se presenta porque intentamos extender las clases de forma en dos dimensiones independientes: por forma y por color. Es un problema muy habitual en la herencia de clases.
 
@@ -31,7 +42,11 @@ El patrón Bridge intenta resolver este problema pasando de la herencia a la com
 
 Con esta solución, podemos extraer el código relacionado con el color y colocarlo dentro de su propia clase, con dos subclases: `Rojo` y `Azul`. La clase `Forma` obtiene entonces un campo de referencia que apunta a uno de los objetos de color. Ahora la forma puede delegar cualquier trabajo relacionado con el color al objeto de color vinculado. Esa referencia actuará como un puente entre las clases `Forma` y `Color`. En adelante, añadir nuevos colores no exigirá cambiar la jerarquía de forma y viceversa.
 
+<br>
+<br>
+
 ## Estructura
+---
 
 ![center | 400](https://refactoring.guru/images/patterns/diagrams/bridge/structure-es-indexed.png)
 
@@ -47,7 +62,11 @@ Con esta solución, podemos extraer el código relacionado con el color y coloca
 
 5. Normalmente, el **Cliente** sólo está interesado en trabajar con la abstracción. No obstante, el cliente tiene que vincular el objeto de la abstracción con uno de los objetos de la implementación.
 
+<br>
+<br>
+
 ## Aplicabilidad
+---
 
 **Utiliza el patrón Bridge cuando quieras dividir y organizar una clase monolítica que tenga muchas variantes de una sola funcionalidad (por ejemplo, si la clase puede trabajar con diversos servidores de bases de datos).**
 
@@ -65,7 +84,11 @@ Con esta solución, podemos extraer el código relacionado con el color y coloca
 
 *Por cierto, este último punto es la razón principal por la que tanta gente confunde el patrón Bridge con el patrón [[Strategy]]. Recuerda que un patrón es algo más que un cierto modo de estructurar tus clases. También puede comunicar intención y el tipo de problema que se está abordando.*
 
+<br>
+<br>
+
 ## Cómo implementarlo
+---
 
 1.  Identifica las dimensiones ortogonales de tus clases. Estos conceptos independientes pueden ser: abstracción/plataforma, dominio/infraestructura, *front end/back end*, o interfaz/implementación.
 
@@ -81,7 +104,11 @@ Con esta solución, podemos extraer el código relacionado con el color y coloca
 
 7.  El código cliente debe pasar un objeto de implementación al constructor de la abstracción para asociar el uno con el otro. Después, el cliente puede ignorar la implementación y trabajar solo con el objeto de la abstracción.
 
+<br>
+<br>
+
 ## Pros y contras
+---
 
 > [!success] Pro 
 > Puedes crear clases y aplicaciones independientes de plataforma.
@@ -98,6 +125,10 @@ Con esta solución, podemos extraer el código relacionado con el color y coloca
 > [!fail] Contra
 > Puede ser que el código se complique si aplicas el patrón a una clase muy cohesionada.
 
+<br>
+<br>
+
 ## Relación con otros patrones
+---
 
 ![[5. Relación entre patrones#Bridge]]

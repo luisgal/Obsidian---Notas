@@ -6,14 +6,21 @@ tags:
 ---
 
 # Prototype
+---
+---
 
 ## Propósito
+---
 
 **Prototype**es un patrón de diseño creacional que nos permite copiar objetos existentes sin que el código dependa de sus clases.
 
 ![center | 400](https://refactoring.guru/images/patterns/content/prototype/prototype.png)
 
+<br>
+<br>
+
 ## Problema
+---
 
 Digamos que tienes un objeto y quiere crear una copia exacta de él. ¿Cómo lo harías? En primer lugar, debes crear un nuevo objeto de la misma clase, Después debes recorrer todos los campos del objeto original y copiar sus valores en el nuevo objeto.
 
@@ -21,7 +28,11 @@ Pero hay una trampa. No todos los objetos se pueden copiar de este modo, porque 
 
 Hay otro problema con el enfoque directo. Dado que debes conocer la clase del objeto para crear un duplicado, el código se vuelve dependiente de esa clase. Si esta dependencia adicional no te da miedo, todavía hay otra trampa. En ocasiones tan solo conocemos la interfaz que sigue el objeto, pero no su clase concreta, cuando, por ejemplo, un parámetro de un método acepta cualquier objeto que siga cierta interfaz.
 
+<br>
+<br>
+
 ## Solución
+---
 
 El patrón *Prototype* delega el proceso de clonación a los propios objetos que están siendo clonados. El patrón declara una interfaz común para todos los objetos que soportan la clonación. Esta interfaz nos permite clonar un objeto sin acoplar el código a la clase de ese objeto. Normalmente, dicha interfaz contiene un único método `clonar`.
 
@@ -31,7 +42,11 @@ Un objeto que soporta la clonación se denomina *prototipo*. Cuando tus objetos 
 
 Funciona así: se crea un grupo de objetos configurados de manera diferentes. Cuando necesites un objeto como el que has configurado, clona un prototipo en lugar de construir un nuevo objeto desde cero.
 
+<br>
+<br>
+
 ## Estructura
+---
 
 **Implementación básica**
 
@@ -151,7 +166,11 @@ class Application is
         // hijo de la matriz `shape`.
 ```
 
+<br>
+<br>
+
 ## Aplicabilidad
+---
 
 **Utiliza el patrón Prototype cuando tu código no deba depender de las clases concretas de objetos que necesites copiar.**
 
@@ -165,7 +184,11 @@ class Application is
 >
 > En lugar de instanciar una subclase que coincida con una configuración, el cliente puede, sencillamente, buscar el prototipo adecuado y clonarlo.
 
+<br>
+<br>
+
 ## Cómo implementarlo
+---
 
 1.  Crea la interfaz del prototipo y declara el método `clonar` en ella, o, simplemente, añade el método a todas las clases de una jerarquía de clase existente, si la tienes.
 
@@ -181,7 +204,11 @@ class Application is
 
     Por último, sustituye las llamadas directas a los constructores de las subclases por llamadas al método de fábrica del registro de prototipos.
 
+<br>
+<br>
+
 ## Pros y contras
+---
 
 > [!success] Pro
 > Puedes clonar objetos sin acoplarlos a sus clases concretas.
@@ -198,6 +225,10 @@ class Application is
 > [!fail] Contra
 > Clonar objetos complejos con referencias circulares puede resultar complicado.
 
+<br>
+<br>
+
 ## Relación con otros patrones
+---
 
 ![[5. Relación entre patrones#Prototype]]

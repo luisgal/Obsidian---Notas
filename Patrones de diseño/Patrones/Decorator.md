@@ -6,14 +6,21 @@ tags:
 ---
 
 # Decorator
+___
+___
 
 ## Propósito
+---
 
 **Decorator** es un patrón de diseño estructural que te permite añadir funcionalidades a objetos colocando estos objetos dentro de objetos encapsulados especiales que contienen estas funcionalidades.
 
 ![center | 400](https://refactoring.guru/images/patterns/content/decorator/decorator.png)
 
+<br>
+<br>
+
 ## Problema
+---
 
 Imagina que estás trabajando en una biblioteca de notificaciones que permite a otros programas notificar a sus usuarios acerca de eventos importantes.
 
@@ -35,7 +42,11 @@ Intentaste solucionar ese problema creando subclases especiales que combinaban v
 
 Debes encontrar alguna otra forma de estructurar las clases de las notificaciones.
 
+<br>
+<br>
+
 ## Solución
+---
 
 Cuando tenemos que alterar la funcionalidad de un objeto, lo primero que se viene a la mente es extender una clase. No obstante, la herencia tiene varias limitaciones importante de las que debes ser consciente.
 
@@ -64,11 +75,19 @@ El último decorador de la pila será el objeto con el que el cliente trabaja. D
 
 Podemos aplicar la misma solución a otra funcionalidades, como el formateo de mensajes o la composición de una lista de destinatarios. El cliente puede decorar el objeto con los decoradores personalizados que desee, siempre y cuando sigan la misma interfaz que los demás.
 
+<br>
+<br>
+
 ## Analogía en el mundo real
+---
 
 Vestir ropa es un ejemplo del uso de decoradores. Cuando tienes frío, te cubres con un suéter. Si sigues teniendo frío a pesar del suéter, ponerte una chaqueta encima. Si está lloviendo, puede ponerte un impermeables. Todas estas prendas "extienden" tu comportamiento básico pero no son parte de ti, y puedes quitarte fácilmente cualquier prenda cuando lo desees.
 
+<br>
+<br>
+
 ## Estructura
+---
 
 ![center | 300](https://refactoring.guru/images/patterns/diagrams/decorator/structure-indexed.png)
 
@@ -221,7 +240,11 @@ class ApplicationConfigurator is
     // ...
 ```
 
+<br>
+<br>
+
 ## Aplicabilidad
+---
 
 **Utiliza el patrón Decorator cuando necesites asignar funcionalidades adicionales a objetos durante el tiempo de ejecución sin descomponer el código que utiliza esos objetos.**
 
@@ -231,7 +254,11 @@ class ApplicationConfigurator is
 
 > Muchos lenguajes de programación cuentan con la palabra clave `final` que puede utilizarse para evitar que una clase siga extendiéndose. Para una clase final, la única forma de reutilizar el comportamiento existente será envolver la clase con tu propio wrapper, utilizando el patrón Decorator.
 
+<br>
+<br>
+
 ## Cómo implementarlo
+---
 
 1.  Asegúrate de que tu dominio de negocio puede representarse como un componente primario con varias capas opcionales encima.
 
@@ -247,7 +274,11 @@ class ApplicationConfigurator is
 
 7.  El código cliente debe ser responsable de crear decoradores y componerlos del modo que el cliente necesite.
 
+<br>
+<br>
+
 ## Pros y contras
+---
 
 > [!success] Pro
 > Puedes extender el comportamiento de un objeto sin crear una nueva subclase.
@@ -270,6 +301,10 @@ class ApplicationConfigurator is
 > [!fail] Contra
 > El código de configuración inicial de las capas pueden tener un aspecto desagradable.
 
+<br>
+<br>
+
 ## Relación con otros patrones
+---
 
 ![[5. Relación entre patrones#Decorator]]
