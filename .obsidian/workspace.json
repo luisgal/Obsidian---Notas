@@ -14,8 +14,21 @@
               "type": "graph",
               "state": {}
             }
+          },
+          {
+            "id": "d70c7360e97ab632",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Git/¿Qué es Git?.md",
+                "mode": "source",
+                "source": true
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -76,7 +89,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 204.50043487548828
+    "width": 204.50043487548828,
+    "collapsed": true
   },
   "right": {
     "id": "a9f1d40eb82c1004",
@@ -91,7 +105,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Git/¿Qué es Git?.md"
+              }
             }
           },
           {
@@ -100,6 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Git/¿Qué es Git?.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,6 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Git/¿Qué es Git?.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,8 +158,10 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "7cf25f3f11c76cf3",
+  "active": "d70c7360e97ab632",
   "lastOpenFiles": [
+    "Git/Comandos básicos.md",
+    "Git/¿Qué es Git?.md",
     "Java/2. Programación orientada a objetos/8. UML - Diagrama de clases.md",
     "Java/2. Programación orientada a objetos/6. Tipos de clases.md",
     "Obsidian/Basic Formatting.md",
@@ -168,8 +188,6 @@
     "Patrones de diseño/Patrones/Proxy.md",
     "Patrones de diseño/Patrones/Prototype.md",
     "Patrones de diseño/Patrones/Observer.md",
-    "Patrones de diseño/Patrones/Memento.md",
-    "Patrones de diseño/Patrones/Mediator.md",
     "Patrones de diseño/designpatternscard.pdf",
     "Zzz/El rock de la carcel.epub",
     "Zzz/El Paraiso en la otra esquina - Mario Vargas Llosa.mobi",
