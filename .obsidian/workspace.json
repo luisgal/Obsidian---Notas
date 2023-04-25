@@ -16,12 +16,12 @@
             }
           },
           {
-            "id": "d70c7360e97ab632",
+            "id": "3ec12edb4b69aaa1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Git/¿Qué es Git?.md",
+                "file": "Git/1. Git y GitHub.md",
                 "mode": "source",
                 "source": true
               }
@@ -106,7 +106,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Git/¿Qué es Git?.md"
+                "file": "Git/1. Git y GitHub.md"
               }
             }
           },
@@ -116,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Git/¿Qué es Git?.md",
+                "file": "Git/1. Git y GitHub.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Git/¿Qué es Git?.md",
+                "file": "Git/1. Git y GitHub.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,10 +158,23 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "d70c7360e97ab632",
+  "active": "3ec12edb4b69aaa1",
   "lastOpenFiles": [
-    "Git/Comandos básicos.md",
-    "Git/¿Qué es Git?.md",
+    "Zzz/img/Pasted image 20230425174658.png",
+    "Zzz/img/Pasted image 20230425174645.png",
+    "Zzz/img/Pasted image 20230425171210.png",
+    "Zzz/img/Pasted image 20230425171200.png",
+    "Zzz/img/Pasted image 20230425171158.png",
+    "Zzz/img/Pasted image 20230425171135.png",
+    "Java/1. Java Basics/1. Introducción.md",
+    "Git/1. Git y GitHub.md",
+    "Zzz/img/Pasted image 20230425170944.png",
+    "Java/Pasted image 20230423203248.png",
+    "Java/Pasted image 20230423203252.png",
+    "Docker/3. Comandos básicos.md",
+    "Git/2. Comandos básicos.md",
+    "Git/3. Trabajo en equipo.md",
+    "Git/GitHub.md",
     "Java/2. Programación orientada a objetos/8. UML - Diagrama de clases.md",
     "Java/2. Programación orientada a objetos/6. Tipos de clases.md",
     "Obsidian/Basic Formatting.md",
@@ -178,16 +191,11 @@
     "Zzz/img/airplane.png",
     "Java/1. Java Basics/3. Operadores.md",
     "Java/1. Java Basics/2. Tipos de datos y operadores.md",
-    "Java/1. Java Basics/1. Introducción.md",
     "Patrones de diseño/Patrones/Singleton.md",
     "Obsidian/Obsidian Git.md",
     "Patrones de diseño/Patrones/Visitor.md",
     "Patrones de diseño/Patrones/Template Method.md",
     "Patrones de diseño/Patrones/Strategy.md",
-    "Patrones de diseño/Patrones/State.md",
-    "Patrones de diseño/Patrones/Proxy.md",
-    "Patrones de diseño/Patrones/Prototype.md",
-    "Patrones de diseño/Patrones/Observer.md",
     "Patrones de diseño/designpatternscard.pdf",
     "Zzz/El rock de la carcel.epub",
     "Zzz/El Paraiso en la otra esquina - Mario Vargas Llosa.mobi",
@@ -198,12 +206,7 @@
     "Java/2. Programación orienta a objetos/1. POO.docx",
     "Patrones de diseño/Patrones",
     "Patrones de diseño/Patrones",
-    "Java/Pasted image 20230412184356.png",
-    "Java/Pasted image 20230412184352.png",
     "Untitled.canvas",
-    "Zzz/img/coche_rojo.jpg",
-    "Zzz/_canvas_/Coche.canvas",
-    "Zzz/_canvas_/Coche.png",
-    "Zzz/img/coches.jpg"
+    "Zzz/_canvas_/Coche.canvas"
   ]
 }
