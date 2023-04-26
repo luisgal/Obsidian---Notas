@@ -21,7 +21,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Git/1. Git y GitHub.md",
+                "file": "Git/2. Comandos básicos.md",
                 "mode": "source",
                 "source": true
               }
@@ -106,7 +106,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Git/1. Git y GitHub.md"
+                "file": "Git/2. Comandos básicos.md"
               }
             }
           },
@@ -116,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Git/1. Git y GitHub.md",
+                "file": "Git/2. Comandos básicos.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Git/1. Git y GitHub.md",
+                "file": "Git/2. Comandos básicos.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -160,6 +160,10 @@
   },
   "active": "3ec12edb4b69aaa1",
   "lastOpenFiles": [
+    "Git/1. Git y GitHub.md",
+    "Zzz/img/Pasted image 20230425222048.png",
+    "Zzz/img/Pasted image 20230425221949.png",
+    "Zzz/img/Pasted image 20230425195209.png",
     "Zzz/img/Pasted image 20230425174658.png",
     "Zzz/img/Pasted image 20230425174645.png",
     "Zzz/img/Pasted image 20230425171210.png",
@@ -167,10 +171,7 @@
     "Zzz/img/Pasted image 20230425171158.png",
     "Zzz/img/Pasted image 20230425171135.png",
     "Java/1. Java Basics/1. Introducción.md",
-    "Git/1. Git y GitHub.md",
     "Zzz/img/Pasted image 20230425170944.png",
-    "Java/Pasted image 20230423203248.png",
-    "Java/Pasted image 20230423203252.png",
     "Docker/3. Comandos básicos.md",
     "Git/2. Comandos básicos.md",
     "Git/3. Trabajo en equipo.md",
@@ -187,8 +188,6 @@
     "Java/2. Programación orientada a objetos/3. Abstracción.md",
     "Java/2. Programación orientada a objetos/1. POO.md",
     "Java/2. Programación orientada a objetos/2. Clases y objetos.md",
-    "Java/Pasted image 20230420185533.png",
-    "Zzz/img/airplane.png",
     "Java/1. Java Basics/3. Operadores.md",
     "Java/1. Java Basics/2. Tipos de datos y operadores.md",
     "Patrones de diseño/Patrones/Singleton.md",
