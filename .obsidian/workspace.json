@@ -52,7 +52,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -129,7 +129,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Java/Hibernate/Configuración.md"
+                "file": "Java/Hibernate/Relaciones.md"
               }
             }
           },
@@ -139,7 +139,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Java/Hibernate/Configuración.md",
+                "file": "Java/Hibernate/Relaciones.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,7 +156,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Java/Hibernate/Configuración.md",
+                "file": "Java/Hibernate/Relaciones.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -181,10 +181,10 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "25ab0cbbf52e2109",
+  "active": "6183ab47490bc4f2",
   "lastOpenFiles": [
-    "Java/Hibernate/Relaciones.md",
     "Java/Hibernate/Configuración.md",
+    "Java/Hibernate/Relaciones.md",
     "Git/4. Trabajo en equipo.md",
     "Git/1. Git y GitHub.md",
     "Java/Hibernate",
