@@ -11,12 +11,8 @@
             "id": "661b19ff99cff6da",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Git/4. Trabajo en equipo.md",
-                "mode": "source",
-                "source": true
-              }
+              "type": "graph",
+              "state": {}
             }
           },
           {
@@ -37,7 +33,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java/Hibernate/Configuración.md",
+                "file": "Java/Hibernate/Relaciones.md",
                 "mode": "source",
                 "source": true
               }
@@ -55,8 +51,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -132,9 +127,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Java/Hibernate/Configuración.md"
-              }
+              "state": {}
             }
           },
           {
@@ -143,7 +136,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Java/Hibernate/Configuración.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -160,7 +152,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Java/Hibernate/Configuración.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -185,13 +176,13 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "6183ab47490bc4f2",
+  "active": "661b19ff99cff6da",
   "lastOpenFiles": [
+    "Git/4. Trabajo en equipo.md",
+    "Git/1. Git y GitHub.md",
     "Java/Hibernate/Relaciones.md",
     "Java/Hibernate/Configuración.md",
-    "Git/4. Trabajo en equipo.md",
     "Java/Hibernate",
-    "Git/1. Git y GitHub.md",
     "Git/2. Trabajo con Git.md",
     "Git/3. Comandos básicos.md",
     "Zzz/img/GIT/GIT_branch.drawio.png",
