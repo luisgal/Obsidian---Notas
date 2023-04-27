@@ -20,6 +20,30 @@
             }
           },
           {
+            "id": "25ab0cbbf52e2109",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Java/Hibernate/Relaciones.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "6183ab47490bc4f2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Java/Hibernate/Configuración.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
             "id": "b468aa33fbaa9f51",
             "type": "leaf",
             "state": {
@@ -31,7 +55,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -108,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Git/4. Trabajo en equipo.md"
+                "file": "Java/Hibernate/Configuración.md"
               }
             }
           },
@@ -118,7 +143,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Git/4. Trabajo en equipo.md",
+                "file": "Java/Hibernate/Configuración.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +160,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Git/4. Trabajo en equipo.md",
+                "file": "Java/Hibernate/Configuración.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -160,10 +185,13 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "661b19ff99cff6da",
+  "active": "6183ab47490bc4f2",
   "lastOpenFiles": [
-    "Git/1. Git y GitHub.md",
+    "Java/Hibernate/Relaciones.md",
+    "Java/Hibernate/Configuración.md",
     "Git/4. Trabajo en equipo.md",
+    "Java/Hibernate",
+    "Git/1. Git y GitHub.md",
     "Git/2. Trabajo con Git.md",
     "Git/3. Comandos básicos.md",
     "Zzz/img/GIT/GIT_branch.drawio.png",
@@ -183,7 +211,6 @@
     "Zzz/img/GIT/GIT_nuevoCommit.drawio",
     "Zzz/img/GIT/GIT_cambios.drawio",
     "Zzz/img/GIT/GIT.drawio",
-    "Zzz/img/GIT",
     "Zzz/img/Pasted image 20230426164240.png",
     "Untitled.canvas",
     "Zzz/img/Pasted image 20230425222048.png",
@@ -207,7 +234,6 @@
     "Patrones de diseño/Patrones/Singleton.md",
     "Obsidian/Obsidian Git.md",
     "Patrones de diseño/Patrones/Visitor.md",
-    "Patrones de diseño/Patrones/Template Method.md",
     "Zzz/_canvas_/Coche.canvas"
   ]
 }
