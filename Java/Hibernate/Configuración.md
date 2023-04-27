@@ -29,3 +29,10 @@ manager = emf.createEntityManager();
 ---
 
 Con el manager se pueden hacer consultas jql
+
+Se puden crear querys hql arriba de la clase con una anotación
+
+
+manager.getTransaction().begin() // Para iniciar una transacción
+manager.persist(<persist>) // La clase que se desea persistir
+manager.getTransaction().commit(9)
