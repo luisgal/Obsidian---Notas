@@ -20,5 +20,6 @@
   "showInlineTitle": false,
   "rightToLeft": false,
   "legacyEditor": false,
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "autoConvertHtml": true
 }

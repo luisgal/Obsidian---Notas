@@ -4,31 +4,34 @@
     "type": "split",
     "children": [
       {
-        "id": "81c85ffba4081698",
+        "id": "69361ef1e42ff6fa",
         "type": "tabs",
         "children": [
           {
-            "id": "7cf25f3f11c76cf3",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
-            }
-          },
-          {
-            "id": "a95982e8c598ba60",
+            "id": "661b19ff99cff6da",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Git/2. Comandos básicos.md",
+                "file": "Git/4. Trabajo en equipo.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "b468aa33fbaa9f51",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Git/1. Git y GitHub.md",
                 "mode": "source",
                 "source": true
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -89,8 +92,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 204.50043487548828,
-    "collapsed": true
+    "width": 204.50043487548828
   },
   "right": {
     "id": "a9f1d40eb82c1004",
@@ -106,7 +108,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Git/2. Comandos básicos.md"
+                "file": "Git/4. Trabajo en equipo.md"
               }
             }
           },
@@ -116,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Git/2. Comandos básicos.md",
+                "file": "Git/4. Trabajo en equipo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Git/2. Comandos básicos.md",
+                "file": "Git/4. Trabajo en equipo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,23 +160,35 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "a95982e8c598ba60",
+  "active": "661b19ff99cff6da",
   "lastOpenFiles": [
-    "Git/2. Comandos básicos.md",
     "Git/1. Git y GitHub.md",
+    "Git/4. Trabajo en equipo.md",
+    "Git/2. Trabajo con Git.md",
+    "Git/3. Comandos básicos.md",
+    "Zzz/img/GIT/GIT_branch.drawio.png",
+    "Zzz/img/GIT/GIT_cambios.drawio.png",
+    "Zzz/img/GIT/GIT_checkout.drawio.png",
+    "Zzz/img/GIT/GIT_nuevoCommit.drawio.png",
+    "Zzz/img/GIT/GIT_reset.drawio.png",
+    "Zzz/img/GIT/GIT_resetFuture.drawio.png",
+    "Zzz/img/GIT/GIT_revert.png",
+    "Zzz/img/GIT/GIT.drawio.png",
+    "Zzz/img/GIT/GIT_resetFuture.drawio",
+    "Zzz/img/GIT/GIT_branch.drawio",
+    "Zzz/img/GIT/GIT.xml",
+    "Zzz/img/GIT/GIT_revert.drawio",
+    "Zzz/img/GIT/GIT_checkout.drawio",
+    "Zzz/img/GIT/GIT_reset.drawio",
+    "Zzz/img/GIT/GIT_nuevoCommit.drawio",
+    "Zzz/img/GIT/GIT_cambios.drawio",
+    "Zzz/img/GIT/GIT.drawio",
+    "Zzz/img/GIT",
+    "Zzz/img/Pasted image 20230426164240.png",
+    "Untitled.canvas",
     "Zzz/img/Pasted image 20230425222048.png",
-    "Zzz/img/Pasted image 20230425221949.png",
-    "Zzz/img/Pasted image 20230425195209.png",
-    "Zzz/img/Pasted image 20230425174658.png",
-    "Zzz/img/Pasted image 20230425174645.png",
-    "Zzz/img/Pasted image 20230425171210.png",
-    "Zzz/img/Pasted image 20230425171200.png",
-    "Zzz/img/Pasted image 20230425171158.png",
-    "Zzz/img/Pasted image 20230425171135.png",
     "Java/1. Java Basics/1. Introducción.md",
-    "Zzz/img/Pasted image 20230425170944.png",
     "Docker/3. Comandos básicos.md",
-    "Git/3. Trabajo en equipo.md",
     "Git/GitHub.md",
     "Java/2. Programación orientada a objetos/8. UML - Diagrama de clases.md",
     "Java/2. Programación orientada a objetos/6. Tipos de clases.md",
@@ -194,18 +208,6 @@
     "Obsidian/Obsidian Git.md",
     "Patrones de diseño/Patrones/Visitor.md",
     "Patrones de diseño/Patrones/Template Method.md",
-    "Patrones de diseño/Patrones/Strategy.md",
-    "Patrones de diseño/designpatternscard.pdf",
-    "Zzz/El rock de la carcel.epub",
-    "Zzz/El Paraiso en la otra esquina - Mario Vargas Llosa.mobi",
-    "Java/CreationalPattern",
-    "Templates",
-    "Java/2. Programación orientada a objetos",
-    "Java/2. Programación orienta a objetos",
-    "Java/2. Programación orienta a objetos/1. POO.docx",
-    "Patrones de diseño/Patrones",
-    "Patrones de diseño/Patrones",
-    "Untitled.canvas",
     "Zzz/_canvas_/Coche.canvas"
   ]
 }
