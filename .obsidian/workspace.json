@@ -21,7 +21,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java/Hibernate/Configuración.md",
+                "file": "Git/4. Trabajo en equipo.md",
                 "mode": "source",
                 "source": true
               }
@@ -33,7 +33,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java/Hibernate/Relaciones.md",
+                "file": "Git/2. Trabajo con Git.md",
                 "mode": "source",
                 "source": true
               }
@@ -52,7 +52,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -129,7 +129,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Java/Hibernate/Relaciones.md"
+                "file": "Git/4. Trabajo en equipo.md"
               }
             }
           },
@@ -139,7 +139,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Java/Hibernate/Relaciones.md",
+                "file": "Git/4. Trabajo en equipo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,7 +156,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Java/Hibernate/Relaciones.md",
+                "file": "Git/4. Trabajo en equipo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -181,15 +181,15 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "6183ab47490bc4f2",
+  "active": "25ab0cbbf52e2109",
   "lastOpenFiles": [
     "Java/Hibernate/Configuración.md",
-    "Java/Hibernate/Relaciones.md",
+    "Git/2. Trabajo con Git.md",
     "Git/4. Trabajo en equipo.md",
+    "Git/3. Comandos básicos.md",
+    "Java/Hibernate/Relaciones.md",
     "Git/1. Git y GitHub.md",
     "Java/Hibernate",
-    "Git/2. Trabajo con Git.md",
-    "Git/3. Comandos básicos.md",
     "Zzz/img/GIT/GIT_branch.drawio.png",
     "Zzz/img/GIT/GIT_cambios.drawio.png",
     "Zzz/img/GIT/GIT_checkout.drawio.png",
