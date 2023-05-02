@@ -38,18 +38,6 @@
                 "source": true
               }
             }
-          },
-          {
-            "id": "b468aa33fbaa9f51",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Git/1. Git y GitHub.md",
-                "mode": "source",
-                "source": true
-              }
-            }
           }
         ],
         "currentTab": 1
@@ -183,12 +171,12 @@
   },
   "active": "25ab0cbbf52e2109",
   "lastOpenFiles": [
-    "Java/Hibernate/Configuración.md",
     "Git/2. Trabajo con Git.md",
     "Git/4. Trabajo en equipo.md",
     "Git/3. Comandos básicos.md",
-    "Java/Hibernate/Relaciones.md",
     "Git/1. Git y GitHub.md",
+    "Java/Hibernate/Configuración.md",
+    "Java/Hibernate/Relaciones.md",
     "Java/Hibernate",
     "Zzz/img/GIT/GIT_branch.drawio.png",
     "Zzz/img/GIT/GIT_cambios.drawio.png",
