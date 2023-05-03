@@ -179,6 +179,10 @@
   },
   "active": "25ab0cbbf52e2109",
   "lastOpenFiles": [
+    "Java/Liquibase",
+    "Java/Mapstruct",
+    "Java/Lombok",
+    "Java/Spring",
     "Git/3. Comandos básicos.md",
     "Git/4. Trabajo en equipo.md",
     "Git/2. Trabajo con Git.md",
@@ -200,9 +204,6 @@
     "Zzz/img/GIT/GIT_revert.drawio",
     "Zzz/img/GIT/GIT_checkout.drawio",
     "Zzz/img/GIT/GIT_reset.drawio",
-    "Zzz/img/GIT/GIT_nuevoCommit.drawio",
-    "Zzz/img/GIT/GIT_cambios.drawio",
-    "Zzz/img/GIT/GIT.drawio",
     "Zzz/img/Pasted image 20230426164240.png",
     "Untitled.canvas",
     "Zzz/img/Pasted image 20230425222048.png",
@@ -225,7 +226,6 @@
     "Java/1. Java Basics/2. Tipos de datos y operadores.md",
     "Patrones de diseño/Patrones/Singleton.md",
     "Obsidian/Obsidian Git.md",
-    "Patrones de diseño/Patrones/Visitor.md",
     "Zzz/_canvas_/Coche.canvas"
   ]
 }
