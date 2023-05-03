@@ -4,31 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "69361ef1e42ff6fa",
+        "id": "50892a5f5ecaf175",
         "type": "tabs",
         "children": [
           {
-            "id": "661b19ff99cff6da",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
-            }
-          },
-          {
-            "id": "25ab0cbbf52e2109",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Git/4. Trabajo en equipo.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "6183ab47490bc4f2",
+            "id": "086b378ee2fa6310",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -39,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -125,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Git/4. Trabajo en equipo.md"
+                "file": "Git/2. Trabajo con Git.md"
               }
             }
           },
@@ -135,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Git/4. Trabajo en equipo.md",
+                "file": "Git/2. Trabajo con Git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Git/4. Trabajo en equipo.md",
+                "file": "Git/2. Trabajo con Git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -177,15 +156,23 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "25ab0cbbf52e2109",
+  "active": "086b378ee2fa6310",
   "lastOpenFiles": [
+    "Git/github-git-cheat-sheet.pdf",
+    "Git/Cheatseet.md",
     "Git/4. Trabajo en equipo.md",
+    "Git/GitHub Cheatsheets Archivos/octocat.png",
+    "Git/GitHub Cheatsheets Archivos/2764.png",
+    "Git/2. Trabajo con Git.md",
+    "Git/GitHub Cheatsheets.html",
+    "Git/GitHub Cheatsheets Archivos/index.css",
+    "Git/GitHub Cheatsheets Archivos/css.css",
+    "Git/GitHub Cheatsheets Archivos",
     "Java/Liquibase",
     "Java/Mapstruct",
     "Java/Lombok",
     "Java/Spring",
     "Git/3. Comandos básicos.md",
-    "Git/2. Trabajo con Git.md",
     "Git/1. Git y GitHub.md",
     "Java/Hibernate/Configuración.md",
     "Java/Hibernate/Relaciones.md",
@@ -198,14 +185,7 @@
     "Zzz/img/GIT/GIT_resetFuture.drawio.png",
     "Zzz/img/GIT/GIT_revert.png",
     "Zzz/img/GIT/GIT.drawio.png",
-    "Zzz/img/GIT/GIT_resetFuture.drawio",
-    "Zzz/img/GIT/GIT_branch.drawio",
-    "Zzz/img/GIT/GIT.xml",
-    "Zzz/img/GIT/GIT_revert.drawio",
-    "Zzz/img/GIT/GIT_checkout.drawio",
-    "Zzz/img/Pasted image 20230426164240.png",
     "Untitled.canvas",
-    "Zzz/img/Pasted image 20230425222048.png",
     "Java/1. Java Basics/1. Introducción.md",
     "Docker/3. Comandos básicos.md",
     "Git/GitHub.md",
@@ -224,7 +204,6 @@
     "Java/1. Java Basics/3. Operadores.md",
     "Java/1. Java Basics/2. Tipos de datos y operadores.md",
     "Patrones de diseño/Patrones/Singleton.md",
-    "Obsidian/Obsidian Git.md",
     "Zzz/_canvas_/Coche.canvas"
   ]
 }
