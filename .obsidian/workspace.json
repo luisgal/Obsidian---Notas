@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Git/2. Trabajo con Git.md",
+                "file": "Git/4. Trabajo en equipo.md",
                 "mode": "preview",
                 "source": true
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Git/2. Trabajo con Git.md"
+                "file": "Git/4. Trabajo en equipo.md"
               }
             }
           },
@@ -114,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Git/2. Trabajo con Git.md",
+                "file": "Git/4. Trabajo en equipo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Git/2. Trabajo con Git.md",
+                "file": "Git/4. Trabajo en equipo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,6 +158,8 @@
   },
   "active": "086b378ee2fa6310",
   "lastOpenFiles": [
+    "Git/3. Comandos básicos.md",
+    "Git/2. Trabajo con Git.md",
     "Zzz/img/GIT/GIT_PULLREQUEST.drawio.png",
     "Zzz/img/GIT/GIT_PULLREQUEST.drawio",
     "Zzz/img/GIT/GIT_FORK.drawio.png",
@@ -177,12 +179,9 @@
     "Zzz/img/GIT/GIT_MERGE_COMMIT.drawio.png",
     "Zzz/img/GIT/GIT_MERGE_COMMIT.drawio",
     "Zzz/img/GIT/GIT_branching.drawio.png",
-    "Git/2. Trabajo con Git.md",
     "Zzz/img/GIT/GIT_branching.drawio",
     "Git/Cheatseet.md",
     "Git/4. Trabajo en equipo.md",
-    "Git/GitHub Cheatsheets Archivos/octocat.png",
-    "Git/3. Comandos básicos.md",
     "Git/1. Git y GitHub.md",
     "Java/Hibernate/Configuración.md",
     "Java/Hibernate/Relaciones.md",
