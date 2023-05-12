@@ -14,19 +14,8 @@
               "type": "empty",
               "state": {}
             }
-          },
-          {
-            "id": "f5efb202534d4e25",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.2.8"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,9 +99,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Git/github-git-cheat-sheet.pdf"
-              }
+              "state": {}
             }
           },
           {
@@ -121,7 +108,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Git/github-git-cheat-sheet.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,7 +124,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Git/github-git-cheat-sheet.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -163,8 +148,9 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "f5efb202534d4e25",
+  "active": "af3f26a9dc14cf70",
   "lastOpenFiles": [
+    "Untitled.md",
     "Java/Maven",
     "Git/4. Trabajo en equipo.md",
     "Git/3. Comandos básicos.md",
@@ -188,7 +174,6 @@
     "Zzz/img/GIT/GIT_MERGE_COMMIT.drawio.png",
     "Zzz/img/GIT/GIT_MERGE_COMMIT.drawio",
     "Zzz/img/GIT/GIT_branching.drawio.png",
-    "Zzz/img/GIT/GIT_branching.drawio",
     "Git/Cheatseet.md",
     "Git/1. Git y GitHub.md",
     "Java/Hibernate/Configuración.md",
