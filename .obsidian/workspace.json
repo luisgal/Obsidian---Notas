@@ -14,8 +14,19 @@
               "type": "empty",
               "state": {}
             }
+          },
+          {
+            "id": "f5efb202534d4e25",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.2.8"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -152,7 +163,7 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "1a725221c6f2081a",
+  "active": "f5efb202534d4e25",
   "lastOpenFiles": [
     "Java/Maven",
     "Git/4. Trabajo en equipo.md",
