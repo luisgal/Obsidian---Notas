@@ -14,7 +14,7 @@ Relación inversa
 
 Tambien pueden utilizar cacade, fetch como parametros
 
-@JoinColumn(name="<name>") para indicar la tabla que liga con la otra entidad, este se anota en el @ManyToOne7
+@JoinColumn(name="<name>") para indicar la tabla que liga con la otra entidad, este se anota en el @ManyToOne
 Parámetro mappedBy para indicar la entidad del otro extremo de la relación
 
 
