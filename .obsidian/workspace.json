@@ -13,13 +13,24 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java/Hibernate/Relaciones.md",
+                "file": "Java/Hibernate/Configuración.md",
                 "mode": "preview",
                 "source": true
               }
             }
+          },
+          {
+            "id": "918df05b6aa55b3d",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.3.3"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -104,7 +115,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Java/Hibernate/Relaciones.md"
+                "file": "Java/Hibernate/Configuración.md"
               }
             }
           },
@@ -114,7 +125,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Java/Hibernate/Relaciones.md",
+                "file": "Java/Hibernate/Configuración.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Java/Hibernate/Relaciones.md",
+                "file": "Java/Hibernate/Configuración.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -156,10 +167,10 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "af3f26a9dc14cf70",
+  "active": "918df05b6aa55b3d",
   "lastOpenFiles": [
-    "Java/Hibernate/Configuración.md",
     "Java/Hibernate/Relaciones.md",
+    "Java/Hibernate/Configuración.md",
     "Git/2. Trabajo con Git.md",
     "Git/4. Trabajo en equipo.md",
     "Git/3. Comandos básicos.md",
