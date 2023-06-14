@@ -14,12 +14,23 @@
               "type": "markdown",
               "state": {
                 "file": "Zzz/Diagrams/Untitled.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": true
               }
             }
+          },
+          {
+            "id": "7a2d41972214d184",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.3.5"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -156,7 +167,7 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "a50f300ee8862911",
+  "active": "7a2d41972214d184",
   "lastOpenFiles": [
     "Java/Hibernate/Configuración.md",
     "Zzz/Diagrams/Untitled.md",
