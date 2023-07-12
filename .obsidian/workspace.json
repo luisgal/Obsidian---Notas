@@ -8,24 +8,24 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a50f300ee8862911",
+            "id": "7a2d41972214d184",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zzz/Diagrams/Untitled.md",
+                "file": "Patrones de diseño/3. Patrones estructurales.md",
                 "mode": "preview",
                 "source": true
               }
             }
           },
           {
-            "id": "7a2d41972214d184",
+            "id": "d16aa68e3e9cd8ec",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zzz/Diagrams/Untitled.md",
+                "file": "Patrones de diseño/Patrones/Facade.md",
                 "mode": "preview",
                 "source": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Zzz/Diagrams/Untitled.md"
+                "file": "Patrones de diseño/Patrones/Facade.md"
               }
             }
           },
@@ -127,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Zzz/Diagrams/Untitled.md",
+                "file": "Patrones de diseño/Patrones/Facade.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,18 +144,34 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Zzz/Diagrams/Untitled.md",
+                "file": "Patrones de diseño/Patrones/Facade.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
+          },
+          {
+            "id": "d00db72e81a41886",
+            "type": "leaf",
+            "state": {
+              "type": "mermaid-toolbar-view",
+              "state": {}
+            }
+          },
+          {
+            "id": "5b66c1dda251d0a6",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 251.5,
-    "collapsed": true
+    "width": 251.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -169,10 +185,19 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "7a2d41972214d184",
+  "active": "d16aa68e3e9cd8ec",
   "lastOpenFiles": [
-    "Java/Hibernate/Configuración.md",
+    "Patrones de diseño/3. Patrones estructurales.md",
+    "Patrones de diseño/Patrones/Decorator.md",
+    "Patrones de diseño/Patrones/Bridge.md",
+    "Patrones de diseño/2. Patrones creacionales.md",
+    "Patrones de diseño/1. ¿Qué es un patron de diseño?.md",
+    "Patrones de diseño/Patrones/Prototype.md",
     "Zzz/Diagrams/Untitled.md",
+    "Patrones de diseño/Patrones/Adapter.md",
+    "Patrones de diseño/Patrones/Abstract Factory.md",
+    "README.md",
+    "Java/Hibernate/Configuración.md",
     "Zzz/Diagrams",
     "Java/Hibernate/Relaciones.md",
     "Git/2. Trabajo con Git.md",
@@ -209,15 +234,6 @@
     "Obsidian/Basic Formatting.md",
     "Java/1. Java Basics/4. Sentencias de control.md",
     "Java/1. Java Basics/5. Funciones.md",
-    "Java/2. Programación orientada a objetos/4. Encapsulamiento.md",
-    "Java/2. Programación orientada a objetos/7. Relaciones entre objetos.md",
-    "Java/2. Programación orientada a objetos/5. Herencia y Polimorfismo.md",
-    "Patrones de diseño/5. Relación entre patrones.md",
-    "Java/2. Programación orientada a objetos/3. Abstracción.md",
-    "Java/2. Programación orientada a objetos/1. POO.md",
-    "Java/2. Programación orientada a objetos/2. Clases y objetos.md",
-    "Java/1. Java Basics/3. Operadores.md",
-    "Java/1. Java Basics/2. Tipos de datos y operadores.md",
     "Zzz/_canvas_/Coche.canvas"
   ]
 }
