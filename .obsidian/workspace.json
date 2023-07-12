@@ -13,26 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Patrones de diseño/3. Patrones estructurales.md",
-                "mode": "preview",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "d16aa68e3e9cd8ec",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Patrones de diseño/Patrones/Facade.md",
-                "mode": "preview",
+                "file": "Java/Hibernate/Relaciones.md",
+                "mode": "source",
                 "source": true
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -117,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Patrones de diseño/Patrones/Facade.md"
+                "file": "Java/Hibernate/Relaciones.md"
               }
             }
           },
@@ -127,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Patrones de diseño/Patrones/Facade.md",
+                "file": "Java/Hibernate/Relaciones.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Patrones de diseño/Patrones/Facade.md",
+                "file": "Java/Hibernate/Relaciones.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -185,26 +172,37 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "d16aa68e3e9cd8ec",
+  "active": "7a2d41972214d184",
   "lastOpenFiles": [
-    "Patrones de diseño/3. Patrones estructurales.md",
-    "Patrones de diseño/Patrones/Decorator.md",
-    "Patrones de diseño/Patrones/Bridge.md",
-    "Patrones de diseño/2. Patrones creacionales.md",
-    "Patrones de diseño/1. ¿Qué es un patron de diseño?.md",
-    "Patrones de diseño/Patrones/Prototype.md",
-    "Zzz/Diagrams/Untitled.md",
-    "Patrones de diseño/Patrones/Adapter.md",
-    "Patrones de diseño/Patrones/Abstract Factory.md",
-    "README.md",
     "Java/Hibernate/Configuración.md",
-    "Zzz/Diagrams",
     "Java/Hibernate/Relaciones.md",
-    "Git/2. Trabajo con Git.md",
+    "Docker/1. Introducción.md",
+    "README.md",
+    "Zzz/Biblioteca.md",
+    "Zzz/Diagrams/Untitled.md",
+    "Docker/2. Conceptos básicos.md",
+    "Docker/3. Comandos básicos.md",
+    "Docker/4. DockerFile.md",
+    "Docker/5. Docker Compose.md",
+    "Git/github-git-cheat-sheet.pdf",
+    "Git/Cheatseet.md",
     "Git/4. Trabajo en equipo.md",
     "Git/3. Comandos básicos.md",
+    "Git/2. Trabajo con Git.md",
     "Git/1. Git y GitHub.md",
-    "Untitled.md",
+    "Obsidian/Obsidian Git.md",
+    "Obsidian/Basic Formatting.md",
+    "Patrones de diseño/designpatternscard.pdf",
+    "Patrones de diseño/5. Relación entre patrones.md",
+    "Patrones de diseño/4. Patrones de comportamiento.md",
+    "Patrones de diseño/Patrones/Observer.md",
+    "Patrones de diseño/Patrones/Memento.md",
+    "Patrones de diseño/Patrones/Iterator.md",
+    "Patrones de diseño/3. Patrones estructurales.md",
+    "Patrones de diseño/Patrones/Chain of Responsibility.md",
+    "Patrones de diseño/Patrones/Proxy.md",
+    "Patrones de diseño/Patrones/Flyweight.md",
+    "Zzz/Diagrams",
     "Java/Maven",
     "Zzz/img/GIT/GIT_PULLREQUEST.drawio.png",
     "Zzz/img/GIT/GIT_PULLREQUEST.drawio",
@@ -219,21 +217,10 @@
     "Zzz/img/GIT/GIT_MERGE_SQUASH.drawio.png",
     "Zzz/img/GIT/GIT_MERGE_SQUASH.drawio",
     "Zzz/img/GIT/GIT_MERGE_FASTFORWARD.drawio.png",
-    "Zzz/img/GIT/GIT_MERGE_FASTFORWARD.drawio",
     "Zzz/img/GIT/GIT_MERGE_REBASE.drawio.png",
-    "Zzz/img/GIT/GIT_MERGE_REBASE.drawio",
     "Zzz/img/GIT/GIT_MERGE_COMMIT.drawio.png",
     "Zzz/img/GIT/GIT_branching.drawio.png",
-    "Git/Cheatseet.md",
     "Untitled.canvas",
-    "Java/1. Java Basics/1. Introducción.md",
-    "Docker/3. Comandos básicos.md",
-    "Git/GitHub.md",
-    "Java/2. Programación orientada a objetos/8. UML - Diagrama de clases.md",
-    "Java/2. Programación orientada a objetos/6. Tipos de clases.md",
-    "Obsidian/Basic Formatting.md",
-    "Java/1. Java Basics/4. Sentencias de control.md",
-    "Java/1. Java Basics/5. Funciones.md",
     "Zzz/_canvas_/Coche.canvas"
   ]
 }
