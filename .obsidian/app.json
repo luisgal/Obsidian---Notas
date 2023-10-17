@@ -1,7 +1,5 @@
 {
-  "spellcheckLanguages": [
-    "es-MX"
-  ],
+  "spellcheckLanguages": null,
   "pdfExportSettings": {
     "includeName": false,
     "pageSize": "Letter",

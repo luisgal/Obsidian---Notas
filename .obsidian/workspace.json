@@ -18,8 +18,19 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "3aedbcfd6a5b5d31",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.4.14"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -172,7 +183,7 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "7a2d41972214d184",
+  "active": "3aedbcfd6a5b5d31",
   "lastOpenFiles": [
     "Java/Hibernate/Configuración.md",
     "Java/Hibernate/Relaciones.md",

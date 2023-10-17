@@ -22,3 +22,5 @@ Parámetro mappedBy para indicar la entidad del otro extremo de la relación
 ---
 
 @ManyToMany
+
+
